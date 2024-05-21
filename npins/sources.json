@@ -1,0 +1,74 @@
+{
+  "pins": {
+    "bellado": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "bellado"
+      },
+      "branch": "main",
+      "revision": "8b9bb4e19b06a35acd8b2d39830c2751246ff189",
+      "url": "https://github.com/isabelroses/bellado/archive/8b9bb4e19b06a35acd8b2d39830c2751246ff189.tar.gz",
+      "hash": "1vk7g462x4q0hm6bxifjdr328595n1mkhhn79ibq9ql4zbbjiybs"
+    },
+    "gh-eco": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "gh-eco"
+      },
+      "branch": "chore/update-deps",
+      "revision": "d45b1e7de8cbcb692def0e94111262cdeff2835d",
+      "url": "https://github.com/isabelroses/gh-eco/archive/d45b1e7de8cbcb692def0e94111262cdeff2835d.tar.gz",
+      "hash": "067cd79wli18zmm1chf1bvcrj7s1fwgr3incyqgaiy751k7kp06c"
+    },
+    "izrss": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "izrss"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "version": "v0.0.6",
+      "revision": "0a059591ad2c10de84b834bca4e5d23f39cb8acb",
+      "url": "https://api.github.com/repos/isabelroses/izrss/tarball/v0.0.6",
+      "hash": "1mbzhaapra42vk8xqmfhrfzpd0lk727ma9yqriczrdjcs7gydvxl"
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre628952.641daa314d5b/nixexprs.tar.xz",
+      "hash": "10vql3aqsckyjn9qaw39a17scsxiz3sj2918xdf2sjhsfvxyyfml"
+    },
+    "website": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "website"
+      },
+      "branch": "main",
+      "revision": "c11fb794b326f55d41c56ac9540edbf817e159bc",
+      "url": "https://github.com/isabelroses/website/archive/c11fb794b326f55d41c56ac9540edbf817e159bc.tar.gz",
+      "hash": "0mvqn39vzbxfhfzjplzk3ichwc94in6sn9hnhg4bv9c9zdqsviq1"
+    },
+    "zzz": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "zzz"
+      },
+      "branch": "main",
+      "revision": "7715a19520e8234820851d29bb83f44788a671c2",
+      "url": "https://github.com/isabelroses/zzz/archive/7715a19520e8234820851d29bb83f44788a671c2.tar.gz",
+      "hash": "110wjnsx7m0v4hj4a8k80dcmcv8z0f0na986gcz6l29wn1ihkjkj"
+    }
+  },
+  "version": 3
+}
