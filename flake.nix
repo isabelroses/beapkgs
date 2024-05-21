@@ -8,6 +8,7 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
+    # flake only users can ignore this input
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
