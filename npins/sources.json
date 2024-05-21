@@ -12,6 +12,18 @@
       "url": "https://github.com/isabelroses/bellado/archive/8b9bb4e19b06a35acd8b2d39830c2751246ff189.tar.gz",
       "hash": "1vk7g462x4q0hm6bxifjdr328595n1mkhhn79ibq9ql4zbbjiybs"
     },
+    "colloid-gtk-theme": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "vinceliuice",
+        "repo": "colloid-gtk-theme"
+      },
+      "branch": "main",
+      "revision": "1a13048ea1bd4a6cb9b293b537afd16bf267e773",
+      "url": "https://github.com/vinceliuice/colloid-gtk-theme/archive/1a13048ea1bd4a6cb9b293b537afd16bf267e773.tar.gz",
+      "hash": "1ixdqrwvxxjl6caqfcq6fxhlzgmqwbwybqjnhvd81vs84cw2i0fd"
+    },
     "gh-eco": {
       "type": "Git",
       "repository": {
@@ -23,6 +35,18 @@
       "revision": "d45b1e7de8cbcb692def0e94111262cdeff2835d",
       "url": "https://github.com/isabelroses/gh-eco/archive/d45b1e7de8cbcb692def0e94111262cdeff2835d.tar.gz",
       "hash": "067cd79wli18zmm1chf1bvcrj7s1fwgr3incyqgaiy751k7kp06c"
+    },
+    "gtk": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "catppuccin",
+        "repo": "gtk"
+      },
+      "branch": "main",
+      "revision": "663f6c61f8cf1fcbbeb72110bf6b0a0214755245",
+      "url": "https://github.com/catppuccin/gtk/archive/663f6c61f8cf1fcbbeb72110bf6b0a0214755245.tar.gz",
+      "hash": "1nx82w73mhpsk2s8n4103ra19y0y8z1nvj0f5bbr1agvibda2zrn"
     },
     "izrss": {
       "type": "Git",

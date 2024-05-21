@@ -12,9 +12,11 @@
   outputs =
     { self, nixpkgs, ... }:
     let
+      inherit (nixpkgs) lib;
+
       forAllSystems =
         function:
-        nixpkgs.lib.genAttrs [
+        lib.genAttrs [
           "x86_64-linux"
           "aarch64-linux"
           "x86_64-darwin"
@@ -24,7 +26,7 @@
     {
       formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
-      lib = import ./lib { inherit (nixpkgs) lib; };
+      lib = import ./lib { inherit lib; };
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };
@@ -32,9 +34,6 @@
 
       packages = forAllSystems (
         pkgs:
-        let
-          inherit (nixpkgs) lib;
-        in
         lib.packagesFromDirectoryRecursive {
           callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
           directory = ./pkgs;
@@ -44,6 +43,6 @@
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
       nixosModules = import ./modules/nixos { inherit self; };
       darwinModules = import ./modules/darwin { inherit self; };
-      homeManagerModules = import ./modules/home-manager { inherit self; };
+      homeManagerModules = import ./modules/home-manager { inherit lib self; };
     };
 }
