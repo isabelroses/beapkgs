@@ -4,7 +4,7 @@
   buildGoModule,
 }:
 let
-  inherit (pins.izrss) version;
+  version = builtins.substring 0 7 pins.izrss.revision;
 in
 buildGoModule {
   pname = "izrss";
