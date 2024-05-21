@@ -1,1 +1,1 @@
-{ pins }: import "${pins.izrss}/nix/hm-module.nix";
+{ pins }: import "${pins.izrss}/nix/hm-module.nix" { }
