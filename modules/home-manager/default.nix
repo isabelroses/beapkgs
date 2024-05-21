@@ -1,1 +1,6 @@
-builtins.throw "There is no default module yet"
+{ self }:
+let
+  inherit (self.lib) mkModules;
+  modules = mkModules ./.;
+in
+modules

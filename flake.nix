@@ -2,12 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # this will be used at some point for the modules
-    # home-manager = {
-    #   url = "github:nix-community/home-manager";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     # flake only users can ignore this input
     flake-compat = {
       url = "github:edolstra/flake-compat";
@@ -16,7 +10,7 @@
   };
 
   outputs =
-    { nixpkgs, ... }:
+    { self, nixpkgs, ... }:
     let
       forAllSystems =
         function:
@@ -28,11 +22,13 @@
         ] (system: function nixpkgs.legacyPackages.${system});
     in
     {
+      formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
+
+      lib = import ./lib { inherit (nixpkgs) lib; };
+
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };
       });
-
-      formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
       packages = forAllSystems (
         pkgs:
@@ -45,10 +41,9 @@
         }
       );
 
-      # maybe we can sneek in [lib.mergeModules](https://noogle.dev/f/lib/mergeModules) here
-      # but to do that I would like to make something like packagesFromDirectoryRecursive
-      homeManagerModules.default = import ./modules/home-manager;
-      nixosModules.default = import ./modules/nixos;
-      darwinModules.default = import ./modules/darwin;
+      # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
+      nixosModules = import ./modules/nixos { inherit self; };
+      darwinModules = import ./modules/darwin { inherit self; };
+      homeManagerModules = import ./modules/home-manager { inherit self; };
     };
 }
