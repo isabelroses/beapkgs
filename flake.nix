@@ -30,6 +30,13 @@
         default = pkgs.callPackage ./shell.nix { };
       });
 
+      overlays.default =
+        final: _:
+        lib.packagesFromDirectoryRecursive {
+          callPackage = lib.callPackageWith (final // { pins = import ./npins; });
+          directory = ./pkgs;
+        };
+
       packages = forAllSystems (
         pkgs:
         let
@@ -46,8 +53,8 @@
       );
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
-      nixosModules = import ./modules/nixos { };
-      darwinModules = import ./modules/darwin { };
-      homeManagerModules = import ./modules/home-manager { inherit self; };
+      nixosModules.default = import ./modules/nixos;
+      darwinModules.default = import ./modules/darwin;
+      homeManagerModules.default = import ./modules/home-manager;
     };
 }
