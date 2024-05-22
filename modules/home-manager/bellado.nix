@@ -1,4 +1,3 @@
-self:
 {
   lib,
   pkgs,
@@ -27,7 +26,7 @@ in
       };
     in
     mkIf cfg.enable {
-      home.packages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.bellado ];
+      home.packages = [ pkgs.bellado ];
 
       programs = {
         bash.shellAliases = aliases;

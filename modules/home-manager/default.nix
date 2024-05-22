@@ -1,5 +1,9 @@
-{ self, ... }:
 {
-  bellado = import ./bellado.nix self;
-  izrss = import ./izrss.nix self;
+  lib,
+  pkgs,
+  self,
+  ...
+}@args:
+{
+  imports = import ../lib args ./.;
 }

@@ -1,1 +1,9 @@
-_: { wakapi = import ./wakapi.nix { }; }
+{
+  lib,
+  pkgs,
+  self,
+  ...
+}@args:
+{
+  imports = import ../lib args ./.;
+}

@@ -1,4 +1,3 @@
-self:
 {
   lib,
   pkgs,
@@ -23,7 +22,7 @@ in
   options.programs.izrss = {
     enable = mkEnableOption "A fast and once simple cli todo tool";
 
-    package = mkPackageOption self.packages.${pkgs.stdenv.hostPlatform.system} "izrss" { };
+    package = mkPackageOption pkgs "izrss" { };
 
     urls = mkOption {
       type = with types; listOf str;
