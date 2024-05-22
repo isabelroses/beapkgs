@@ -22,6 +22,13 @@
           "x86_64-darwin"
           "aarch64-darwin"
         ] (system: function nixpkgs.legacyPackages.${system});
+
+      callAllPkgs =
+        pkgs:
+        lib.packagesFromDirectoryRecursive {
+          callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
+          directory = ./pkgs;
+        };
     in
     {
       formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
@@ -30,12 +37,7 @@
         default = pkgs.callPackage ./shell.nix { };
       });
 
-      overlays.default =
-        final: _:
-        lib.packagesFromDirectoryRecursive {
-          callPackage = lib.callPackageWith (final // { pins = import ./npins; });
-          directory = ./pkgs;
-        };
+      overlays.default = final: _: callAllPkgs final;
 
       packages = forAllSystems (
         pkgs:
@@ -46,10 +48,7 @@
           docs-md = docs.md;
           docs-html = docs.html;
         }
-        // lib.packagesFromDirectoryRecursive {
-          callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
-          directory = ./pkgs;
-        }
+        // (callAllPkgs pkgs)
       );
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
