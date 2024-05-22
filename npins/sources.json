@@ -12,6 +12,18 @@
       "url": "https://github.com/isabelroses/bellado/archive/8b9bb4e19b06a35acd8b2d39830c2751246ff189.tar.gz",
       "hash": "1vk7g462x4q0hm6bxifjdr328595n1mkhhn79ibq9ql4zbbjiybs"
     },
+    "blahaj": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "blahaj"
+      },
+      "branch": "main",
+      "revision": "bc4b4f6813d5e5eb996d9b08508940a51b6f06c8",
+      "url": "https://github.com/isabelroses/blahaj/archive/bc4b4f6813d5e5eb996d9b08508940a51b6f06c8.tar.gz",
+      "hash": "1dklp7zsxfd709hbvrgw1frppi64bzxanvd7vq51p7xr968pifwv"
+    },
     "colloid-gtk-theme": {
       "type": "Git",
       "repository": {
@@ -65,6 +77,30 @@
       "name": "nixpkgs-unstable",
       "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre628952.641daa314d5b/nixexprs.tar.xz",
       "hash": "10vql3aqsckyjn9qaw39a17scsxiz3sj2918xdf2sjhsfvxyyfml"
+    },
+    "nixpkgs-using": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "uncenter",
+        "repo": "nixpkgs-using"
+      },
+      "branch": "main",
+      "revision": "6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb",
+      "url": "https://github.com/uncenter/nixpkgs-using/archive/6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb.tar.gz",
+      "hash": "1hd7lzgw9lcxvz4iyyma3hvr8p2a65zmfx5zsmiiq7rmfaydbkfm"
+    },
+    "ringfairy": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "isabelroses",
+        "repo": "ringfairy"
+      },
+      "branch": "main",
+      "revision": "7c95380f645af56145226162c49b59db0e786006",
+      "url": "https://github.com/isabelroses/ringfairy/archive/7c95380f645af56145226162c49b59db0e786006.tar.gz",
+      "hash": "0jzdbpkfmy373hrwxyhjd23rdb69fzqsfblzr65vjn0yyx6kf165"
     },
     "website": {
       "type": "Git",
