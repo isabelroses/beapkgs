@@ -1,6 +1,4 @@
-{ self }:
-let
-  inherit (self.lib) mkModules;
-  modules = mkModules ./.;
-in
-modules
+_: {
+  default = builtins.throw "No default module is provided";
+  wakapi = import ./wakapi.nix { };
+}

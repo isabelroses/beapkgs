@@ -1,3 +1,4 @@
+# modified from https://git.winston.sh/winston/deployment-flake/src/branch/main/modules/wakapi.nix
 {
   lib,
   pkgs,
@@ -5,7 +6,6 @@
   ...
 }:
 let
-  # modified from https://git.winston.sh/winston/deployment-flake/src/branch/main/modules/wakapi.nix
   cfg = config.services.wakapi;
   user = config.users.users.wakapi.name;
   group = config.users.groups.wakapi.name;
