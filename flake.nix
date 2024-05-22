@@ -26,23 +26,28 @@
     {
       formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
-      lib = import ./lib { inherit lib; };
-
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };
       });
 
       packages = forAllSystems (
         pkgs:
-        lib.packagesFromDirectoryRecursive {
+        let
+          docs = pkgs.callPackage ./docs { inherit self; };
+        in
+        {
+          docs-md = docs.md;
+          docs-html = docs.html;
+        }
+        // lib.packagesFromDirectoryRecursive {
           callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
           directory = ./pkgs;
         }
       );
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
-      nixosModules = import ./modules/nixos { inherit self; };
-      darwinModules = import ./modules/darwin { inherit self; };
-      homeManagerModules = import ./modules/home-manager { inherit lib self; };
+      nixosModules = import ./modules/nixos { };
+      darwinModules = import ./modules/darwin { };
+      homeManagerModules = import ./modules/home-manager { inherit self; };
     };
 }
