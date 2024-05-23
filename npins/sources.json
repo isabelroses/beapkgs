@@ -56,9 +56,9 @@
         "repo": "gtk"
       },
       "branch": "main",
-      "revision": "663f6c61f8cf1fcbbeb72110bf6b0a0214755245",
-      "url": "https://github.com/catppuccin/gtk/archive/663f6c61f8cf1fcbbeb72110bf6b0a0214755245.tar.gz",
-      "hash": "1nx82w73mhpsk2s8n4103ra19y0y8z1nvj0f5bbr1agvibda2zrn"
+      "revision": "febd32f208ebfc0a649674b9b3b94cd21fc10fb2",
+      "url": "https://github.com/catppuccin/gtk/archive/febd32f208ebfc0a649674b9b3b94cd21fc10fb2.tar.gz",
+      "hash": "1j0g5skpassbf6qpp2sxi97p8xbirjc3p8awwn6q5vnlmlr46z34"
     },
     "izrss": {
       "type": "Git",
@@ -75,8 +75,8 @@
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre628952.641daa314d5b/nixexprs.tar.xz",
-      "hash": "10vql3aqsckyjn9qaw39a17scsxiz3sj2918xdf2sjhsfvxyyfml"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre629857.3f316d2a5069/nixexprs.tar.xz",
+      "hash": "1l0i5a9yakfh6nb9x51kpnv0iyjyr3d3c6dlszkswxrk1zyz123x"
     },
     "nixpkgs-using": {
       "type": "Git",
