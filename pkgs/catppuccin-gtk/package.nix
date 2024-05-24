@@ -6,12 +6,10 @@
   sassc,
   python3,
   stdenvNoCC,
-  gtk-engine-murrine,
-  gnome-themes-extra,
-  accents ? [ "mauve" ],
+  accents ? [ "blue" ],
   size ? "standard",
   tweaks ? [ ],
-  variant ? "mocha",
+  variant ? "frappe",
 }:
 let
   validAccents = [
@@ -39,7 +37,6 @@ let
     "rimless"
     "normal"
     "float"
-    "oled"
   ];
   validVariants = [
     "latte"
@@ -76,17 +73,11 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
     src = pins.gtk;
 
     nativeBuildInputs = [
-      git
       gtk3
       sassc
-    ];
-
-    buildInputs = [
-      gnome-themes-extra
+      git
       (python3.withPackages (ps: [ ps.catppuccin ]))
     ];
-
-    propagatedUserEnvPkgs = [ gtk-engine-murrine ];
 
     postUnpack = ''
       rm -rf source/colloid
@@ -115,6 +106,7 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
       description = "Soothing pastel theme for GTK";
       homepage = "https://github.com/catppuccin/gtk";
       license = lib.licenses.gpl3Plus;
-      platforms = lib.platforms.linux;
+      platforms = lib.platforms.all;
+      maintainers = with lib.maintainers; [ isabelroses ];
     };
   }
