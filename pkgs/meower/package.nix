@@ -8,7 +8,7 @@ rustPlatform.buildRustPackage {
   inherit ((lib.importTOML (pins.meower + "/Cargo.toml")).package) version;
 
   src = pins.meower;
-  cargoLock.lockFile = (pins.nixpkgs-using + "/Cargo.lock");
+  cargoLock.lockFile = (pins.meower + "/Cargo.lock");
 
   meta = {
     description = "Helps you generate your meow mrrrp nya";
