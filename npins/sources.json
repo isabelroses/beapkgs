@@ -56,9 +56,9 @@
         "repo": "izrss"
       },
       "branch": "main",
-      "revision": "a8d8aee127848a19c67275ee68164293ee7fb51a",
-      "url": "https://github.com/isabelroses/izrss/archive/a8d8aee127848a19c67275ee68164293ee7fb51a.tar.gz",
-      "hash": "1c07wl50jwb13l3kqd5jkng738jhka1vbw6diyhi1xnanrx2ni3r"
+      "revision": "8541343000f79049fff220f131f5f5f6966f52b6",
+      "url": "https://github.com/isabelroses/izrss/archive/8541343000f79049fff220f131f5f5f6966f52b6.tar.gz",
+      "hash": "1k3crqms7cz9iyxh9xv6sv120xik89aynlsd5cbvc1jh8msbp3ky"
     },
     "meower": {
       "type": "Git",
