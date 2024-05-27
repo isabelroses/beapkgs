@@ -48,6 +48,18 @@
       "url": "https://github.com/catppuccin/gtk/archive/641f692dd801be5d68d257764721a86825964f03.tar.gz",
       "hash": "1czvskn1iw91jnqmivsajjwd3ypqdxxbpkzyk7pwaldasrfw3a01"
     },
+    "ito": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "uncenter",
+        "repo": "ito"
+      },
+      "branch": "main",
+      "revision": "af2a956320387e88fe8cf77dbdb1402e51823435",
+      "url": "https://github.com/uncenter/ito/archive/af2a956320387e88fe8cf77dbdb1402e51823435.tar.gz",
+      "hash": "14wfz32qbrvmb5k8fps0cji50wmf2r59n4b2jjb2vgwxq9afvw3i"
+    },
     "izrss": {
       "type": "Git",
       "repository": {
