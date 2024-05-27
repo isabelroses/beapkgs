@@ -16,11 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        package:
+        package: # TODO: don't hardcode this
           - bellado
           - izrss
           - zzz
-          - gh-eco
           - isabelroses-website
 
     steps:
