@@ -2,5 +2,44 @@ A collection of often broken packages. Hence the name bea for break and pkgs for
 
 The packages are always on the latest git version hence why they may be broken.
 
+# Installation
+
+You can use this as either a flake or with channels, not that I know how to use channels.
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    beapkgs = {
+      url = "github:isabelroses/beapkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-compact.follows = "";
+      };
+    };
+  };
+
+  outputs = { self, nixpkgs, beapkgs }: {
+    nixpkgs.overlays = [ beapkgs.overlays.default ];
+  };
+}
+```
+
+## Using the modules
+
 > [!NOTE]
 > The home manager modules require the overlay to be added to your configuration.
+
+You can import the modules like so:
+
+```nix
+{inputs, ...}:
+{
+  imports = [
+    inputs.beapkgs.homeManagerModules.default
+    inputs.beapkgs.nixosModules.default
+    inputs.beapkgs.darwinModules.default
+  ];
+}
+```
