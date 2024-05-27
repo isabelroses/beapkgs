@@ -72,6 +72,18 @@
       "url": "https://github.com/isabelroses/izrss/archive/a8d8aee127848a19c67275ee68164293ee7fb51a.tar.gz",
       "hash": "1c07wl50jwb13l3kqd5jkng738jhka1vbw6diyhi1xnanrx2ni3r"
     },
+    "meower": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Noxyntious",
+        "repo": "meower"
+      },
+      "branch": "master",
+      "revision": "065de6cf7992e0e9a20cfa1eaf07088eda66b7d3",
+      "url": "https://github.com/Noxyntious/meower/archive/065de6cf7992e0e9a20cfa1eaf07088eda66b7d3.tar.gz",
+      "hash": "12wpw1c5xp700kgbdajpwzw48crq8d7vahydhf08hg9w2n04q28j"
+    },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
@@ -89,6 +101,18 @@
       "revision": "6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb",
       "url": "https://github.com/uncenter/nixpkgs-using/archive/6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb.tar.gz",
       "hash": "1hd7lzgw9lcxvz4iyyma3hvr8p2a65zmfx5zsmiiq7rmfaydbkfm"
+    },
+    "purr": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "uncenter",
+        "repo": "purr"
+      },
+      "branch": "main",
+      "revision": "12cdded42d8a6c206b95c42fe0eb4c239e69c1d4",
+      "url": "https://github.com/uncenter/purr/archive/12cdded42d8a6c206b95c42fe0eb4c239e69c1d4.tar.gz",
+      "hash": "1f9pfihms412gh3y1ygjnzlk7j98qbgphx2il0f2zdm9wsr9rs2f"
     },
     "ringfairy": {
       "type": "Git",
