@@ -1,7 +1,7 @@
 { unzip, stdenvNoCC }:
 stdenvNoCC.mkDerivation {
   pname = "emojis";
-  version = "0.1.1";
+  version = "0.1.2";
 
   src = builtins.filterSource (path: _: baseNameOf path != ".zip") ./.;
 

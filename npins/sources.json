@@ -128,9 +128,9 @@
         "repo": "website"
       },
       "branch": "main",
-      "revision": "d412eba198d84a04c05b0a0a1f1344fdcafbde22",
-      "url": "https://github.com/isabelroses/website/archive/d412eba198d84a04c05b0a0a1f1344fdcafbde22.tar.gz",
-      "hash": "1af5mrzsvywnk3l6gnjnqcgd07x75zwmj0k9kx2g1n4q87iih5bf"
+      "revision": "35091f0d13a349d19052b0f4f2f2dcaefb278ad0",
+      "url": "https://github.com/isabelroses/website/archive/35091f0d13a349d19052b0f4f2f2dcaefb278ad0.tar.gz",
+      "hash": "0i8prp381qm5v09ayhpcavdfmlzrg4zlpbbi35q1llz6pxnlybvc"
     },
     "zzz": {
       "type": "Git",
