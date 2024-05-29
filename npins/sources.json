@@ -68,9 +68,9 @@
         "repo": "izrss"
       },
       "branch": "main",
-      "revision": "883660dbbff06b28b2d55d35894df8693e990723",
-      "url": "https://github.com/isabelroses/izrss/archive/883660dbbff06b28b2d55d35894df8693e990723.tar.gz",
-      "hash": "1pgkq23wkb35ymvspx9gsphv96glr6r4s9giqyxbnp0w4bzbw2nb"
+      "revision": "c51d21158095e278541152ba54d6829bf97f7949",
+      "url": "https://github.com/isabelroses/izrss/archive/c51d21158095e278541152ba54d6829bf97f7949.tar.gz",
+      "hash": "0pqcfv46z8g81h6izrgir4i0qyszf9jm79y0hr63viwh5jyzzaq7"
     },
     "meower": {
       "type": "Git",
@@ -83,12 +83,6 @@
       "revision": "065de6cf7992e0e9a20cfa1eaf07088eda66b7d3",
       "url": "https://github.com/Noxyntious/meower/archive/065de6cf7992e0e9a20cfa1eaf07088eda66b7d3.tar.gz",
       "hash": "12wpw1c5xp700kgbdajpwzw48crq8d7vahydhf08hg9w2n04q28j"
-    },
-    "nixpkgs": {
-      "type": "Channel",
-      "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.11pre631646.e2dd4e18cc1c/nixexprs.tar.xz",
-      "hash": "0mfb3ky0ylc5hlm9m1bzxy7r4p2j7g1mgh1ymwd94nd5m7gcl81b"
     },
     "nixpkgs-using": {
       "type": "Git",
@@ -134,9 +128,9 @@
         "repo": "website"
       },
       "branch": "main",
-      "revision": "c11fb794b326f55d41c56ac9540edbf817e159bc",
-      "url": "https://github.com/isabelroses/website/archive/c11fb794b326f55d41c56ac9540edbf817e159bc.tar.gz",
-      "hash": "0mvqn39vzbxfhfzjplzk3ichwc94in6sn9hnhg4bv9c9zdqsviq1"
+      "revision": "d412eba198d84a04c05b0a0a1f1344fdcafbde22",
+      "url": "https://github.com/isabelroses/website/archive/d412eba198d84a04c05b0a0a1f1344fdcafbde22.tar.gz",
+      "hash": "1af5mrzsvywnk3l6gnjnqcgd07x75zwmj0k9kx2g1n4q87iih5bf"
     },
     "zzz": {
       "type": "Git",
