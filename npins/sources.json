@@ -56,9 +56,9 @@
         "repo": "ito"
       },
       "branch": "main",
-      "revision": "af2a956320387e88fe8cf77dbdb1402e51823435",
-      "url": "https://github.com/uncenter/ito/archive/af2a956320387e88fe8cf77dbdb1402e51823435.tar.gz",
-      "hash": "14wfz32qbrvmb5k8fps0cji50wmf2r59n4b2jjb2vgwxq9afvw3i"
+      "revision": "80f06386c07db2930a2a71f17db68f338917460d",
+      "url": "https://github.com/uncenter/ito/archive/80f06386c07db2930a2a71f17db68f338917460d.tar.gz",
+      "hash": "0mvy1j4s5kk648a45arphj7wh2gvryi16n45cynbjxqn73gfs8rb"
     },
     "izrss": {
       "type": "Git",
@@ -98,9 +98,9 @@
         "repo": "nixpkgs-using"
       },
       "branch": "main",
-      "revision": "6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb",
-      "url": "https://github.com/uncenter/nixpkgs-using/archive/6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb.tar.gz",
-      "hash": "1hd7lzgw9lcxvz4iyyma3hvr8p2a65zmfx5zsmiiq7rmfaydbkfm"
+      "revision": "ea554014108c9207824a1509e81efe113b978950",
+      "url": "https://github.com/uncenter/nixpkgs-using/archive/ea554014108c9207824a1509e81efe113b978950.tar.gz",
+      "hash": "1g89jn9m2haaramlswdcdip96mhk5g80jxm55nmhh1p6vzw554sh"
     },
     "purr": {
       "type": "Git",
@@ -110,9 +110,9 @@
         "repo": "purr"
       },
       "branch": "main",
-      "revision": "12cdded42d8a6c206b95c42fe0eb4c239e69c1d4",
-      "url": "https://github.com/uncenter/purr/archive/12cdded42d8a6c206b95c42fe0eb4c239e69c1d4.tar.gz",
-      "hash": "1f9pfihms412gh3y1ygjnzlk7j98qbgphx2il0f2zdm9wsr9rs2f"
+      "revision": "673bfa3ae3c5512db282fb284afd083384f027ef",
+      "url": "https://github.com/uncenter/purr/archive/673bfa3ae3c5512db282fb284afd083384f027ef.tar.gz",
+      "hash": "0g2jmxl4qa655zcwmb0yva7v6iwwacw0lym86nskbqddfw57xq1x"
     },
     "ringfairy": {
       "type": "Git",
