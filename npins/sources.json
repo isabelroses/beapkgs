@@ -104,9 +104,9 @@
         "repo": "purr"
       },
       "branch": "main",
-      "revision": "5e2a0ae65bdd28d100bc96b3aab034d5ac4e4833",
-      "url": "https://github.com/uncenter/purr/archive/5e2a0ae65bdd28d100bc96b3aab034d5ac4e4833.tar.gz",
-      "hash": "1pla3smy47r43p0l8h1wd25ivgbhdjvcpy8zrzwq05bs8izn2c2g"
+      "revision": "9205e0a902da23032dc6362f867cd983365acc9c",
+      "url": "https://github.com/uncenter/purr/archive/9205e0a902da23032dc6362f867cd983365acc9c.tar.gz",
+      "hash": "1yilxf90l02rd6l2c44wglwxqkqizmjjgakks0wyvffs3r3yid5m"
     },
     "ringfairy": {
       "type": "Git",
