@@ -12,7 +12,7 @@ buildGoModule {
 
   src = pins.zzz;
 
-  vendorHash = "sha256-ePHkrsc9NJO8c3J1eDkFeSLvVs5flSeiTmXqkfF261s=";
+  vendorHash = "sha256-qgda2JLT+rtf9b+3JKhvu0uuXGKssLC0YrMghn1QQ8I=";
 
   ldflags = [
     "-s"
