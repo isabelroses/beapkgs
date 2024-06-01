@@ -7,11 +7,9 @@
 let
   inherit (lib)
     mkIf
-    types
     mkOption
     mkEnableOption
     mkPackageOption
-    concatStringsSep
     ;
 
   settingsFormat = pkgs.formats.toml { };
@@ -23,12 +21,6 @@ in
     enable = mkEnableOption "A fast and once simple cli todo tool";
 
     package = mkPackageOption pkgs "izrss" { };
-
-    urls = mkOption {
-      type = with types; listOf str;
-      example = [ "http://example.com" ];
-      description = "Feed URLs.";
-    };
 
     settings = mkOption {
       inherit (settingsFormat) type;
@@ -43,6 +35,10 @@ in
           accent = "#74c7ec";
           borders = "#313244";
         };
+
+        urls = [
+          "http://example.com"
+        ];
       '';
       description = ''
         Configuration written to {file}`$XDG_CONFIG_HOME/izrss/config.toml`.
@@ -52,6 +48,14 @@ in
     };
   };
 
+  imports = [
+    (lib.mkRemovedOptionModule [
+      "programs"
+      "izrss"
+      "urls"
+    ] "Please use `programs.izrss.settings.urls` instead.")
+  ];
+
   config =
     let
       cfg = config.programs.izrss;
@@ -59,18 +63,8 @@ in
     mkIf cfg.enable {
       home.packages = [ cfg.package ];
 
-      xdg.configFile = {
-        "izrss/urls" = mkIf (cfg.urls != [ ]) { text = concatStringsSep "\n" cfg.urls; };
-        "izrss/config.toml" = mkIf (cfg.settings != { }) {
-          source = (settingsFormat.generate "izrss-config.toml" cfg.settings);
-        };
+      xdg.configFile."izrss/config.toml" = mkIf (cfg.settings != { }) {
+        source = (settingsFormat.generate "izrss-config.toml" cfg.settings);
       };
-
-      assertions = [
-        {
-          assertion = config.xdg.enable;
-          message = "Option xdg.enable must be enabled for the configuration to be written to the filesystem.";
-        }
-      ];
     };
 }
