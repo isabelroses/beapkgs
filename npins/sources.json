@@ -44,9 +44,9 @@
         "repo": "gtk"
       },
       "branch": "main",
-      "revision": "54633c0f72be7ea737784ce85fad9ab6079e9377",
-      "url": "https://github.com/catppuccin/gtk/archive/54633c0f72be7ea737784ce85fad9ab6079e9377.tar.gz",
-      "hash": "0ics0k06mvkc9qw82y1g778jn02r5chbym0pyb2qcanlc1hdcp1h"
+      "revision": "3cb2f3ab4a5eefb85f33a03a0d7130aaf04f05c0",
+      "url": "https://github.com/catppuccin/gtk/archive/3cb2f3ab4a5eefb85f33a03a0d7130aaf04f05c0.tar.gz",
+      "hash": "0vwa2paicvyb3ii3j97cg47n6rs75jsjx7g159a3wmwmkasrkb7h"
     },
     "ito": {
       "type": "Git",
@@ -68,9 +68,9 @@
         "repo": "izrss"
       },
       "branch": "main",
-      "revision": "cbed6fc429416c25055155f96db9412a66810651",
-      "url": "https://github.com/isabelroses/izrss/archive/cbed6fc429416c25055155f96db9412a66810651.tar.gz",
-      "hash": "11lkc96snykwchfs63gxddr62xb3cj41cfmb57lzxks7z6i4y2w1"
+      "revision": "428803aeab98e90f749c5e4e49133497c055ec65",
+      "url": "https://github.com/isabelroses/izrss/archive/428803aeab98e90f749c5e4e49133497c055ec65.tar.gz",
+      "hash": "0f8dgxwzrgzgv5r8j0s37cr5y3939v055f66vw9vvawh0ih1375s"
     },
     "meower": {
       "type": "Git",
