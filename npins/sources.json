@@ -44,9 +44,9 @@
         "repo": "gtk"
       },
       "branch": "main",
-      "revision": "3cb2f3ab4a5eefb85f33a03a0d7130aaf04f05c0",
-      "url": "https://github.com/catppuccin/gtk/archive/3cb2f3ab4a5eefb85f33a03a0d7130aaf04f05c0.tar.gz",
-      "hash": "0vwa2paicvyb3ii3j97cg47n6rs75jsjx7g159a3wmwmkasrkb7h"
+      "revision": "23b52b5b9cde1e11c07315e79a55804d2ac77e3a",
+      "url": "https://github.com/catppuccin/gtk/archive/23b52b5b9cde1e11c07315e79a55804d2ac77e3a.tar.gz",
+      "hash": "0pj25mjn0r4bkwmwcbn0kk1199m9imljsa1rlsva0svbwhvldl72"
     },
     "ito": {
       "type": "Git",
@@ -104,9 +104,9 @@
         "repo": "purr"
       },
       "branch": "main",
-      "revision": "9205e0a902da23032dc6362f867cd983365acc9c",
-      "url": "https://github.com/uncenter/purr/archive/9205e0a902da23032dc6362f867cd983365acc9c.tar.gz",
-      "hash": "1yilxf90l02rd6l2c44wglwxqkqizmjjgakks0wyvffs3r3yid5m"
+      "revision": "09ed5b0c1ce7a05ce0e892001f4b9da45db807c3",
+      "url": "https://github.com/uncenter/purr/archive/09ed5b0c1ce7a05ce0e892001f4b9da45db807c3.tar.gz",
+      "hash": "0wlmx9nn7p44xvhmqabwx4js57q0n63ani87dj75ash8l9v59xp8"
     },
     "ringfairy": {
       "type": "Git",
