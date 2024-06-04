@@ -73,16 +73,19 @@
       "hash": "1vmp3i41lysvws5w984id4sjw8pad844skfmcgzrsk0d10pvva6p"
     },
     "meower": {
-      "type": "Git",
+      "type": "GitRelease",
       "repository": {
         "type": "GitHub",
         "owner": "Noxyntious",
         "repo": "meower"
       },
-      "branch": "master",
-      "revision": "e3428d20d784b9388856b6b9331ba00804d4d867",
-      "url": "https://github.com/Noxyntious/meower/archive/e3428d20d784b9388856b6b9331ba00804d4d867.tar.gz",
-      "hash": "0026fqkbn8520fsyin179lvh6glvy6l9l6vpqz1xy7kxhlxwxfvf"
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "version": "1.0",
+      "revision": "0463d5652485da23bb94ed060eba35f82f7f48a6",
+      "url": "https://api.github.com/repos/Noxyntious/meower/tarball/1.0",
+      "hash": "0ik09f35zq9jfh4nhmk5lm5rqbhp0n2wz5904yyk65zzw1mzskm5"
     },
     "nixpkgs-using": {
       "type": "Git",
