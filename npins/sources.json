@@ -107,9 +107,9 @@
         "repo": "purr"
       },
       "branch": "main",
-      "revision": "fa5e6bf4cc0e1ea5f82d7ef5186eacfa3eb65129",
-      "url": "https://github.com/uncenter/purr/archive/fa5e6bf4cc0e1ea5f82d7ef5186eacfa3eb65129.tar.gz",
-      "hash": "0z5blnr4dfa2b7axcxmiv5m71q135nvr18r5z9bb0g4xsw63qfh9"
+      "revision": "7e74694e78bb4d6a24e73608e268078f40b3df27",
+      "url": "https://github.com/uncenter/purr/archive/7e74694e78bb4d6a24e73608e268078f40b3df27.tar.gz",
+      "hash": "0iqcv1p72bsz93fzhhx83hl5jm9169yvp9v47ybzcf0fp86b2nl4"
     },
     "ringfairy": {
       "type": "Git",
@@ -131,9 +131,9 @@
         "repo": "website"
       },
       "branch": "main",
-      "revision": "35091f0d13a349d19052b0f4f2f2dcaefb278ad0",
-      "url": "https://github.com/isabelroses/website/archive/35091f0d13a349d19052b0f4f2f2dcaefb278ad0.tar.gz",
-      "hash": "0i8prp381qm5v09ayhpcavdfmlzrg4zlpbbi35q1llz6pxnlybvc"
+      "revision": "471ad368132e6a00badc99c733a39a80255941b7",
+      "url": "https://github.com/isabelroses/website/archive/471ad368132e6a00badc99c733a39a80255941b7.tar.gz",
+      "hash": "03ql8kx41ziz1m4didrwd1c1hp8p03jiy4qpih6nsivvq4s0qwp5"
     },
     "zzz": {
       "type": "Git",
