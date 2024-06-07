@@ -68,9 +68,9 @@
         "repo": "izrss"
       },
       "branch": "main",
-      "revision": "94f9ce82d75b9eee6893cfe0d382532bc04a13ab",
-      "url": "https://github.com/isabelroses/izrss/archive/94f9ce82d75b9eee6893cfe0d382532bc04a13ab.tar.gz",
-      "hash": "1vmp3i41lysvws5w984id4sjw8pad844skfmcgzrsk0d10pvva6p"
+      "revision": "59b4654807301cf99bc3a09ae73f8476d4682a08",
+      "url": "https://github.com/isabelroses/izrss/archive/59b4654807301cf99bc3a09ae73f8476d4682a08.tar.gz",
+      "hash": "1sbfllhnxsg20kr3svbdrd6wrgld0g46yn9zj6gcd7jp33gcvv2f"
     },
     "meower": {
       "type": "GitRelease",
@@ -95,9 +95,9 @@
         "repo": "nixpkgs-using"
       },
       "branch": "main",
-      "revision": "ea554014108c9207824a1509e81efe113b978950",
-      "url": "https://github.com/uncenter/nixpkgs-using/archive/ea554014108c9207824a1509e81efe113b978950.tar.gz",
-      "hash": "1g89jn9m2haaramlswdcdip96mhk5g80jxm55nmhh1p6vzw554sh"
+      "revision": "96c6cf9f471ec407a205e56ac02e53cbcdc5dbfb",
+      "url": "https://github.com/uncenter/nixpkgs-using/archive/96c6cf9f471ec407a205e56ac02e53cbcdc5dbfb.tar.gz",
+      "hash": "0i7pbbx3mzc5hwgrw3zafs5sr0my2hn1r2lpgklcqir8jwf908v9"
     },
     "purr": {
       "type": "Git",
@@ -131,9 +131,9 @@
         "repo": "website"
       },
       "branch": "main",
-      "revision": "471ad368132e6a00badc99c733a39a80255941b7",
-      "url": "https://github.com/isabelroses/website/archive/471ad368132e6a00badc99c733a39a80255941b7.tar.gz",
-      "hash": "03ql8kx41ziz1m4didrwd1c1hp8p03jiy4qpih6nsivvq4s0qwp5"
+      "revision": "095f3fab253ff8291dc5c49bb72ebf3117c58182",
+      "url": "https://github.com/isabelroses/website/archive/095f3fab253ff8291dc5c49bb72ebf3117c58182.tar.gz",
+      "hash": "06ym9s2zcqxnzq9y3hn0mgi28cgw7vwbi7szpd5ar0gi8n3v8v4r"
     },
     "zzz": {
       "type": "Git",
