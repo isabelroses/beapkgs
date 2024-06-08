@@ -68,9 +68,9 @@
         "repo": "izrss"
       },
       "branch": "main",
-      "revision": "59b4654807301cf99bc3a09ae73f8476d4682a08",
-      "url": "https://github.com/isabelroses/izrss/archive/59b4654807301cf99bc3a09ae73f8476d4682a08.tar.gz",
-      "hash": "1sbfllhnxsg20kr3svbdrd6wrgld0g46yn9zj6gcd7jp33gcvv2f"
+      "revision": "afa0726c260f2cc36e2dc5c5266db66f6d61b232",
+      "url": "https://github.com/isabelroses/izrss/archive/afa0726c260f2cc36e2dc5c5266db66f6d61b232.tar.gz",
+      "hash": "1km3rq4wnm00bi3wrcnadw0jq6jm80ix746h77c3zgn967nyhkln"
     },
     "meower": {
       "type": "GitRelease",
@@ -107,9 +107,9 @@
         "repo": "purr"
       },
       "branch": "main",
-      "revision": "a4d0a390efb6346553a46b27b43c2158da112082",
-      "url": "https://github.com/uncenter/purr/archive/a4d0a390efb6346553a46b27b43c2158da112082.tar.gz",
-      "hash": "01vzmiinyyazgn4mbf8sa7yndryqkacmwqik4hv03xdzax0b1vls"
+      "revision": "5c6a544373018d578343e77ed74830a995f79b20",
+      "url": "https://github.com/uncenter/purr/archive/5c6a544373018d578343e77ed74830a995f79b20.tar.gz",
+      "hash": "1k8knlj189dqgci8q95jd6h0lwkgkks53p1rcyqyi0h3a0msp7iz"
     },
     "ringfairy": {
       "type": "Git",
