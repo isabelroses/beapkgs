@@ -10,7 +10,7 @@ buildGoModule {
   pname = "isabelroses-website";
   inherit version;
 
-  src = pins.website;
+  src = pins.isabelroses-website;
 
   vendorHash = "sha256-rdAPPF8pqkK/JZSKC2XBmJDzgCh5PA5LJgrg9Z0ZAnU=";
 

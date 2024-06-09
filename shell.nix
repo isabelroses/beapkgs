@@ -3,7 +3,7 @@
 }:
 pkgs.mkShellNoCC {
   packages = with pkgs; [
-    npins
+    nvfetcher
     nixfmt-rfc-style
   ];
 }

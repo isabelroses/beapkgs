@@ -26,7 +26,12 @@
       callAllPkgs =
         pkgs:
         lib.packagesFromDirectoryRecursive {
-          callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
+          callPackage = lib.callPackageWith (
+            pkgs
+            // {
+              pins = builtins.mapAttrs (_: pkg: pkg.src) (pkgs.callPackage ../_sources/generated.nix { });
+            }
+          );
           directory = ./pkgs;
         };
     in

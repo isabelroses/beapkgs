@@ -6,7 +6,7 @@ on:
     paths:
       - "flake/pkgs"
       - "**.lock"
-      - "npins/*"
+      - "_sources/*"
   schedule:
     - cron: "0 1 * * *"
 
@@ -16,11 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        package: # TODO: don't hardcode this
+        package:
           - bellado
           - izrss
           - zzz
           - isabelroses-website
+          - wezterm-nightly
 
     steps:
       - name: Checkout

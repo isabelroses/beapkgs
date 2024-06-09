@@ -70,7 +70,7 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
   {
     inherit pname version;
 
-    src = pins.gtk;
+    src = pins.catppuccin-gtk;
 
     nativeBuildInputs = [
       gtk3
