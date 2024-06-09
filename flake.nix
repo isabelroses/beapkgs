@@ -29,7 +29,7 @@
           callPackage = lib.callPackageWith (
             pkgs
             // {
-              pins = builtins.mapAttrs (_: pkg: pkg.src) (pkgs.callPackage ../_sources/generated.nix { });
+              pins = builtins.mapAttrs (_: pkg: pkg.src) (pkgs.callPackage ./_sources/generated.nix { });
             }
           );
           directory = ./pkgs;
