@@ -1,6 +1,6 @@
 [catppuccin-gtk]
 src.git = "https://github.com/catppuccin/gtk"
-fetch.github = "catppuccino/gtk"
+fetch.github = "catppuccin/gtk"
 
 [colloid-gtk-theme]
 src.git = "https://github.com/vinceliuice/Colloid-gtk-theme"

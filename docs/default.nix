@@ -65,7 +65,7 @@ let
     # package list
     EOF
 
-    ${lib.getExe pkgs.jq} ".pins | keys[]" ${../npins/sources.json} | tr -d \" >> $out
+    ${lib.getExe pkgs.jq} "keys[]" ${../_sources/generated.json} | tr -d \" >> $out
   '';
 
   convert =
