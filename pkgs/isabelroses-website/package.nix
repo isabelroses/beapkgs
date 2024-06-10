@@ -4,13 +4,13 @@
   buildGoModule,
 }:
 let
-  version = builtins.substring 0 7 pins.website.revision;
+  version = builtins.substring 0 7 pins.website.version;
 in
 buildGoModule {
   pname = "isabelroses-website";
   inherit version;
 
-  src = pins.isabelroses-website;
+  inherit (pins.isabelroses-website) src;
 
   vendorHash = "sha256-rdAPPF8pqkK/JZSKC2XBmJDzgCh5PA5LJgrg9Z0ZAnU=";
 

@@ -1,9 +1,9 @@
 { pins, buildNpmPackage }:
 buildNpmPackage {
   pname = "blahaj";
-  version = builtins.substring 0 7 pins.blahaj.revision;
+  version = builtins.substring 0 7 pins.blahaj.version;
 
-  src = pins.blahaj;
+  inherit (pins.blahaj) src;
 
   dontNpmBuild = true;
 

@@ -46,7 +46,7 @@ let
   ];
 
   pname = "catppuccin-gtk";
-  version = builtins.substring 0 7 pins.gtk.revision;
+  version = builtins.substring 0 7 pins.gtk.version;
 in
 
 lib.checkListOfEnum "${pname}: theme accent" validAccents accents
@@ -70,7 +70,7 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
   {
     inherit pname version;
 
-    src = pins.catppuccin-gtk;
+    inherit (pins.catppuccin-gtk) src;
 
     nativeBuildInputs = [
       gtk3
@@ -81,7 +81,7 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
 
     postUnpack = ''
       rm -rf source/colloid
-      cp -r ${pins.colloid-gtk-theme} source/colloid
+      cp -r ${pins.colloid-gtk-theme.src} source/colloid
       chmod -R +w source/colloid
     '';
 

@@ -4,13 +4,13 @@
   buildGoModule,
 }:
 let
-  version = builtins.substring 0 7 pins.izrss.revision;
+  version = builtins.substring 0 7 pins.izrss.version;
 in
 buildGoModule {
   pname = "izrss";
   inherit version;
 
-  src = pins.izrss;
+  inherit (pins.izrss) src;
 
   vendorHash = "sha256-/TRCD6akZV2qDqJz62p7UzFIGuTAKLnUtYqqvdw3rCI=";
 

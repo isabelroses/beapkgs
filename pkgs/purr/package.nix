@@ -9,10 +9,10 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "purr";
-  inherit ((lib.importTOML "${pins.purr}/Cargo.toml").package) version;
+  inherit ((lib.importTOML "${pins.purr.src}/Cargo.toml").package) version;
 
-  src = pins.purr;
-  cargoLock.lockFile = "${pins.purr}/Cargo.lock";
+  inherit (pins.purr) src;
+  cargoLock.lockFile = "${pins.purr.src}/Cargo.lock";
 
   nativeBuildInputs = [ pkg-config ];
 
