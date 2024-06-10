@@ -1,11 +1,43 @@
-{ pins, buildNpmPackage }:
-buildNpmPackage {
-  pname = "blahaj";
-  version = builtins.substring 0 7 pins.blahaj.version;
+{
+  lib,
+  pins,
+  rustPlatform,
+  stdenv,
+  openssl,
+  darwin,
+  pkg-config,
+}:
+let
+  p = (lib.importTOML "${pins.blahaj.src}/Cargo.toml").package;
+in
+rustPlatform.buildRustPackage {
+  pname = p.name;
+  inherit (p) version;
 
   inherit (pins.blahaj) src;
 
-  dontNpmBuild = true;
+  cargoLock.lockFile = "${pins.blahaj.src}/Cargo.lock";
+  buildInputs =
+    [ openssl ]
+    ++ lib.optionals stdenv.isDarwin (
+      with darwin.apple_sdk.frameworks;
+      [
+        Security
+        CoreFoundation
+        SystemConfiguration
+      ]
+    );
 
-  npmDepsHash = "sha256-hjExjokjK3HZssWOkARDJY1m0+SxsQsxT2WaoBYqqe8=";
+  nativeBuildInputs = [ pkg-config ];
+
+  env = {
+    BUILD_REV = p.version;
+  };
+
+  meta = {
+    inherit (p) description homepage;
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ isabelroses ];
+    mainProgram = "blahaj";
+  };
 }
