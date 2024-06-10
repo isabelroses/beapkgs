@@ -80,9 +80,9 @@ lib.checkListOfEnum "${pname}: theme accent" validAccents accents
     ];
 
     postUnpack = ''
-      rm -rf source/colloid
-      cp -r ${pins.colloid-gtk-theme.src} source/colloid
-      chmod -R +w source/colloid
+      rm -rf source/sources/colloid
+      cp -r ${pins.colloid-gtk-theme.src} sources/colloid
+      chmod -R +w source/sources/colloid
     '';
 
     dontConfigure = true;
