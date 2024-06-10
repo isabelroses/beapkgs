@@ -23,7 +23,7 @@
 }:
 rustPlatform.buildRustPackage rec {
   inherit (pins.wezterm) pname src;
-  version = "${builtins.replaceStrings [ "-" ] [ "" ] pins.date}-isabelroses-${
+  version = "${builtins.replaceStrings [ "-" ] [ "" ] pins.wezterm.date}-isabelroses-${
     builtins.substring 0 7 pins.wezterm.version
   }";
 
