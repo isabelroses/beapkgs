@@ -7,7 +7,7 @@ rustPlatform.buildRustPackage {
   pname = "meower";
   inherit ((lib.importTOML "${pins.meower.src}/Cargo.toml").package) version;
 
-  src = pins.meower;
+  inherit (pins.meower) src;
   cargoLock.lockFile = "${pins.meower.src}/Cargo.lock";
 
   meta = {
