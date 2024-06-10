@@ -16,12 +16,9 @@
 
       forAllSystems =
         function:
-        lib.genAttrs [
-          "x86_64-linux"
-          "aarch64-linux"
-          "x86_64-darwin"
-          "aarch64-darwin"
-        ] (system: function nixpkgs.legacyPackages.${system});
+        nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed (
+          system: function nixpkgs.legacyPackages.${system}
+        );
 
       callAllPkgs =
         pkgs:
