@@ -46,7 +46,7 @@ let
   ];
 
   pname = "catppuccin-gtk";
-  version = builtins.substring 0 7 pins.gtk.version;
+  version = builtins.substring 0 7 pins.catppuccin-gtk.version;
 in
 
 lib.checkListOfEnum "${pname}: theme accent" validAccents accents

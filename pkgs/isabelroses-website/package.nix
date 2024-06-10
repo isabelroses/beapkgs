@@ -4,7 +4,7 @@
   buildGoModule,
 }:
 let
-  version = builtins.substring 0 7 pins.website.version;
+  version = builtins.substring 0 7 pins.isabelroses-website.version;
 in
 buildGoModule {
   pname = "isabelroses-website";
