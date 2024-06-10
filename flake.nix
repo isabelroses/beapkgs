@@ -16,17 +16,16 @@
 
       forAllSystems =
         function:
-        lib.genAttrs [
-          "x86_64-linux"
-          "aarch64-linux"
-          "x86_64-darwin"
-          "aarch64-darwin"
-        ] (system: function nixpkgs.legacyPackages.${system});
+        nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed (
+          system: function nixpkgs.legacyPackages.${system}
+        );
 
       callAllPkgs =
         pkgs:
         lib.packagesFromDirectoryRecursive {
-          callPackage = lib.callPackageWith (pkgs // { pins = import ./npins; });
+          callPackage = lib.callPackageWith (
+            pkgs // { pins = pkgs.callPackage ./_sources/generated.nix { }; }
+          );
           directory = ./pkgs;
         };
     in

@@ -1,0 +1,75 @@
+[catppuccin-gtk]
+src.git = "https://github.com/catppuccin/gtk"
+fetch.github = "catppuccin/gtk"
+
+[colloid-gtk-theme]
+src.git = "https://github.com/vinceliuice/Colloid-gtk-theme"
+fetch.github = "vinceliuice/Colloid-gtk-theme"
+
+[bellado]
+src.git = "https://github.com/isabelroses/bellado"
+fetch.github = "isabelroses/bellado"
+
+[blahaj]
+src.git = "https://github.com/isabelroses/blahaj"
+fetch.github = "isabelroses/blahaj"
+
+[izrss]
+src.git = "https://github.com/isabelroses/izrss"
+fetch.github = "isabelroses/izrss"
+
+[ringfairy]
+src.git = "https://github.com/k3rs3d/ringfairy"
+fetch.github = "k3rs3d/ringfairy"
+
+[purr]
+src.git = "https://github.com/uncenter/purr"
+fetch.github = "uncenter/purr"
+
+[nixpkgs-using]
+src.git = "https://github.com/uncenter/nixpkgs-using"
+fetch.github = "uncenter/nixpkgs-using"
+
+[ito]
+src.git = "https://github.com/uncenter/ito"
+fetch.github = "uncenter/ito"
+
+[meower]
+src.git = "https://github.com/Noxyntious/meower"
+fetch.github = "Noxyntious/meower"
+
+[isabelroses-website]
+src.git = "https://github.com/isabelroses/website"
+fetch.github = "isabelroses/website"
+
+[zzz]
+src.git = "https://github.com/isabelroses/zzz"
+fetch.github = "isabelroses/zzz"
+
+[wezterm]
+src.git = "https://github.com/wez/wezterm"
+fetch.github = "wez/wezterm"
+git.fetchSubmodules = true
+cargo_locks = ["Cargo.lock"]
+
+# gonvim-tools
+[go-enum]
+fetch.github = "abice/go-enum"
+src.github = "abice/go-enum"
+
+[gomvp]
+fetch.github = "abenz1267/gomvp"
+src.git = "https://github.com/abenz1267/gomvp"
+
+[json-to-struct]
+fetch.github = "tmc/json-to-struct"
+src.git = "https://github.com/tmc/json-to-struct"
+
+# LSPs
+[helm-ls]
+fetch.github = "mrjosh/helm-ls"
+src.github = "mrjosh/helm-ls"
+
+[jq-lsp]
+fetch.github = "wader/jq-lsp"
+src.git = "https://github.com/wader/jq-lsp"

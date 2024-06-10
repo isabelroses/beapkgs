@@ -9,10 +9,10 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "ringfairy";
-  version = builtins.substring 0 7 pins.ringfairy.revision;
+  version = builtins.substring 0 7 pins.ringfairy.version;
 
-  src = pins.ringfairy;
-  cargoLock.lockFile = (pins.ringfairy + "/Cargo.lock");
+  inherit (pins.ringfairy) src;
+  cargoLock.lockFile = "${pins.ringfairy.src}/Cargo.lock";
 
   buildInputs =
     [ openssl ]

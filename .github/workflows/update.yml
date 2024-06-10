@@ -25,8 +25,8 @@ jobs:
       - name: Update Lockfile
         run: nix flake update
 
-      - name: Update npins
-        run: nix run nixpkgs#npins -- update
+      - name: Update nvfetcher
+        run: nix run github:berberman/nvfetcher
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
