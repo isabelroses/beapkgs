@@ -161,7 +161,7 @@
     },
     "ito": {
         "cargoLocks": null,
-        "date": "2024-05-27",
+        "date": "2024-06-10",
         "extract": null,
         "name": "ito",
         "passthru": null,
@@ -173,15 +173,15 @@
             "name": null,
             "owner": "uncenter",
             "repo": "ito",
-            "rev": "80f06386c07db2930a2a71f17db68f338917460d",
-            "sha256": "sha256-KyPt3jgWd7msZ4VYE6LP+wnIj4Q3q0IUImbOookMflc=",
+            "rev": "7dfbb2ab5fff469ff7e74b6c03e85afb786d14be",
+            "sha256": "sha256-k3QCAgtQ5LeXE6a2N3oDIOvGqInBEQTotsdGbbYR2+0=",
             "type": "github"
         },
-        "version": "80f06386c07db2930a2a71f17db68f338917460d"
+        "version": "7dfbb2ab5fff469ff7e74b6c03e85afb786d14be"
     },
     "izrss": {
         "cargoLocks": null,
-        "date": "2024-06-07",
+        "date": "2024-06-10",
         "extract": null,
         "name": "izrss",
         "passthru": null,
@@ -193,11 +193,11 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "izrss",
-            "rev": "afa0726c260f2cc36e2dc5c5266db66f6d61b232",
-            "sha256": "sha256-lk7o7THJvj/YOdCQ0yNAVRosAW/KssxHXABUywnOo84=",
+            "rev": "f9ba8f79e5816c0c781e8a6ba424c73297742f3b",
+            "sha256": "sha256-C1CLD8jf6daAuk8t+RnJmAbbOG79vujOyNRi8nXJHig=",
             "type": "github"
         },
-        "version": "afa0726c260f2cc36e2dc5c5266db66f6d61b232"
+        "version": "f9ba8f79e5816c0c781e8a6ba424c73297742f3b"
     },
     "jq-lsp": {
         "cargoLocks": null,
@@ -261,7 +261,7 @@
     },
     "nixpkgs-using": {
         "cargoLocks": null,
-        "date": "2024-06-08",
+        "date": "2024-06-10",
         "extract": null,
         "name": "nixpkgs-using",
         "passthru": null,
@@ -273,15 +273,15 @@
             "name": null,
             "owner": "uncenter",
             "repo": "nixpkgs-using",
-            "rev": "98a5599ea4402f93785ae705d858219e06f93815",
-            "sha256": "sha256-6JPd8gzFKDBmpeRArmgaKfKKfrbZTMO0HPiRuAf34mg=",
+            "rev": "d07d099be6816aea21e52f89eac102aee2347906",
+            "sha256": "sha256-VQNefwVa1zHL1TLrO5s4xj6k2fNFVM6J8PIYpCR40T4=",
             "type": "github"
         },
-        "version": "98a5599ea4402f93785ae705d858219e06f93815"
+        "version": "d07d099be6816aea21e52f89eac102aee2347906"
     },
     "purr": {
         "cargoLocks": null,
-        "date": "2024-06-08",
+        "date": "2024-06-10",
         "extract": null,
         "name": "purr",
         "passthru": null,
@@ -293,11 +293,11 @@
             "name": null,
             "owner": "uncenter",
             "repo": "purr",
-            "rev": "b154fb0b0dbc02389a6b165a523c030ba41637ef",
-            "sha256": "sha256-Cu1+FxdJGeyzd0m1Nmd/0dDy2Va38e6uVeV6jVjpOa8=",
+            "rev": "18661d424e0f9864b1c4c663f8ca19b73144a1f4",
+            "sha256": "sha256-NcMXCFMWJxCpXz9+OXzYjo0EIDcSnHI49P4/QpDE/04=",
             "type": "github"
         },
-        "version": "b154fb0b0dbc02389a6b165a523c030ba41637ef"
+        "version": "18661d424e0f9864b1c4c663f8ca19b73144a1f4"
     },
     "ringfairy": {
         "cargoLocks": null,
