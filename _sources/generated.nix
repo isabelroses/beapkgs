@@ -15,15 +15,15 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "8421909118cfe995a7c1a8d955684ad582f728a9";
+    version = "4ae0574bbcf9d65790c80826b19fc3afc7f8f64a";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "8421909118cfe995a7c1a8d955684ad582f728a9";
+      rev = "4ae0574bbcf9d65790c80826b19fc3afc7f8f64a";
       fetchSubmodules = false;
-      sha256 = "sha256-cXJcytIyAiQcsO3KLlKr3c1FpLt6zjaBJRm9LG9jm/Y=";
+      sha256 = "sha256-wkCuiRkRRJa+johuGkYXd4LAuhIlL9lHx1yaibgmElk=";
     };
-    date = "2024-06-11";
+    date = "2024-06-12";
   };
   catppuccin-gtk = {
     pname = "catppuccin-gtk";
