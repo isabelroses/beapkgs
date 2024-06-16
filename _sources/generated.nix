@@ -39,15 +39,15 @@
   };
   colloid-gtk-theme = {
     pname = "colloid-gtk-theme";
-    version = "b00d256e59c842a57b07eb1ecd82c2e27bb6da21";
+    version = "e23c79601c53b846832e2da430dbb9737b3ef70f";
     src = fetchFromGitHub {
       owner = "vinceliuice";
       repo = "Colloid-gtk-theme";
-      rev = "b00d256e59c842a57b07eb1ecd82c2e27bb6da21";
+      rev = "e23c79601c53b846832e2da430dbb9737b3ef70f";
       fetchSubmodules = false;
-      sha256 = "sha256-e7h7ywmSawR0OH6WgrUstQAGT1TarKfLJnEOV8dlTXQ=";
+      sha256 = "sha256-ZfXlOxgMVORK+QMAY7KfJR0aLyT3WKHCQiowlFxL/fU=";
     };
-    date = "2024-06-10";
+    date = "2024-06-16";
   };
   go-enum = {
     pname = "go-enum";
@@ -145,15 +145,15 @@
   };
   meower = {
     pname = "meower";
-    version = "86b6b92c5eb2cd8738363ef5336cdb82703e1845";
+    version = "edc08e7f0f22041d28c70bccd9fd6100e31c1040";
     src = fetchFromGitHub {
       owner = "Noxyntious";
       repo = "meower";
-      rev = "86b6b92c5eb2cd8738363ef5336cdb82703e1845";
+      rev = "edc08e7f0f22041d28c70bccd9fd6100e31c1040";
       fetchSubmodules = false;
-      sha256 = "sha256-+tnxwANf0+osS/gSPdnfqWytncOulkOSZ6yZlKYmE5U=";
+      sha256 = "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=";
     };
-    date = "2024-06-06";
+    date = "2024-06-15";
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
@@ -193,22 +193,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "ad5d6f96fff13bbb767153ab545bead777af3c91";
+    version = "794389ceacdd19dbf6255d153f88d539bd504e4b";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "ad5d6f96fff13bbb767153ab545bead777af3c91";
+      rev = "794389ceacdd19dbf6255d153f88d539bd504e4b";
       fetchSubmodules = true;
-      sha256 = "sha256-d3F3UphkWoG6JrhFbGXa/olWDdeF1zThv0BGXQzclMc=";
+      sha256 = "sha256-vs0t+j8DMmf10XIKdPXeebFkk2L411tVeA4HLbAIN7Q=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-ad5d6f96fff13bbb767153ab545bead777af3c91/Cargo.lock;
+      lockFile = ./wezterm-794389ceacdd19dbf6255d153f88d539bd504e4b/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-06-14";
+    date = "2024-06-15";
   };
   zzz = {
     pname = "zzz";
