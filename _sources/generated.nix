@@ -39,15 +39,15 @@
   };
   colloid-gtk-theme = {
     pname = "colloid-gtk-theme";
-    version = "e23c79601c53b846832e2da430dbb9737b3ef70f";
+    version = "a21570fdab8aaf18d15c180e4b098cafe35bd91a";
     src = fetchFromGitHub {
       owner = "vinceliuice";
       repo = "Colloid-gtk-theme";
-      rev = "e23c79601c53b846832e2da430dbb9737b3ef70f";
+      rev = "a21570fdab8aaf18d15c180e4b098cafe35bd91a";
       fetchSubmodules = false;
-      sha256 = "sha256-ZfXlOxgMVORK+QMAY7KfJR0aLyT3WKHCQiowlFxL/fU=";
+      sha256 = "sha256-2aQYmh9rf1E+6GthBjwQyyN2DazqM+gGO+TV/Cl4jIM=";
     };
-    date = "2024-06-16";
+    date = "2024-06-18";
   };
   go-enum = {
     pname = "go-enum";
@@ -169,15 +169,15 @@
   };
   purr = {
     pname = "purr";
-    version = "18661d424e0f9864b1c4c663f8ca19b73144a1f4";
+    version = "89c2df7be8cb462a606953320b8ab4ddbb2f619c";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "18661d424e0f9864b1c4c663f8ca19b73144a1f4";
+      rev = "89c2df7be8cb462a606953320b8ab4ddbb2f619c";
       fetchSubmodules = false;
-      sha256 = "sha256-NcMXCFMWJxCpXz9+OXzYjo0EIDcSnHI49P4/QpDE/04=";
+      sha256 = "sha256-0YizFlNcX7Eu/b1KL8+4p+Rd5yx5y3/wuTXWRU3Zvx8=";
     };
-    date = "2024-06-10";
+    date = "2024-06-18";
   };
   ringfairy = {
     pname = "ringfairy";

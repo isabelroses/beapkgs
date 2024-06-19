@@ -64,7 +64,7 @@
     },
     "colloid-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-06-16",
+        "date": "2024-06-18",
         "extract": null,
         "name": "colloid-gtk-theme",
         "passthru": null,
@@ -76,12 +76,12 @@
             "name": null,
             "owner": "vinceliuice",
             "repo": "Colloid-gtk-theme",
-            "rev": "e23c79601c53b846832e2da430dbb9737b3ef70f",
-            "sha256": "sha256-ZfXlOxgMVORK+QMAY7KfJR0aLyT3WKHCQiowlFxL/fU=",
+            "rev": "a21570fdab8aaf18d15c180e4b098cafe35bd91a",
+            "sha256": "sha256-2aQYmh9rf1E+6GthBjwQyyN2DazqM+gGO+TV/Cl4jIM=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e23c79601c53b846832e2da430dbb9737b3ef70f"
+        "version": "a21570fdab8aaf18d15c180e4b098cafe35bd91a"
     },
     "go-enum": {
         "cargoLocks": null,
@@ -295,7 +295,7 @@
     },
     "purr": {
         "cargoLocks": null,
-        "date": "2024-06-10",
+        "date": "2024-06-18",
         "extract": null,
         "name": "purr",
         "passthru": null,
@@ -307,12 +307,12 @@
             "name": null,
             "owner": "uncenter",
             "repo": "purr",
-            "rev": "18661d424e0f9864b1c4c663f8ca19b73144a1f4",
-            "sha256": "sha256-NcMXCFMWJxCpXz9+OXzYjo0EIDcSnHI49P4/QpDE/04=",
+            "rev": "89c2df7be8cb462a606953320b8ab4ddbb2f619c",
+            "sha256": "sha256-0YizFlNcX7Eu/b1KL8+4p+Rd5yx5y3/wuTXWRU3Zvx8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "18661d424e0f9864b1c4c663f8ca19b73144a1f4"
+        "version": "89c2df7be8cb462a606953320b8ab4ddbb2f619c"
     },
     "ringfairy": {
         "cargoLocks": null,
