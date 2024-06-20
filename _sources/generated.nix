@@ -15,15 +15,15 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "4ae0574bbcf9d65790c80826b19fc3afc7f8f64a";
+    version = "627b93ddc1f765f8aa22e73da54eca79ee713649";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "4ae0574bbcf9d65790c80826b19fc3afc7f8f64a";
+      rev = "627b93ddc1f765f8aa22e73da54eca79ee713649";
       fetchSubmodules = false;
-      sha256 = "sha256-wkCuiRkRRJa+johuGkYXd4LAuhIlL9lHx1yaibgmElk=";
+      sha256 = "sha256-eQGRilraJf2P+Eqt2AX15pVh+X4BLrjo5Y3gq96FWlQ=";
     };
-    date = "2024-06-12";
+    date = "2024-06-19";
   };
   catppuccin-gtk = {
     pname = "catppuccin-gtk";
@@ -109,15 +109,15 @@
   };
   izrss = {
     pname = "izrss";
-    version = "f9ba8f79e5816c0c781e8a6ba424c73297742f3b";
+    version = "eb3f319fdd0493ddcfba3f0d4b5514c9a3f961e9";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "izrss";
-      rev = "f9ba8f79e5816c0c781e8a6ba424c73297742f3b";
+      rev = "eb3f319fdd0493ddcfba3f0d4b5514c9a3f961e9";
       fetchSubmodules = false;
-      sha256 = "sha256-C1CLD8jf6daAuk8t+RnJmAbbOG79vujOyNRi8nXJHig=";
+      sha256 = "sha256-SuqVnieTlnTODPshj+fVHz8fLvCIwZnIfKgXCFiEUVA=";
     };
-    date = "2024-06-10";
+    date = "2024-06-19";
   };
   jq-lsp = {
     pname = "jq-lsp";
@@ -169,15 +169,15 @@
   };
   purr = {
     pname = "purr";
-    version = "89c2df7be8cb462a606953320b8ab4ddbb2f619c";
+    version = "0338a6eb1ab329ed8a1a8970600f8ffdd13a59a5";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "89c2df7be8cb462a606953320b8ab4ddbb2f619c";
+      rev = "0338a6eb1ab329ed8a1a8970600f8ffdd13a59a5";
       fetchSubmodules = false;
-      sha256 = "sha256-0YizFlNcX7Eu/b1KL8+4p+Rd5yx5y3/wuTXWRU3Zvx8=";
+      sha256 = "sha256-AVfdk7+wuZ3dwV25EK5fbU4fwjBcgF6ewU3C6Sn8DCU=";
     };
-    date = "2024-06-18";
+    date = "2024-06-19";
   };
   ringfairy = {
     pname = "ringfairy";
