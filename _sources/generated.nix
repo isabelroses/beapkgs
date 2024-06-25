@@ -169,15 +169,15 @@
   };
   purr = {
     pname = "purr";
-    version = "0338a6eb1ab329ed8a1a8970600f8ffdd13a59a5";
+    version = "b377a000bee91d0efae07207770e90e27c1734f2";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "0338a6eb1ab329ed8a1a8970600f8ffdd13a59a5";
+      rev = "b377a000bee91d0efae07207770e90e27c1734f2";
       fetchSubmodules = false;
-      sha256 = "sha256-AVfdk7+wuZ3dwV25EK5fbU4fwjBcgF6ewU3C6Sn8DCU=";
+      sha256 = "sha256-cPtcDfJLhOZfYNI/y+iX1lD4kKs0WHWo4m31Fugu8y4=";
     };
-    date = "2024-06-19";
+    date = "2024-06-23";
   };
   ringfairy = {
     pname = "ringfairy";
@@ -193,22 +193,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "4daab4dc7a3fbbca6895e41a544b54d41ef7e2b5";
+    version = "552bb1d66b6d0102961974c0da22dc7c69b0cd30";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "4daab4dc7a3fbbca6895e41a544b54d41ef7e2b5";
+      rev = "552bb1d66b6d0102961974c0da22dc7c69b0cd30";
       fetchSubmodules = true;
-      sha256 = "sha256-PznhF7CN8ZzHKbVX9FE6hzsuBJcye70fBfsBElbSayk=";
+      sha256 = "sha256-dr/f/zEqgzJ26s2KkiX6/68IU986jAYpeerRMSqejjM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-4daab4dc7a3fbbca6895e41a544b54d41ef7e2b5/Cargo.lock;
+      lockFile = ./wezterm-552bb1d66b6d0102961974c0da22dc7c69b0cd30/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-06-23";
+    date = "2024-06-24";
   };
   zzz = {
     pname = "zzz";
