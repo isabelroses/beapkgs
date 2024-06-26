@@ -1,10 +1,6 @@
-[catppuccin-gtk]
-src.git = "https://github.com/catppuccin/gtk"
-fetch.github = "catppuccin/gtk"
-
-[colloid-gtk-theme]
-src.git = "https://github.com/vinceliuice/Colloid-gtk-theme"
-fetch.github = "vinceliuice/Colloid-gtk-theme"
+[nh-darwin]
+src.git = "https://github.com/ToyVo/nh_darwin"
+fetch.github = "ToyVo/nh_darwin"
 
 [bellado]
 src.git = "https://github.com/isabelroses/bellado"

@@ -41,48 +41,6 @@
         },
         "version": "627b93ddc1f765f8aa22e73da54eca79ee713649"
     },
-    "catppuccin-gtk": {
-        "cargoLocks": null,
-        "date": "2024-06-02",
-        "extract": null,
-        "name": "catppuccin-gtk",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "catppuccin",
-            "repo": "gtk",
-            "rev": "23b52b5b9cde1e11c07315e79a55804d2ac77e3a",
-            "sha256": "sha256-4tBGN+Rra6C2pjkoLWmNqaYUwpzALsYrn4tkYGUtQl4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "23b52b5b9cde1e11c07315e79a55804d2ac77e3a"
-    },
-    "colloid-gtk-theme": {
-        "cargoLocks": null,
-        "date": "2024-06-26",
-        "extract": null,
-        "name": "colloid-gtk-theme",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vinceliuice",
-            "repo": "Colloid-gtk-theme",
-            "rev": "73184229f5e09ae97d7b7c91300a011f6e5fd2a7",
-            "sha256": "sha256-IVC1rQ9XF/LZcJF9bJu730OnEsYtNEnRTPTw38JzgkM=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "73184229f5e09ae97d7b7c91300a011f6e5fd2a7"
-    },
     "go-enum": {
         "cargoLocks": null,
         "date": null,
@@ -271,6 +229,27 @@
             "type": "github"
         },
         "version": "edc08e7f0f22041d28c70bccd9fd6100e31c1040"
+    },
+    "nh-darwin": {
+        "cargoLocks": null,
+        "date": "2024-06-20",
+        "extract": null,
+        "name": "nh-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "ToyVo",
+            "repo": "nh_darwin",
+            "rev": "754ecbc5826d5f305ddd7d9d439c167a34495071",
+            "sha256": "sha256-5tAHTS1mrf8UbkpLUIaNCxsgLyaSJZqNo5skWJdVQVs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "754ecbc5826d5f305ddd7d9d439c167a34495071"
     },
     "nixpkgs-using": {
         "cargoLocks": null,
