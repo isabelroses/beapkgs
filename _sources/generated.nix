@@ -39,15 +39,15 @@
   };
   colloid-gtk-theme = {
     pname = "colloid-gtk-theme";
-    version = "dfff1a7817d8bf3ba403cc2335a86064c165136a";
+    version = "73184229f5e09ae97d7b7c91300a011f6e5fd2a7";
     src = fetchFromGitHub {
       owner = "vinceliuice";
       repo = "Colloid-gtk-theme";
-      rev = "dfff1a7817d8bf3ba403cc2335a86064c165136a";
+      rev = "73184229f5e09ae97d7b7c91300a011f6e5fd2a7";
       fetchSubmodules = false;
-      sha256 = "sha256-UhR2htAnulgQLhVd/Se15S6wqXqvLQq8k95fjrbyN+M=";
+      sha256 = "sha256-IVC1rQ9XF/LZcJF9bJu730OnEsYtNEnRTPTw38JzgkM=";
     };
-    date = "2024-06-22";
+    date = "2024-06-26";
   };
   go-enum = {
     pname = "go-enum";
