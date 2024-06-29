@@ -119,10 +119,10 @@ rustPlatform.buildRustPackage rec {
     '';
   };
 
-  meta = with lib; {
+  meta = {
     description = "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust";
     homepage = "https://wezfurlong.org/wezterm";
-    license = licenses.mit;
-    platforms = platforms.unix;
+    license = lib.licenses.mit;
+    platforms = lib.platforms.unix;
   };
 }

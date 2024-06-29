@@ -10,35 +10,36 @@ let
       {
         go-enum = {
           vendorHash = "sha256-YzIVI+PLZt24s/KjTxifWrvjrIU8jLvkC1lgw4yG6cg=";
-          meta = with lib; {
+          meta = {
             description = "An enum generator for go";
             homepage = "https://github.com/abice/go-enum";
-            license = licenses.mit;
-            platforms = platforms.unix;
+            license = lib.licenses.mit;
+            platforms = lib.platforms.unix;
           };
         };
         gomvp = {
           vendorHash = null;
-          meta = with lib; {
+          meta = {
             description = "gomvp lets you refactor/rename packages";
             homepage = "https://github.com/abenz1267/gomvp";
-            license = licenses.mit;
-            platforms = platforms.unix;
+            license = lib.licenses.mit;
+            platforms = lib.platforms.unix;
           };
         };
         json-to-struct = {
           vendorHash = "sha256-XeqElLWCHqQxWNrbFGB9nBekG9uWDmv1AkGIoHfX1Co=";
-          meta = with lib; {
+          meta = {
             description = "A simple command-line tool for generating to struct definitions from JSON";
             homepage = "https://github.com/tmc/json-to-struct";
-            license = licenses.gpl3;
-            platforms = platforms.unix;
+            license = lib.licenses.gpl3;
+            platforms = lib.platforms.unix;
           };
         };
       };
 in
 pkgs.symlinkJoin rec {
   name = "gonvim-tools";
+
   # comments are binaries provided by the package
   # see https://github.com/ray-x/go.nvim/blob/master/lua/go/install.lua
   paths =
@@ -65,11 +66,12 @@ pkgs.symlinkJoin rec {
       reftools # fillstruct, fillswitch
       richgo
     ];
-  meta = with lib; {
+
+  meta = {
     description = "Convienience package for ray-x/go.nvim, that provides all external tools it relies on.";
-    license = lists.unique (
-      lists.flatten (builtins.map (pkg: pkg.meta.license or licenses.unfree) paths)
+    license = lib.lists.unique (
+      lib.lists.flatten (builtins.map (pkg: pkg.meta.license or lib.licenses.unfree) paths)
     );
-    platforms = platforms.unix;
+    platforms = lib.platforms.unix;
   };
 }
