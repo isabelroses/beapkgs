@@ -25,30 +25,6 @@
     };
     date = "2024-06-28";
   };
-  catppuccin-gtk = {
-    pname = "catppuccin-gtk";
-    version = "23b52b5b9cde1e11c07315e79a55804d2ac77e3a";
-    src = fetchFromGitHub {
-      owner = "catppuccin";
-      repo = "gtk";
-      rev = "23b52b5b9cde1e11c07315e79a55804d2ac77e3a";
-      fetchSubmodules = false;
-      sha256 = "sha256-4tBGN+Rra6C2pjkoLWmNqaYUwpzALsYrn4tkYGUtQl4=";
-    };
-    date = "2024-06-02";
-  };
-  colloid-gtk-theme = {
-    pname = "colloid-gtk-theme";
-    version = "73184229f5e09ae97d7b7c91300a011f6e5fd2a7";
-    src = fetchFromGitHub {
-      owner = "vinceliuice";
-      repo = "Colloid-gtk-theme";
-      rev = "73184229f5e09ae97d7b7c91300a011f6e5fd2a7";
-      fetchSubmodules = false;
-      sha256 = "sha256-IVC1rQ9XF/LZcJF9bJu730OnEsYtNEnRTPTw38JzgkM=";
-    };
-    date = "2024-06-26";
-  };
   go-enum = {
     pname = "go-enum";
     version = "v0.6.0";

@@ -26,4 +26,11 @@ rustPlatform.buildRustPackage {
     );
 
   nativeBuildInputs = [ pkg-config ];
+
+  meta = {
+    description = "Build a webring with ease!";
+    mainProgram = "ringfairy";
+    homepage = "https://github.com/k3rs3d/ringfairy";
+    license = lib.licenses.gpl3Plus;
+  };
 }

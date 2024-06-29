@@ -8,11 +8,11 @@
   pkg-config,
 }:
 let
-  p = (lib.importTOML "${pins.blahaj.src}/Cargo.toml").package;
+  version = builtins.substring 0 7 pins.blahaj.version;
 in
 rustPlatform.buildRustPackage {
-  pname = p.name;
-  inherit (p) version;
+  pname = "blahaj";
+  inherit version;
 
   inherit (pins.blahaj) src;
 
@@ -31,11 +31,12 @@ rustPlatform.buildRustPackage {
   nativeBuildInputs = [ pkg-config ];
 
   env = {
-    BUILD_REV = p.version;
+    BUILD_REV = version;
   };
 
   meta = {
-    inherit (p) description homepage;
+    description = "the resident discord bot of hell :3";
+    homepage = "https://github.com/isabelroses/blahaj";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ isabelroses ];
     mainProgram = "blahaj";

@@ -41,48 +41,6 @@
         },
         "version": "265163d8a2135a05132db07000a5c6c8a34a762a"
     },
-    "catppuccin-gtk": {
-        "cargoLocks": null,
-        "date": "2024-06-02",
-        "extract": null,
-        "name": "catppuccin-gtk",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "catppuccin",
-            "repo": "gtk",
-            "rev": "23b52b5b9cde1e11c07315e79a55804d2ac77e3a",
-            "sha256": "sha256-4tBGN+Rra6C2pjkoLWmNqaYUwpzALsYrn4tkYGUtQl4=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "23b52b5b9cde1e11c07315e79a55804d2ac77e3a"
-    },
-    "colloid-gtk-theme": {
-        "cargoLocks": null,
-        "date": "2024-06-26",
-        "extract": null,
-        "name": "colloid-gtk-theme",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vinceliuice",
-            "repo": "Colloid-gtk-theme",
-            "rev": "73184229f5e09ae97d7b7c91300a011f6e5fd2a7",
-            "sha256": "sha256-IVC1rQ9XF/LZcJF9bJu730OnEsYtNEnRTPTw38JzgkM=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "73184229f5e09ae97d7b7c91300a011f6e5fd2a7"
-    },
     "go-enum": {
         "cargoLocks": null,
         "date": null,

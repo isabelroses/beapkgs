@@ -9,7 +9,7 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "purr";
-  inherit ((lib.importTOML "${pins.purr.src}/Cargo.toml").package) version;
+  version = builtins.substring 0 7 pins.purr.version;
 
   inherit (pins.purr) src;
   cargoLock.lockFile = "${pins.purr.src}/Cargo.lock";

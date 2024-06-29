@@ -5,7 +5,7 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "ito";
-  inherit ((lib.importTOML "${pins.ito.src}/Cargo.toml").package) version;
+  version = builtins.substring 0 7 pins.ito.version;
 
   inherit (pins.ito) src;
   cargoLock.lockFile = "${pins.ito.src}/Cargo.lock";
