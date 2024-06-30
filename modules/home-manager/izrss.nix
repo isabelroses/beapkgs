@@ -1,3 +1,4 @@
+self:
 {
   lib,
   pkgs,
@@ -20,7 +21,9 @@ in
   options.programs.izrss = {
     enable = mkEnableOption "A fast and once simple cli todo tool";
 
-    package = mkPackageOption pkgs "izrss" { };
+    package = mkPackageOption pkgs "izrss" { } // {
+      default = self.packages.${pkgs.stdenv.hostPlatform.system}.izrss;
+    };
 
     settings = mkOption {
       inherit (settingsFormat) type;

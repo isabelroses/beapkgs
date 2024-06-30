@@ -1,1 +1,1 @@
-_: { }
+self: { imports = [ (import ./nh.nix self) ]; }

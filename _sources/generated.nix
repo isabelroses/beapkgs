@@ -15,15 +15,15 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "265163d8a2135a05132db07000a5c6c8a34a762a";
+    version = "627b93ddc1f765f8aa22e73da54eca79ee713649";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "265163d8a2135a05132db07000a5c6c8a34a762a";
+      rev = "627b93ddc1f765f8aa22e73da54eca79ee713649";
       fetchSubmodules = false;
-      sha256 = "sha256-KJaz9NEWg8Jam4vY7nu9HkxQodKAxfyq6FrmgRrzaHw=";
+      sha256 = "sha256-eQGRilraJf2P+Eqt2AX15pVh+X4BLrjo5Y3gq96FWlQ=";
     };
-    date = "2024-06-28";
+    date = "2024-06-19";
   };
   go-enum = {
     pname = "go-enum";
@@ -130,6 +130,18 @@
       sha256 = "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=";
     };
     date = "2024-06-15";
+  };
+  nh-darwin = {
+    pname = "nh-darwin";
+    version = "754ecbc5826d5f305ddd7d9d439c167a34495071";
+    src = fetchFromGitHub {
+      owner = "ToyVo";
+      repo = "nh_darwin";
+      rev = "754ecbc5826d5f305ddd7d9d439c167a34495071";
+      fetchSubmodules = false;
+      sha256 = "sha256-5tAHTS1mrf8UbkpLUIaNCxsgLyaSJZqNo5skWJdVQVs=";
+    };
+    date = "2024-06-20";
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
