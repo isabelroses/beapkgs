@@ -62,4 +62,4 @@ jobs:
           authToken: "${{ secrets.CACHIX_TOKEN }}"
 
       - name: Build from the matrix
-        run: nix build -Lv .#${{ matrix.package }}
+        run: nix build -L .#${{ matrix.package }}
