@@ -28,7 +28,11 @@ jobs:
       - name: Get packages
         id: get_packages
         run: |
-          echo "packages=$(nix flake show --json | jq -c ".packages.\"x86_64-linux\" | keys")" >> $GITHUB_OUTPUT
+          #!/usr/bin/env bash
+
+          export parsed=$(nix flake show --json | jq -c ".packages.\"x86_64-linux\" | keys")
+          echo "$parsed"
+          echo "packages=$parsed" >> $GITHUB_OUTPUT
 
   build:
     if: github.repository == 'isabelroses/beapkgs'
