@@ -133,39 +133,39 @@
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
-    version = "d07d099be6816aea21e52f89eac102aee2347906";
+    version = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "nixpkgs-using";
-      rev = "d07d099be6816aea21e52f89eac102aee2347906";
+      rev = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";
       fetchSubmodules = false;
-      sha256 = "sha256-VQNefwVa1zHL1TLrO5s4xj6k2fNFVM6J8PIYpCR40T4=";
+      sha256 = "sha256-asC2csiiHpjujukoX7unHQKguGm6tRqWVbaI4TWEmtA=";
     };
-    date = "2024-06-10";
+    date = "2024-06-30";
   };
   purr = {
     pname = "purr";
-    version = "b377a000bee91d0efae07207770e90e27c1734f2";
+    version = "99bfdbe3270aed9c619bb0c021f3a3f92719295f";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "b377a000bee91d0efae07207770e90e27c1734f2";
+      rev = "99bfdbe3270aed9c619bb0c021f3a3f92719295f";
       fetchSubmodules = false;
-      sha256 = "sha256-cPtcDfJLhOZfYNI/y+iX1lD4kKs0WHWo4m31Fugu8y4=";
+      sha256 = "sha256-IATclOEV8s3K5bwqIv7Gsm4IqqUGy0eColRpAlvoqfU=";
     };
-    date = "2024-06-23";
+    date = "2024-06-29";
   };
   ringfairy = {
     pname = "ringfairy";
-    version = "bce9dce450d9fa8406f12f64045ca21f9f548942";
+    version = "2e8936af16428efae5123489d6d4b2504a3c11b3";
     src = fetchFromGitHub {
       owner = "k3rs3d";
       repo = "ringfairy";
-      rev = "bce9dce450d9fa8406f12f64045ca21f9f548942";
+      rev = "2e8936af16428efae5123489d6d4b2504a3c11b3";
       fetchSubmodules = false;
-      sha256 = "sha256-dyqmjjhX3aehxoziV1C8Xsh/tNR2mhMBgcziPPNqqkA=";
+      sha256 = "sha256-4DWQCyVtqMKKgBAOejve9v/en1tfFi6FN3eeuC7B5I0=";
     };
-    date = "2024-06-02";
+    date = "2024-06-29";
   };
   wezterm = {
     pname = "wezterm";
