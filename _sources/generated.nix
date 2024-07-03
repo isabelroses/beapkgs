@@ -85,15 +85,15 @@
   };
   izrss = {
     pname = "izrss";
-    version = "eb3f319fdd0493ddcfba3f0d4b5514c9a3f961e9";
+    version = "7d6e5f67f0fdc4ee2e07ed7259338487db6fd74b";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "izrss";
-      rev = "eb3f319fdd0493ddcfba3f0d4b5514c9a3f961e9";
+      rev = "7d6e5f67f0fdc4ee2e07ed7259338487db6fd74b";
       fetchSubmodules = false;
-      sha256 = "sha256-SuqVnieTlnTODPshj+fVHz8fLvCIwZnIfKgXCFiEUVA=";
+      sha256 = "sha256-IIYV0P34tQ8L5U0yt1AwbDFivW7c7jZbRnqicsdvV2M=";
     };
-    date = "2024-06-19";
+    date = "2024-07-02";
   };
   jq-lsp = {
     pname = "jq-lsp";
