@@ -12,7 +12,7 @@ buildGoModule {
 
   inherit (pins.izrss) src;
 
-  vendorHash = "sha256-/TRCD6akZV2qDqJz62p7UzFIGuTAKLnUtYqqvdw3rCI=";
+  vendorHash = "sha256-XYJuXEGHGYTeprHp9oBiHCrKBVc46KpYY3qqlEknr+8=";
 
   ldflags = [
     "-s"
