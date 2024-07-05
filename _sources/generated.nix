@@ -9,7 +9,7 @@
       repo = "bellado";
       rev = "8b9bb4e19b06a35acd8b2d39830c2751246ff189";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2023-12-16";
   };
@@ -21,7 +21,7 @@
       repo = "blahaj";
       rev = "265163d8a2135a05132db07000a5c6c8a34a762a";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-06-28";
   };
@@ -33,7 +33,7 @@
       repo = "go-enum";
       rev = "v0.6.0";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
   };
   gomvp = {
@@ -44,7 +44,7 @@
       repo = "gomvp";
       rev = "5b06c041c898822fd72cd245188e51d112adae74";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2022-10-25";
   };
@@ -56,7 +56,7 @@
       repo = "helm-ls";
       rev = "v0.0.18";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
   };
   isabelroses-website = {
@@ -67,21 +67,21 @@
       repo = "website";
       rev = "8ae059c8c6438b6e47bbc1e8b4fa13facf924dd1";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-06-22";
   };
   ito = {
     pname = "ito";
-    version = "7dfbb2ab5fff469ff7e74b6c03e85afb786d14be";
+    version = "c4050b57e749332820c3c30a9fa2dc4f34ae4a9f";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "ito";
-      rev = "7dfbb2ab5fff469ff7e74b6c03e85afb786d14be";
+      rev = "c4050b57e749332820c3c30a9fa2dc4f34ae4a9f";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
-    date = "2024-06-10";
+    date = "2024-07-03";
   };
   izrss = {
     pname = "izrss";
@@ -91,7 +91,7 @@
       repo = "izrss";
       rev = "7d6e5f67f0fdc4ee2e07ed7259338487db6fd74b";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-07-02";
   };
@@ -103,7 +103,7 @@
       repo = "jq-lsp";
       rev = "01e96e9809ef775783cefb41a564d78162cece0f";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-04-02";
   };
@@ -115,7 +115,7 @@
       repo = "json-to-struct";
       rev = "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2023-06-13";
   };
@@ -127,7 +127,7 @@
       repo = "meower";
       rev = "edc08e7f0f22041d28c70bccd9fd6100e31c1040";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-06-15";
   };
@@ -139,21 +139,21 @@
       repo = "nixpkgs-using";
       rev = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-06-30";
   };
   purr = {
     pname = "purr";
-    version = "99bfdbe3270aed9c619bb0c021f3a3f92719295f";
+    version = "6e7a604b8c14c9113486815b61d05bfe0dd2afe4";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "99bfdbe3270aed9c619bb0c021f3a3f92719295f";
+      rev = "6e7a604b8c14c9113486815b61d05bfe0dd2afe4";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
-    date = "2024-06-29";
+    date = "2024-07-04";
   };
   ringfairy = {
     pname = "ringfairy";
@@ -163,7 +163,7 @@
       repo = "ringfairy";
       rev = "2e8936af16428efae5123489d6d4b2504a3c11b3";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-06-29";
   };
@@ -194,7 +194,7 @@
       repo = "zzz";
       rev = "3429b1f17c6cb755697e0520d98a223789b7c8c1";
       fetchSubmodules = false;
-      sha256 = "sha256-BY5AngvaUYoMTJkNgiC8zRKiPF9zvw+78ser3sIZFDU=";
+      sha256 = "sha256-pKhzc+ZartOWkr3fbMUzKOU9m/pUuKcIf6LE07WQZ34=";
     };
     date = "2024-05-30";
   };
