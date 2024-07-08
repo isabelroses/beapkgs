@@ -9,12 +9,9 @@
   makeBinaryWrapper,
   nix-output-monitor,
 }:
-let
-  p = (lib.importTOML "${pins.nh-darwin.src}/Cargo.toml").package;
-in
 rustPlatform.buildRustPackage {
   pname = "nh-darwin";
-  version = "${p.version}-${pins.nh-darwin.version}";
+  inherit (pins.nh-darwin) version;
 
   inherit (pins.nh-darwin) src;
   strictDeps = true;
@@ -30,15 +27,15 @@ rustPlatform.buildRustPackage {
 
   preFixup = ''
     mkdir completions
-    $out/bin/nh-darwin completions --shell bash > completions/nh-darwin.bash
-    $out/bin/nh-darwin completions --shell zsh > completions/nh-darwin.zsh
-    $out/bin/nh-darwin completions --shell fish > completions/nh-darwin.fish
+    $out/bin/nh_darwin completions --shell bash > completions/nh_darwin.bash
+    $out/bin/nh_darwin completions --shell zsh > completions/nh_darwin.zsh
+    $out/bin/nh_darwin completions --shell fish > completions/nh_darwin.fish
 
     installShellCompletion completions/*
   '';
 
   postFixup = ''
-    wrapProgram $out/bin/nh-darwin \
+    wrapProgram $out/bin/nh_darwin \
       --prefix PATH : ${
         lib.makeBinPath [
           nix-output-monitor
@@ -50,8 +47,7 @@ rustPlatform.buildRustPackage {
   cargoLock.lockFile = "${pins.nh-darwin.src}/Cargo.lock";
 
   meta = {
-    inherit (p) description homepage;
     license = lib.licenses.eupl12;
-    mainProgram = "nh-darwin";
+    mainProgram = "nh_darwin";
   };
 }
