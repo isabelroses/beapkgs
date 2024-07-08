@@ -7,8 +7,6 @@ on:
       - "flake/pkgs"
       - "**.lock"
       - "_sources/*"
-  schedule:
-    - cron: "0 1 * * *"
 
 jobs:
   setup:
