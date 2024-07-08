@@ -131,6 +131,18 @@
     };
     date = "2024-06-15";
   };
+  nh-darwin = {
+    pname = "nh-darwin";
+    version = "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e";
+    src = fetchFromGitHub {
+      owner = "ToyVo";
+      repo = "nh_darwin";
+      rev = "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e";
+      fetchSubmodules = false;
+      sha256 = "sha256-yX0NOCmiRq3iMAwsKoSMxhfBMkLlZirHdmAyZIL95FM=";
+    };
+    date = "2024-07-02";
+  };
   nixpkgs-using = {
     pname = "nixpkgs-using";
     version = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";

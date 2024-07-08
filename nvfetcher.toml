@@ -1,3 +1,7 @@
+[nh-darwin]
+src.git = "https://github.com/ToyVo/nh_darwin"
+fetch.github = "ToyVo/nh_darwin"
+
 [bellado]
 src.git = "https://github.com/isabelroses/bellado"
 fetch.github = "isabelroses/bellado"

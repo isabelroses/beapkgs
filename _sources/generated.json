@@ -219,6 +219,26 @@
         },
         "version": "edc08e7f0f22041d28c70bccd9fd6100e31c1040"
     },
+    "nh-darwin": {
+        "cargoLocks": null,
+        "date": "2024-07-02",
+        "extract": null,
+        "name": "nh-darwin",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "ToyVo",
+            "repo": "nh_darwin",
+            "rev": "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e",
+            "sha256": "sha256-yX0NOCmiRq3iMAwsKoSMxhfBMkLlZirHdmAyZIL95FM=",
+            "type": "github"
+        },
+        "version": "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e"
+    },
     "nixpkgs-using": {
         "cargoLocks": null,
         "date": "2024-06-30",
