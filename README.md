@@ -19,17 +19,10 @@ You can use this as either a flake or with channels, not that I know how to use 
       };
     };
   };
-
-  outputs = { self, nixpkgs, beapkgs }: {
-    nixpkgs.overlays = [ beapkgs.overlays.default ];
-  };
 }
 ```
 
 ## Using the modules
-
-> [!NOTE]
-> The home manager modules require the overlay to be added to your configuration.
 
 You can import the modules like so:
 
