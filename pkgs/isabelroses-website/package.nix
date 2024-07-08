@@ -12,7 +12,7 @@ buildGoModule {
 
   inherit (pins.isabelroses-website) src;
 
-  vendorHash = "sha256-hz1lzBv5Qhg0UmefwhvFbLxnA/o/wysW+kvY8v+FPRU=";
+  vendorHash = "sha256-9ZjF2Y5xx0+NARkh1zbTb4igYbCDEGDIMBxJWXOeGvc=";
 
   ldflags = [
     "-s"
@@ -21,8 +21,7 @@ buildGoModule {
 
   patchPhase = ''
     substituteInPlace lib/settings.go \
-      --replace-fail 'RootDir  string = "."' 'RootDir  string = "'$out/share'"' \
-      --replace-fail 'ServeDir string = "."' 'ServeDir string = "/srv/storage/isabelroses.com"'
+      --replace-fail 'RootDir string = "."' 'RootDir  string = "'$out/share'"'
   '';
 
   postInstall = ''
