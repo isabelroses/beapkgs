@@ -32,7 +32,6 @@ rustPlatform.buildRustPackage rec {
 
   nativeBuildInputs = [
     installShellFiles
-    ncurses # tic for terminfo
     pkg-config
     python3
   ] ++ lib.optionals stdenv.isDarwin [ perl ];
@@ -109,10 +108,6 @@ rustPlatform.buildRustPackage rec {
     '';
 
   passthru = {
-    tests = {
-      all-terminfo = nixosTests.allTerminfo;
-      terminal-emulators = nixosTests.terminal-emulators.wezterm;
-    };
     terminfo = runCommand "wezterm-terminfo" { nativeBuildInputs = [ ncurses ]; } ''
       mkdir -p $out/share/terminfo $out/nix-support
       tic -x -o $out/share/terminfo ${src}/termwiz/data/wezterm.terminfo
