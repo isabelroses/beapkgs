@@ -15,15 +15,15 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "3c2bd7ee788429daa623e7ddde540802d314f85d";
+    version = "3cbacecb6404ca127d1f0ca64dbf8a9760467359";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "3c2bd7ee788429daa623e7ddde540802d314f85d";
+      rev = "3cbacecb6404ca127d1f0ca64dbf8a9760467359";
       fetchSubmodules = false;
-      sha256 = "sha256-16xgRzoAtS2ZVMzlHfSa/2/FagEAXVuZhrINaaIvdXE=";
+      sha256 = "sha256-jJKsdTbYlsOFgx9agJyyvZ+7xiy/5Ly4Aq5PrGdDzlU=";
     };
-    date = "2024-07-08";
+    date = "2024-07-09";
   };
   go-enum = {
     pname = "go-enum";
@@ -73,15 +73,15 @@
   };
   ito = {
     pname = "ito";
-    version = "c4050b57e749332820c3c30a9fa2dc4f34ae4a9f";
+    version = "30596468c71e1da2176eea78206486c60559bab6";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "ito";
-      rev = "c4050b57e749332820c3c30a9fa2dc4f34ae4a9f";
+      rev = "30596468c71e1da2176eea78206486c60559bab6";
       fetchSubmodules = false;
-      sha256 = "sha256-xRk2uWYRZ9lMJztXjDaHFD235VvCOVWBYA6cvwy4SSM=";
+      sha256 = "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=";
     };
-    date = "2024-07-03";
+    date = "2024-07-09";
   };
   izrss = {
     pname = "izrss";
@@ -145,27 +145,27 @@
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
-    version = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";
+    version = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "nixpkgs-using";
-      rev = "738ee58509bb74a9b3404dfa71b3ef59784ad3a0";
+      rev = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
       fetchSubmodules = false;
-      sha256 = "sha256-asC2csiiHpjujukoX7unHQKguGm6tRqWVbaI4TWEmtA=";
+      sha256 = "sha256-XAC3Ejf/ZMJr1h/4BTmlOKALhZdLEVdMQE6qEEjRZSE=";
     };
-    date = "2024-06-30";
+    date = "2024-07-09";
   };
   purr = {
     pname = "purr";
-    version = "6e7a604b8c14c9113486815b61d05bfe0dd2afe4";
+    version = "4713916157d515ae824140a5d3a5cfc3dfc8d37e";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "6e7a604b8c14c9113486815b61d05bfe0dd2afe4";
+      rev = "4713916157d515ae824140a5d3a5cfc3dfc8d37e";
       fetchSubmodules = false;
-      sha256 = "sha256-uiz//bsIfircVdA9dY99w80nu83TLNdb3XioPT9ooWo=";
+      sha256 = "sha256-D6P4tg3eb0d/S0/aINszE6iV/oYJ9KihWYux43iNy58=";
     };
-    date = "2024-07-04";
+    date = "2024-07-09";
   };
   ringfairy = {
     pname = "ringfairy";
