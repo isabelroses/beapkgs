@@ -119,15 +119,15 @@ in
   md = pkgs.linkFarm "md" [
     {
       name = "nixos";
-      path = modulesPath + /nixos;
+      path = nixos;
     }
     {
       name = "darwin";
-      path = modulesPath + /darwin;
+      path = darwin;
     }
     {
       name = "home-manager";
-      path = modulesPath + /home-manager;
+      path = hm;
     }
   ];
 }
