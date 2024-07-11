@@ -66,17 +66,7 @@
 
       overlays.default = final: _: callAllPkgs final;
 
-      packages = forAllSystems (
-        pkgs:
-        let
-          docs = pkgs.callPackage ./docs { inherit self; };
-        in
-        {
-          docs-md = docs.md;
-          docs-html = docs.html;
-        }
-        // (callAllPkgs pkgs)
-      );
+      packages = forAllSystems callAllPkgs;
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
       nixosModules.default = import ./modules/nixos;

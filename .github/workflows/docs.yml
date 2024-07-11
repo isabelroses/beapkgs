@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "docs/*"
       - "modules/**/*"
       - "pkgs/**/*"
       - ".github/workflows/docs.yml"
@@ -23,7 +22,7 @@ jobs:
           logger: pretty
 
       - name: Build Linux packages
-        run: "nix build -L .#docs-html"
+        run: "nix build -L .#beapkgs-docs"
 
       - name: Upload Pages Artifact
         uses: "actions/upload-pages-artifact@v3"
