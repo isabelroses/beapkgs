@@ -7,7 +7,7 @@
   stdenvNoCC,
   runCommand,
   nixosOptionsDoc,
-  python311Packages,
+  python312Packages,
   ...
 }:
 let
@@ -121,9 +121,9 @@ stdenvNoCC.mkDerivation {
 
   nativeBuildInputs = [
     mkdocs
-    python311Packages.pillow
-    python311Packages.cairosvg
-    python311Packages.mkdocs-material
+    python312Packages.pillow
+    python312Packages.cairosvg
+    python312Packages.mkdocs-material
   ];
 
   configurePhase = ''
