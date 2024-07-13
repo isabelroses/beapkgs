@@ -16,9 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Nix
+      - name: Install Lix
         uses: DeterminateSystems/nix-installer-action@main
         with:
+          source_url: https://install.lix.systems/lix/lix-installer-x86_64-linux
           logger: pretty
 
       - name: Build Linux packages
