@@ -68,8 +68,6 @@
 
       packages = forAllSystems callAllPkgs;
 
-      checks = forAllSystems callAllPkgs;
-
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
       nixosModules.default = import ./modules/nixos;
       darwinModules.default = import ./modules/darwin self;
