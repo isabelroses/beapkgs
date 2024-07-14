@@ -61,15 +61,15 @@
   };
   isabelroses-website = {
     pname = "isabelroses-website";
-    version = "f05fa29812061a531b5d5e7b32b0f499fc90892c";
+    version = "aea556c282b8d2216126ad859e5620f15e7984a6";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "website";
-      rev = "f05fa29812061a531b5d5e7b32b0f499fc90892c";
+      rev = "aea556c282b8d2216126ad859e5620f15e7984a6";
       fetchSubmodules = false;
-      sha256 = "sha256-lJPrmEqVb3u2+e/6ZKYyHGLoDFogjUSv1Jo6gctuIOs=";
+      sha256 = "sha256-e03MZEr+3WC4LQzR/MDGwFTEFNKA7EVfkAnU0PGcs3U=";
     };
-    date = "2024-07-08";
+    date = "2024-07-13";
   };
   ito = {
     pname = "ito";
@@ -181,22 +181,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "69686f4564ea460111936dee3179ecf8c80e9930";
+    version = "4884f3176254542f1b8db911aa7b7a73eef02f55";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "69686f4564ea460111936dee3179ecf8c80e9930";
+      rev = "4884f3176254542f1b8db911aa7b7a73eef02f55";
       fetchSubmodules = true;
-      sha256 = "sha256-9sYfXoAvNHvelI4NEU7L+DV7hfBoOnJnLiRcmxNvjE4=";
+      sha256 = "sha256-KQLZuzCsAVrQp1BNsEpi1mazjYlb8MTHa3rWO4rh24Y=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-69686f4564ea460111936dee3179ecf8c80e9930/Cargo.lock;
+      lockFile = ./wezterm-4884f3176254542f1b8db911aa7b7a73eef02f55/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-07-01";
+    date = "2024-07-13";
   };
   zzz = {
     pname = "zzz";
