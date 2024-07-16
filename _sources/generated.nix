@@ -181,22 +181,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "b20c61926ea086cfca6a411e38b215c3045bb12c";
+    version = "c9116830c27baf0c547a1524d33363fd5e42295a";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "b20c61926ea086cfca6a411e38b215c3045bb12c";
+      rev = "c9116830c27baf0c547a1524d33363fd5e42295a";
       fetchSubmodules = true;
-      sha256 = "sha256-vwiy4r8WAgB85AbzeQjOub0dnZv+lsylccUPTksvBio=";
+      sha256 = "sha256-TUQVcrR9QUBWkhxoKz23a12ZvAPcG3PcNGZRC4q9kNc=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-b20c61926ea086cfca6a411e38b215c3045bb12c/Cargo.lock;
+      lockFile = ./wezterm-c9116830c27baf0c547a1524d33363fd5e42295a/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-07-14";
+    date = "2024-07-15";
   };
   zzz = {
     pname = "zzz";
