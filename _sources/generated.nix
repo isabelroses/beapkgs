@@ -61,15 +61,15 @@
   };
   isabelroses-website = {
     pname = "isabelroses-website";
-    version = "aea556c282b8d2216126ad859e5620f15e7984a6";
+    version = "acae0ec2f4dadee5308f2d243b898cfaa4ea3e97";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "website";
-      rev = "aea556c282b8d2216126ad859e5620f15e7984a6";
+      rev = "acae0ec2f4dadee5308f2d243b898cfaa4ea3e97";
       fetchSubmodules = false;
-      sha256 = "sha256-e03MZEr+3WC4LQzR/MDGwFTEFNKA7EVfkAnU0PGcs3U=";
+      sha256 = "sha256-zif6BU5/gWvqxoyphrytivzvabAQmbKk87QIXIr0uKo=";
     };
-    date = "2024-07-13";
+    date = "2024-07-17";
   };
   ito = {
     pname = "ito";

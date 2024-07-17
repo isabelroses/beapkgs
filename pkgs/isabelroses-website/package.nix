@@ -19,19 +19,6 @@ buildGoModule {
     "-w"
   ];
 
-  patchPhase = ''
-    substituteInPlace lib/settings.go \
-      --replace-fail 'RootDir string = "."' 'RootDir  string = "'$out/share'"'
-  '';
-
-  postInstall = ''
-    mkdir -p $out/share
-
-    cp -r content $out/share/content
-    cp -r public $out/share/public
-    cp -r templates $out/share/templates
-  '';
-
   meta = {
     description = "isabelroses.com";
     homepage = "https://isabelroses.com/";
