@@ -23,6 +23,4 @@ jobs:
           logger: pretty
 
       - name: Check Flake
-        run: |
-          export NIXPKGS_ALLOW_UNFREE=1
-          nix flake check --accept-flake-config --impure
+        run: nix flake check
