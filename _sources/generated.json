@@ -329,7 +329,7 @@
     },
     "zzz": {
         "cargoLocks": null,
-        "date": "2024-05-30",
+        "date": "2024-07-18",
         "extract": null,
         "name": "zzz",
         "passthru": null,
@@ -341,10 +341,10 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "zzz",
-            "rev": "3429b1f17c6cb755697e0520d98a223789b7c8c1",
-            "sha256": "sha256-nogVarYxWoSpDQtk1AQnyOrYFGDwjeN/2ybv5aSGwM4=",
+            "rev": "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520",
+            "sha256": "sha256-qe07WxDQmyiK6gq607SiNGAr9DL6p7TnAiQIhJK5vRE=",
             "type": "github"
         },
-        "version": "3429b1f17c6cb755697e0520d98a223789b7c8c1"
+        "version": "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520"
     }
 }

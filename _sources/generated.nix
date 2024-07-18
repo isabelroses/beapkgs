@@ -200,14 +200,14 @@
   };
   zzz = {
     pname = "zzz";
-    version = "3429b1f17c6cb755697e0520d98a223789b7c8c1";
+    version = "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "zzz";
-      rev = "3429b1f17c6cb755697e0520d98a223789b7c8c1";
+      rev = "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520";
       fetchSubmodules = false;
-      sha256 = "sha256-nogVarYxWoSpDQtk1AQnyOrYFGDwjeN/2ybv5aSGwM4=";
+      sha256 = "sha256-qe07WxDQmyiK6gq607SiNGAr9DL6p7TnAiQIhJK5vRE=";
     };
-    date = "2024-05-30";
+    date = "2024-07-18";
   };
 }
