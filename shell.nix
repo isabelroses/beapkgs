@@ -1,9 +1,24 @@
 {
-  pkgs ? import <nixpkgs> { },
+  nvfetcher,
+  mkShellNoCC,
+  nixfmt-rfc-style,
+  simple-http-server,
+  writeShellApplication,
 }:
-pkgs.mkShellNoCC {
-  packages = with pkgs; [
+mkShellNoCC {
+  packages = [
     nvfetcher
     nixfmt-rfc-style
+
+    (writeShellApplication {
+      name = "docs";
+      runtimeInputs = [ simple-http-server ];
+
+      text = ''
+        nix build -L .#beapkgs-docs
+
+        simple-http-server -i result
+      '';
+    })
   ];
 }
