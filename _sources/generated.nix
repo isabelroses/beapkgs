@@ -48,6 +48,18 @@
     };
     date = "2022-10-25";
   };
+  hael = {
+    pname = "hael";
+    version = "d604e456f3f1b1c5df011204adb74d7e27a1fce5";
+    src = fetchFromGitHub {
+      owner = "isabelroses";
+      repo = "hael";
+      rev = "d604e456f3f1b1c5df011204adb74d7e27a1fce5";
+      fetchSubmodules = false;
+      sha256 = "sha256-QtOkCIReOgSRz/hMWT3v1PSpS0Dv8TgKkVnZv8AjsIE=";
+    };
+    date = "2024-03-25";
+  };
   helm-ls = {
     pname = "helm-ls";
     version = "v0.0.18";

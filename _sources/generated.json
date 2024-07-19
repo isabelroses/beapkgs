@@ -79,6 +79,26 @@
         },
         "version": "5b06c041c898822fd72cd245188e51d112adae74"
     },
+    "hael": {
+        "cargoLocks": null,
+        "date": "2024-03-25",
+        "extract": null,
+        "name": "hael",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "isabelroses",
+            "repo": "hael",
+            "rev": "d604e456f3f1b1c5df011204adb74d7e27a1fce5",
+            "sha256": "sha256-QtOkCIReOgSRz/hMWT3v1PSpS0Dv8TgKkVnZv8AjsIE=",
+            "type": "github"
+        },
+        "version": "d604e456f3f1b1c5df011204adb74d7e27a1fce5"
+    },
     "helm-ls": {
         "cargoLocks": null,
         "date": null,

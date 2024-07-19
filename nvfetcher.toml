@@ -38,6 +38,10 @@ fetch.github = "Noxyntious/meower"
 src.git = "https://github.com/isabelroses/website"
 fetch.github = "isabelroses/website"
 
+[hael]
+src.git = "https://github.com/isabelroses/hael"
+fetch.github = "isabelroses/hael"
+
 [zzz]
 src.git = "https://github.com/isabelroses/zzz"
 fetch.github = "isabelroses/zzz"
