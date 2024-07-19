@@ -12,7 +12,7 @@ buildGoModule {
 
   inherit (pins.hael) src;
 
-  vendorHash = "";
+  vendorHash = null;
 
   ldflags = [
     "-s"
