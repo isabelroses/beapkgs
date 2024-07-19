@@ -36,36 +36,37 @@ let
           };
         };
       };
+
+  paths = with pkgs; [
+    # comments are binaries provided by the package
+    # see https://github.com/ray-x/go.nvim/blob/master/lua/go/install.lua
+    # all sorted in order of what they are in the file above, with this exception:
+    gotools # callgraph, goimports, gorename, gonew (and guru though support has been removed)
+
+    gofumpt
+    golines
+    golangci-lint
+    gomodifytags
+    gopls
+    gotests
+    iferr
+    impl
+    reftools # fillstruct, fillswitch
+    delve # dlv
+    ginkgo
+    richgo
+    gotestsum
+    mockgen
+    nurPkgs.json-to-struct
+    nurPkgs.gomvp
+    govulncheck
+    nurPkgs.go-enum
+  ];
 in
-pkgs.symlinkJoin rec {
+pkgs.symlinkJoin {
   name = "gonvim-tools";
 
-  # comments are binaries provided by the package
-  # see https://github.com/ray-x/go.nvim/blob/master/lua/go/install.lua
-  paths =
-    with pkgs;
-    with nurPkgs;
-    [
-      delve # dlv
-      ginkgo
-      go-enum
-      gofumpt
-      golangci-lint
-      golines
-      gomodifytags
-      gomvp
-      gopls
-      gotests
-      gotestsum
-      gotools # callgraph, goimports, gorename, guru
-      govulncheck
-      iferr
-      impl
-      json-to-struct
-      mockgen
-      reftools # fillstruct, fillswitch
-      richgo
-    ];
+  inherit paths;
 
   meta = {
     description = "Convienience package for ray-x/go.nvim, that provides all external tools it relies on.";
