@@ -17,6 +17,7 @@ let
     mkForce
     filterAttrs
     removePrefix
+    getExe
     ;
 
   mkEval =
@@ -66,18 +67,33 @@ let
     in
     runCommand "${name}-module-doc.md" { } ''
       cat >$out <<EOF
-      # ${name} module options
+      # ${name}
       EOF
 
       cat ${doc.optionsCommonMark} >> $out
     '';
+
+  modules = linkFarm "modules" [
+    {
+      name = "nixos.md";
+      path = nixos;
+    }
+    {
+      name = "darwin.md";
+      path = darwin;
+    }
+    {
+      name = "home-manager.md";
+      path = hm;
+    }
+  ];
 
   pkgs-list = runCommand "package-list.md" { } ''
     cat >$out <<EOF
     # package list
     EOF
 
-    ${lib.getExe jq} "keys[]" ${../../_sources/generated.json} | tr -d \" >> $out
+    ${getExe jq} -r "keys | map(\"- \" + .) | .[]" ${../../_sources/generated.json} >> $out
   '';
 
   modulesPath = ../../modules;
@@ -92,24 +108,16 @@ let
 
   md = linkFarm "md" [
     {
-      name = "package-list.md";
-      path = pkgs-list;
-    }
-    {
-      name = "nixos.md";
-      path = nixos;
-    }
-    {
-      name = "darwin.md";
-      path = darwin;
-    }
-    {
-      name = "home-manager.md";
-      path = hm;
-    }
-    {
       name = "index.md";
       path = ./index.md;
+    }
+    {
+      name = "modules";
+      path = modules;
+    }
+    {
+      name = "package-list.md";
+      path = pkgs-list;
     }
   ];
 in
