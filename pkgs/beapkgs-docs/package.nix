@@ -93,7 +93,7 @@ let
     # package list
     EOF
 
-    ${getExe jq} -r "keys | map(\"- \" + .) | .[]" ${../../_sources/generated.json} >> $out
+    ls ${../.} | sed 's/^/- /' >> $out
   '';
 
   modulesPath = ../../modules;
