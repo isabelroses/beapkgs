@@ -101,7 +101,7 @@
     },
     "isabelroses-website": {
         "cargoLocks": null,
-        "date": "2024-07-17",
+        "date": "2024-07-18",
         "extract": null,
         "name": "isabelroses-website",
         "passthru": null,
@@ -113,11 +113,11 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "website",
-            "rev": "acae0ec2f4dadee5308f2d243b898cfaa4ea3e97",
-            "sha256": "sha256-zif6BU5/gWvqxoyphrytivzvabAQmbKk87QIXIr0uKo=",
+            "rev": "eb1d51c9c88c450683b00f30047614c07e319dec",
+            "sha256": "sha256-/cFKbKfYRW4u3EkC4jlCAanP0gXV2+peXpFNA4+1mhI=",
             "type": "github"
         },
-        "version": "acae0ec2f4dadee5308f2d243b898cfaa4ea3e97"
+        "version": "eb1d51c9c88c450683b00f30047614c07e319dec"
     },
     "ito": {
         "cargoLocks": null,
