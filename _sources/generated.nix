@@ -62,13 +62,13 @@
   };
   helm-ls = {
     pname = "helm-ls";
-    version = "v0.0.18";
+    version = "v0.0.19";
     src = fetchFromGitHub {
       owner = "mrjosh";
       repo = "helm-ls";
-      rev = "v0.0.18";
+      rev = "v0.0.19";
       fetchSubmodules = false;
-      sha256 = "sha256-nOb7hoUOQfmpCYqui+hw5hcL/pURvsMXlksa8KUBjSY=";
+      sha256 = "sha256-mG3H7XvvXtckMjCSWkj1DqoJTUwVVQU02IQj7za1USw=";
     };
   };
   isabelroses-website = {
@@ -193,22 +193,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "643d85f8c9eb533e6c9812e9d6a124d228794914";
+    version = "574e0221fa214106352a9f03f0257e9dec9f6176";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "643d85f8c9eb533e6c9812e9d6a124d228794914";
+      rev = "574e0221fa214106352a9f03f0257e9dec9f6176";
       fetchSubmodules = true;
-      sha256 = "sha256-WSIhnQjNplRe0NbMxa0nPuBGhGmR/OZLM/ZjheoT/JE=";
+      sha256 = "sha256-5NxBHyBsv3KpDkZuOpPDoZPTsgIejtoxzkMTQ4FxUJg=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-643d85f8c9eb533e6c9812e9d6a124d228794914/Cargo.lock;
+      lockFile = ./wezterm-574e0221fa214106352a9f03f0257e9dec9f6176/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-07-19";
+    date = "2024-07-21";
   };
   zzz = {
     pname = "zzz";

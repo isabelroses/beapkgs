@@ -113,11 +113,11 @@
             "name": null,
             "owner": "mrjosh",
             "repo": "helm-ls",
-            "rev": "v0.0.18",
-            "sha256": "sha256-nOb7hoUOQfmpCYqui+hw5hcL/pURvsMXlksa8KUBjSY=",
+            "rev": "v0.0.19",
+            "sha256": "sha256-mG3H7XvvXtckMjCSWkj1DqoJTUwVVQU02IQj7za1USw=",
             "type": "github"
         },
-        "version": "v0.0.18"
+        "version": "v0.0.19"
     },
     "isabelroses-website": {
         "cargoLocks": null,
@@ -322,14 +322,14 @@
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-643d85f8c9eb533e6c9812e9d6a124d228794914/Cargo.lock",
+                "./wezterm-574e0221fa214106352a9f03f0257e9dec9f6176/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
                 }
             ]
         },
-        "date": "2024-07-19",
+        "date": "2024-07-21",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -341,11 +341,11 @@
             "name": null,
             "owner": "wez",
             "repo": "wezterm",
-            "rev": "643d85f8c9eb533e6c9812e9d6a124d228794914",
-            "sha256": "sha256-WSIhnQjNplRe0NbMxa0nPuBGhGmR/OZLM/ZjheoT/JE=",
+            "rev": "574e0221fa214106352a9f03f0257e9dec9f6176",
+            "sha256": "sha256-5NxBHyBsv3KpDkZuOpPDoZPTsgIejtoxzkMTQ4FxUJg=",
             "type": "github"
         },
-        "version": "643d85f8c9eb533e6c9812e9d6a124d228794914"
+        "version": "574e0221fa214106352a9f03f0257e9dec9f6176"
     },
     "zzz": {
         "cargoLocks": null,
