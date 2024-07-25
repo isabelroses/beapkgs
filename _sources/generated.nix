@@ -15,15 +15,15 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "3cbacecb6404ca127d1f0ca64dbf8a9760467359";
+    version = "43db57aabe54c899ecd59e2cdb81a241f351fe4b";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "3cbacecb6404ca127d1f0ca64dbf8a9760467359";
+      rev = "43db57aabe54c899ecd59e2cdb81a241f351fe4b";
       fetchSubmodules = false;
-      sha256 = "sha256-jJKsdTbYlsOFgx9agJyyvZ+7xiy/5Ly4Aq5PrGdDzlU=";
+      sha256 = "sha256-x2ouphbMFrDMV7OgFANNkV5oq0I9MAdA/09AAtepFYI=";
     };
-    date = "2024-07-09";
+    date = "2024-07-24";
   };
   go-enum = {
     pname = "go-enum";
