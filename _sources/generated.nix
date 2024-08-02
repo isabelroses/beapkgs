@@ -181,15 +181,15 @@
   };
   ringfairy = {
     pname = "ringfairy";
-    version = "d4b2fc4300d9913936a66b89daf92f5c0272e830";
+    version = "1331a920e525db3586b73cdd789caba0458a76e6";
     src = fetchFromGitHub {
       owner = "k3rs3d";
       repo = "ringfairy";
-      rev = "d4b2fc4300d9913936a66b89daf92f5c0272e830";
+      rev = "1331a920e525db3586b73cdd789caba0458a76e6";
       fetchSubmodules = false;
-      sha256 = "sha256-lh2svLhY1BLRJ5+FGjMtvPLFkAWpn9VCbLv3fhCZIgU=";
+      sha256 = "sha256-mnv0T1RThuVc13gMVb8yYyxEfD1JuFk85cyt6BF5KdE=";
     };
-    date = "2024-07-28";
+    date = "2024-08-01";
   };
   wezterm = {
     pname = "wezterm";
