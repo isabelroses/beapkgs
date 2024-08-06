@@ -169,15 +169,15 @@
   };
   purr = {
     pname = "purr";
-    version = "4713916157d515ae824140a5d3a5cfc3dfc8d37e";
+    version = "507132622656de0ace74a71fbc8c9f52c3ba31e6";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "4713916157d515ae824140a5d3a5cfc3dfc8d37e";
+      rev = "507132622656de0ace74a71fbc8c9f52c3ba31e6";
       fetchSubmodules = false;
-      sha256 = "sha256-D6P4tg3eb0d/S0/aINszE6iV/oYJ9KihWYux43iNy58=";
+      sha256 = "sha256-DiyUx6pe6/aurHrI4aZ/tYvfI/PuPU9+KGySCoF79SU=";
     };
-    date = "2024-07-09";
+    date = "2024-08-05";
   };
   ringfairy = {
     pname = "ringfairy";
