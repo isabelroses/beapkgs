@@ -26,6 +26,10 @@ fetch.github = "uncenter/purr"
 src.git = "https://github.com/uncenter/nixpkgs-using"
 fetch.github = "uncenter/nixpkgs-using"
 
+[nixpkgs-track]
+src.git = "https://github.com/uncenter/nixpkgs-track"
+fetch.github = "uncenter/nixpkgs-track"
+
 [ito]
 src.git = "https://github.com/uncenter/ito"
 fetch.github = "uncenter/ito"

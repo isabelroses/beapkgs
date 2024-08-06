@@ -155,6 +155,18 @@
     };
     date = "2024-07-02";
   };
+  nixpkgs-track = {
+    pname = "nixpkgs-track";
+    version = "5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5";
+    src = fetchFromGitHub {
+      owner = "uncenter";
+      repo = "nixpkgs-track";
+      rev = "5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5";
+      fetchSubmodules = false;
+      sha256 = "sha256-AMB0mOfNRtVJxiFH6keSnWERRRKXRfQhqBb4zyBHhZg=";
+    };
+    date = "2024-08-06";
+  };
   nixpkgs-using = {
     pname = "nixpkgs-using";
     version = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
