@@ -145,15 +145,15 @@
   };
   nh-darwin = {
     pname = "nh-darwin";
-    version = "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e";
+    version = "b691ee8a0f0c6793ddf5d29b396672f4c2887ae0";
     src = fetchFromGitHub {
       owner = "ToyVo";
       repo = "nh_darwin";
-      rev = "aa4bc963cbbdc44d0ed35d18345c911d465a5c7e";
+      rev = "b691ee8a0f0c6793ddf5d29b396672f4c2887ae0";
       fetchSubmodules = false;
-      sha256 = "sha256-yX0NOCmiRq3iMAwsKoSMxhfBMkLlZirHdmAyZIL95FM=";
+      sha256 = "sha256-Htrphi1NW5QgG9YPHycyVpgtzDw+zFwrQIkeae5QDu8=";
     };
-    date = "2024-07-02";
+    date = "2024-08-08";
   };
   nixpkgs-track = {
     pname = "nixpkgs-track";
