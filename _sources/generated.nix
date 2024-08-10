@@ -224,14 +224,14 @@
   };
   zzz = {
     pname = "zzz";
-    version = "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520";
+    version = "0e925cee1e869c80f678d3b5ca81d930bffdfc9a";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "zzz";
-      rev = "659eb8d3a0f9fc94be0c09f3876b530ab6d4c520";
+      rev = "0e925cee1e869c80f678d3b5ca81d930bffdfc9a";
       fetchSubmodules = false;
-      sha256 = "sha256-qe07WxDQmyiK6gq607SiNGAr9DL6p7TnAiQIhJK5vRE=";
+      sha256 = "sha256-H6I4r6pzezkV7L9zbbr3lUGX1azmijZinN+Oc/0O0eQ=";
     };
-    date = "2024-07-18";
+    date = "2024-08-09";
   };
 }
