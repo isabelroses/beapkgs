@@ -36,10 +36,12 @@
             }
           )
         );
-
-      callAllPkgs =
+    in
+    {
+      packages = forAllSystems (
         pkgs:
         lib.packagesFromDirectoryRecursive {
+          directory = ./pkgs;
           callPackage = lib.callPackageWith (
             pkgs
             // {
@@ -55,19 +57,16 @@
                 };
             }
           );
-          directory = ./pkgs;
-        };
-    in
-    {
-      formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
+        }
+      );
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };
       });
 
-      overlays.default = final: _: callAllPkgs final;
+      formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
-      packages = forAllSystems callAllPkgs;
+      overlays.default = final: _: self.packages.${final.stdenv.hostPlatform.system} or { };
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
       nixosModules.default = import ./modules/nixos;
