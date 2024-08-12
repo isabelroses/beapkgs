@@ -36,7 +36,7 @@ in
         description = "User that runs the garbage collector.";
       };
 
-      interval = lib.mkOption {
+      dates = lib.mkOption {
         type = lib.types.attrs;
         default = {
           Weekday = 0;
