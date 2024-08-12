@@ -66,7 +66,7 @@
 
       formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
-      overlays.default = final: _: self.packages.${final.stdenv.hostPlatform.system} or { };
+      overlays.default = _: prev: self.packages.${prev.stdenv.hostPlatform.system} or { };
 
       # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
       nixosModules.default = import ./modules/nixos;
