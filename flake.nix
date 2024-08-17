@@ -2,11 +2,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # flake only users can ignore this input
     flake-compat = {
       url = "github:edolstra/flake-compat";
@@ -15,12 +10,7 @@
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      rust-overlay,
-      ...
-    }:
+    { self, nixpkgs, ... }:
     let
       inherit (nixpkgs) lib;
 
@@ -32,7 +22,6 @@
             import nixpkgs {
               inherit system;
               config.allowUnfree = true;
-              overlays = [ rust-overlay.overlays.default ];
             }
           )
         );
@@ -43,19 +32,7 @@
         lib.packagesFromDirectoryRecursive {
           directory = ./pkgs;
           callPackage = lib.callPackageWith (
-            pkgs
-            // {
-              pins = pkgs.callPackage ./_sources/generated.nix { };
-              # override rustPlatform to use the overlay
-              rustPlatform =
-                let
-                  toolchain = pkgs.rust-bin.stable.latest.default;
-                in
-                pkgs.makeRustPlatform {
-                  cargo = toolchain;
-                  rustc = toolchain;
-                };
-            }
+            pkgs // { pins = pkgs.callPackage ./_sources/generated.nix { }; }
           );
         }
       );
