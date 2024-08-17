@@ -22,7 +22,10 @@ buildGoModule {
   meta = {
     description = "isabelroses.com";
     homepage = "https://isabelroses.com/";
-    license = lib.licenses.mit;
+    license = with lib.licenses; [
+      mit
+      cc-by-nc-sa-40
+    ];
     mainProgram = "isabelroses.com";
   };
 }
