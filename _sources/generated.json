@@ -339,6 +339,25 @@
         },
         "version": "1331a920e525db3586b73cdd789caba0458a76e6"
     },
+    "term2alpha": {
+        "cargoLocks": null,
+        "date": "2024-08-07",
+        "extract": null,
+        "name": "term2alpha",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca",
+            "sha256": "sha256-TqGryK4a+zizTq/5xS4HYF6JCeRHP27ZVkGJq22bAbk=",
+            "type": "git",
+            "url": "https://git.sr.ht/~zethra/term2alpha"
+        },
+        "version": "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca"
+    },
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [

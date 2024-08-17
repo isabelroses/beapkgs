@@ -203,6 +203,19 @@
     };
     date = "2024-08-01";
   };
+  term2alpha = {
+    pname = "term2alpha";
+    version = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
+    src = fetchgit {
+      url = "https://git.sr.ht/~zethra/term2alpha";
+      rev = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-TqGryK4a+zizTq/5xS4HYF6JCeRHP27ZVkGJq22bAbk=";
+    };
+    date = "2024-08-07";
+  };
   wezterm = {
     pname = "wezterm";
     version = "30345b36d8a00fed347e4df5dadd83915a7693fb";
