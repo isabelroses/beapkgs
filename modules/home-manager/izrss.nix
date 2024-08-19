@@ -75,7 +75,7 @@ in
       home.packages = [ cfg.package ];
 
       xdg.configFile."izrss/config.toml" = mkIf (cfg.settings != { }) {
-        source = (settingsFormat.generate "izrss-config.toml" cfg.settings);
+        source = settingsFormat.generate "izrss-config.toml" cfg.settings;
       };
     };
 }
