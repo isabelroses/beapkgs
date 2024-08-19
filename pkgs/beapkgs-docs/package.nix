@@ -86,9 +86,9 @@ let
     }
   ];
 
-  pkgs-list = runCommand "package-list.md" { } ''
+  pkgs-list = runCommand "packages.md" { } ''
     cat >$out <<EOF
-    # package list
+    # packages
     EOF
 
     ls ${../.} | sed 's/^/- /' >> $out
@@ -107,21 +107,21 @@ let
   md = linkFarm "md" [
     {
       name = "index.md";
-      path = ./index.md;
+      path = ../../README.md;
     }
     {
       name = "modules";
       path = modules;
     }
     {
-      name = "package-list.md";
+      name = "package.md";
       path = pkgs-list;
     }
   ];
 in
 stdenvNoCC.mkDerivation {
   pname = "beapkgs-docs";
-  version = "0.1.0";
+  version = "0.2.0";
 
   src = md;
 

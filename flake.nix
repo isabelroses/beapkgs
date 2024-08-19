@@ -16,7 +16,7 @@
 
       forAllSystems =
         function:
-        nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed (
+        nixpkgs.lib.genAttrs lib.systems.flakeExposed (
           system:
           function (
             import nixpkgs {
