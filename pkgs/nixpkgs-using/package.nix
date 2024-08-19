@@ -13,7 +13,7 @@ rustPlatform.buildRustPackage {
   version = builtins.substring 0 7 pins.nixpkgs-using.version;
 
   inherit (pins.nixpkgs-using) src;
-  cargoLock.lockFile = "${pins.nixpkgs-using.src}/Cargo.lock";
+  cargoLock = pins.nixpkgs-using.cargoLock."Cargo.lock";
 
   buildInputs =
     [ openssl ]

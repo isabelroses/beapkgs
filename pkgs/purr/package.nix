@@ -12,7 +12,7 @@ rustPlatform.buildRustPackage {
   version = builtins.substring 0 7 pins.purr.version;
 
   inherit (pins.purr) src;
-  cargoLock.lockFile = "${pins.purr.src}/Cargo.lock";
+  cargoLock = pins.purr.cargoLock."Cargo.lock";
 
   nativeBuildInputs = [ pkg-config ];
 

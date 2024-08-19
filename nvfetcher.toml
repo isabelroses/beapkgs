@@ -1,6 +1,7 @@
 [nh-darwin]
 src.git = "https://github.com/ToyVo/nh_darwin"
 fetch.github = "ToyVo/nh_darwin"
+cargo_locks = ["Cargo.lock"]
 
 [bellado]
 src.git = "https://github.com/isabelroses/bellado"
@@ -9,6 +10,7 @@ fetch.github = "isabelroses/bellado"
 [blahaj]
 src.git = "https://github.com/isabelroses/blahaj"
 fetch.github = "isabelroses/blahaj"
+cargo_locks = ["Cargo.lock"]
 
 [izrss]
 src.git = "https://github.com/isabelroses/izrss"
@@ -17,26 +19,32 @@ fetch.github = "isabelroses/izrss"
 [ringfairy]
 src.git = "https://github.com/k3rs3d/ringfairy"
 fetch.github = "k3rs3d/ringfairy"
+cargo_locks = ["Cargo.lock"]
 
 [purr]
 src.git = "https://github.com/uncenter/purr"
 fetch.github = "uncenter/purr"
+cargo_locks = ["Cargo.lock"]
 
 [nixpkgs-using]
 src.git = "https://github.com/uncenter/nixpkgs-using"
 fetch.github = "uncenter/nixpkgs-using"
+cargo_locks = ["Cargo.lock"]
 
 [nixpkgs-track]
 src.git = "https://github.com/uncenter/nixpkgs-track"
 fetch.github = "uncenter/nixpkgs-track"
+cargo_locks = ["Cargo.lock"]
 
 [ito]
 src.git = "https://github.com/uncenter/ito"
 fetch.github = "uncenter/ito"
+cargo_locks = ["Cargo.lock"]
 
 [meower]
 src.git = "https://github.com/Noxyntious/meower"
 fetch.github = "Noxyntious/meower"
+cargo_locks = ["Cargo.lock"]
 
 [isabelroses-website]
 src.git = "https://github.com/isabelroses/website"

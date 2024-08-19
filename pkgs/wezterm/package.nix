@@ -8,7 +8,6 @@
   libiconv,
   libxkbcommon,
   ncurses,
-  nixosTests,
   openssl,
   perl,
   pkg-config,

@@ -1,5 +1,4 @@
 {
-  jq,
   lib,
   pkgs,
   mkdocs,
@@ -17,7 +16,6 @@ let
     mkForce
     filterAttrs
     removePrefix
-    getExe
     ;
 
   mkEval =

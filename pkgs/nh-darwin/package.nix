@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage {
       }
   '';
 
-  cargoLock.lockFile = "${pins.nh-darwin.src}/Cargo.lock";
+  cargoLock = pins.nh-darwin.cargoLock."Cargo.lock";
 
   meta = {
     license = lib.licenses.eupl12;

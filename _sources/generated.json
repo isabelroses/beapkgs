@@ -20,7 +20,14 @@
         "version": "8b9bb4e19b06a35acd8b2d39830c2751246ff189"
     },
     "blahaj": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./blahaj-569335b74e14c025a2b2cb30fba129f7c7736433/Cargo.lock",
+                {
+                    "git-tracker-0.2.0": "sha256-ekji25NfXsMrAQE8uz24DkFcGfba1U2SLTEZE/atpss="
+                }
+            ]
+        },
         "date": "2024-08-06",
         "extract": null,
         "name": "blahaj",
@@ -140,7 +147,12 @@
         "version": "3d72d2de7469648708dd37a0e833d5e12ead4bd7"
     },
     "ito": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./ito-30596468c71e1da2176eea78206486c60559bab6/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-07-09",
         "extract": null,
         "name": "ito",
@@ -181,7 +193,7 @@
     },
     "jq-lsp": {
         "cargoLocks": null,
-        "date": "2024-04-02",
+        "date": "2024-08-19",
         "extract": null,
         "name": "jq-lsp",
         "passthru": null,
@@ -193,11 +205,11 @@
             "name": null,
             "owner": "wader",
             "repo": "jq-lsp",
-            "rev": "01e96e9809ef775783cefb41a564d78162cece0f",
-            "sha256": "sha256-c7uK8WPM/h2PLVLFGeN66SztvzjBCgJje7L14+oErVU=",
+            "rev": "5395972afe5dae43e98d136555782b6bc5c0d608",
+            "sha256": "sha256-ueSf32C4BznDKBQD0OIJKZhrwLq1xpn6WWEnsqoWkl8=",
             "type": "github"
         },
-        "version": "01e96e9809ef775783cefb41a564d78162cece0f"
+        "version": "5395972afe5dae43e98d136555782b6bc5c0d608"
     },
     "json-to-struct": {
         "cargoLocks": null,
@@ -220,7 +232,12 @@
         "version": "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec"
     },
     "meower": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./meower-edc08e7f0f22041d28c70bccd9fd6100e31c1040/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-06-15",
         "extract": null,
         "name": "meower",
@@ -240,7 +257,12 @@
         "version": "edc08e7f0f22041d28c70bccd9fd6100e31c1040"
     },
     "nh-darwin": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./nh-darwin-b691ee8a0f0c6793ddf5d29b396672f4c2887ae0/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-08-08",
         "extract": null,
         "name": "nh-darwin",
@@ -260,7 +282,12 @@
         "version": "b691ee8a0f0c6793ddf5d29b396672f4c2887ae0"
     },
     "nixpkgs-track": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./nixpkgs-track-5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-08-06",
         "extract": null,
         "name": "nixpkgs-track",
@@ -280,7 +307,12 @@
         "version": "5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5"
     },
     "nixpkgs-using": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./nixpkgs-using-c716afae7bb1ded4ea5b6283d5778b88f6e75482/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-07-09",
         "extract": null,
         "name": "nixpkgs-using",
@@ -300,7 +332,12 @@
         "version": "c716afae7bb1ded4ea5b6283d5778b88f6e75482"
     },
     "purr": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./purr-507132622656de0ace74a71fbc8c9f52c3ba31e6/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-08-05",
         "extract": null,
         "name": "purr",
@@ -320,7 +357,12 @@
         "version": "507132622656de0ace74a71fbc8c9f52c3ba31e6"
     },
     "ringfairy": {
-        "cargoLocks": null,
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./ringfairy-1331a920e525db3586b73cdd789caba0458a76e6/Cargo.lock",
+                {}
+            ]
+        },
         "date": "2024-08-01",
         "extract": null,
         "name": "ringfairy",

@@ -8,7 +8,7 @@ rustPlatform.buildRustPackage {
   version = builtins.substring 0 7 pins.ito.version;
 
   inherit (pins.ito) src;
-  cargoLock.lockFile = "${pins.ito.src}/Cargo.lock";
+  cargoLock = pins.ito.cargoLock."Cargo.lock";
 
   meta = {
     description = "A powerful string manipulation tool";

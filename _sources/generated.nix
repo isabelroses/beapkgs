@@ -23,6 +23,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-b/bENglEpxU+ilfiAp0XI53+iYvep80S6eB78HSpPbI=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./blahaj-569335b74e14c025a2b2cb30fba129f7c7736433/Cargo.lock;
+      outputHashes = {
+        "git-tracker-0.2.0" = "sha256-ekji25NfXsMrAQE8uz24DkFcGfba1U2SLTEZE/atpss=";
+      };
+    };
     date = "2024-08-06";
   };
   go-enum = {
@@ -93,6 +99,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./ito-30596468c71e1da2176eea78206486c60559bab6/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
     date = "2024-07-09";
   };
   izrss = {
@@ -109,15 +121,15 @@
   };
   jq-lsp = {
     pname = "jq-lsp";
-    version = "01e96e9809ef775783cefb41a564d78162cece0f";
+    version = "5395972afe5dae43e98d136555782b6bc5c0d608";
     src = fetchFromGitHub {
       owner = "wader";
       repo = "jq-lsp";
-      rev = "01e96e9809ef775783cefb41a564d78162cece0f";
+      rev = "5395972afe5dae43e98d136555782b6bc5c0d608";
       fetchSubmodules = false;
-      sha256 = "sha256-c7uK8WPM/h2PLVLFGeN66SztvzjBCgJje7L14+oErVU=";
+      sha256 = "sha256-ueSf32C4BznDKBQD0OIJKZhrwLq1xpn6WWEnsqoWkl8=";
     };
-    date = "2024-04-02";
+    date = "2024-08-19";
   };
   json-to-struct = {
     pname = "json-to-struct";
@@ -141,6 +153,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./meower-edc08e7f0f22041d28c70bccd9fd6100e31c1040/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
     date = "2024-06-15";
   };
   nh-darwin = {
@@ -152,6 +170,12 @@
       rev = "b691ee8a0f0c6793ddf5d29b396672f4c2887ae0";
       fetchSubmodules = false;
       sha256 = "sha256-Htrphi1NW5QgG9YPHycyVpgtzDw+zFwrQIkeae5QDu8=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./nh-darwin-b691ee8a0f0c6793ddf5d29b396672f4c2887ae0/Cargo.lock;
+      outputHashes = {
+        
+      };
     };
     date = "2024-08-08";
   };
@@ -165,6 +189,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-AMB0mOfNRtVJxiFH6keSnWERRRKXRfQhqBb4zyBHhZg=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./nixpkgs-track-5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
     date = "2024-08-06";
   };
   nixpkgs-using = {
@@ -176,6 +206,12 @@
       rev = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
       fetchSubmodules = false;
       sha256 = "sha256-XAC3Ejf/ZMJr1h/4BTmlOKALhZdLEVdMQE6qEEjRZSE=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./nixpkgs-using-c716afae7bb1ded4ea5b6283d5778b88f6e75482/Cargo.lock;
+      outputHashes = {
+        
+      };
     };
     date = "2024-07-09";
   };
@@ -189,6 +225,12 @@
       fetchSubmodules = false;
       sha256 = "sha256-DiyUx6pe6/aurHrI4aZ/tYvfI/PuPU9+KGySCoF79SU=";
     };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./purr-507132622656de0ace74a71fbc8c9f52c3ba31e6/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
     date = "2024-08-05";
   };
   ringfairy = {
@@ -200,6 +242,12 @@
       rev = "1331a920e525db3586b73cdd789caba0458a76e6";
       fetchSubmodules = false;
       sha256 = "sha256-mnv0T1RThuVc13gMVb8yYyxEfD1JuFk85cyt6BF5KdE=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./ringfairy-1331a920e525db3586b73cdd789caba0458a76e6/Cargo.lock;
+      outputHashes = {
+        
+      };
     };
     date = "2024-08-01";
   };
