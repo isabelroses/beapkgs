@@ -284,11 +284,11 @@
     "nixpkgs-track": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nixpkgs-track-5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5/Cargo.lock",
+                "./nixpkgs-track-6c5b9f795215274b00ce1b2f4119121cd97a3320/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-08-06",
+        "date": "2024-08-19",
         "extract": null,
         "name": "nixpkgs-track",
         "passthru": null,
@@ -300,11 +300,11 @@
             "name": null,
             "owner": "uncenter",
             "repo": "nixpkgs-track",
-            "rev": "5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5",
-            "sha256": "sha256-AMB0mOfNRtVJxiFH6keSnWERRRKXRfQhqBb4zyBHhZg=",
+            "rev": "6c5b9f795215274b00ce1b2f4119121cd97a3320",
+            "sha256": "sha256-nvsQkW4+HQhFu3pcmUoNh3ZUrH8YYaHyQIrhldTd4cE=",
             "type": "github"
         },
-        "version": "5b19f03019f4a96ce108a39bb6b9a0f6210ee1c5"
+        "version": "6c5b9f795215274b00ce1b2f4119121cd97a3320"
     },
     "nixpkgs-using": {
         "cargoLocks": {
