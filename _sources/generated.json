@@ -173,7 +173,7 @@
     },
     "izrss": {
         "cargoLocks": null,
-        "date": "2024-07-16",
+        "date": "2024-08-22",
         "extract": null,
         "name": "izrss",
         "passthru": null,
@@ -185,11 +185,11 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "izrss",
-            "rev": "ce683bcbb6c528c0d1f5cd4940423998b9d97634",
-            "sha256": "sha256-s4JDus82yj4Ami7TBZNasIgqc6/RN8XFes0TxZH4K/w=",
+            "rev": "47460bfdfde0ec797daa52150fff6106819b7d0a",
+            "sha256": "sha256-UcE/zzGjBVst6+tE/Znary7pvQIAELj6eB7T2m803BM=",
             "type": "github"
         },
-        "version": "ce683bcbb6c528c0d1f5cd4940423998b9d97634"
+        "version": "47460bfdfde0ec797daa52150fff6106819b7d0a"
     },
     "jq-lsp": {
         "cargoLocks": null,
