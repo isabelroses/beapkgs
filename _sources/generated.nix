@@ -68,13 +68,13 @@
   };
   helm-ls = {
     pname = "helm-ls";
-    version = "v0.0.21";
+    version = "v0.0.22";
     src = fetchFromGitHub {
       owner = "mrjosh";
       repo = "helm-ls";
-      rev = "v0.0.21";
+      rev = "v0.0.22";
       fetchSubmodules = false;
-      sha256 = "sha256-O30gdcQdNjKADraPCltTjNglztz37CVx+fUeoVI3/O8=";
+      sha256 = "sha256-h3ppVj+Y1jtvsZLWzZxmFmmxr0My9Nd4zQBqeDSX0ZI=";
     };
   };
   isabelroses-website = {
