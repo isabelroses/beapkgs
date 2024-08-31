@@ -1,1 +1,1 @@
-{ imports = [ ./wakapi.nix ]; }
+{ imports = [ ]; }
