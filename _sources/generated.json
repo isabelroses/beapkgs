@@ -120,11 +120,11 @@
             "name": null,
             "owner": "mrjosh",
             "repo": "helm-ls",
-            "rev": "v0.0.22",
-            "sha256": "sha256-h3ppVj+Y1jtvsZLWzZxmFmmxr0My9Nd4zQBqeDSX0ZI=",
+            "rev": "v0.1.0",
+            "sha256": "sha256-EuZbbeRssacrctIbxBbd2GOh8zgFi2OBRregfC88se0=",
             "type": "github"
         },
-        "version": "v0.0.22"
+        "version": "v0.1.0"
     },
     "isabelroses-website": {
         "cargoLocks": null,
