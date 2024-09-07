@@ -235,21 +235,21 @@
   };
   ringfairy = {
     pname = "ringfairy";
-    version = "1331a920e525db3586b73cdd789caba0458a76e6";
+    version = "8635cb208f854fc5545b59db1cb602bf2f10e25a";
     src = fetchFromGitHub {
       owner = "k3rs3d";
       repo = "ringfairy";
-      rev = "1331a920e525db3586b73cdd789caba0458a76e6";
+      rev = "8635cb208f854fc5545b59db1cb602bf2f10e25a";
       fetchSubmodules = false;
-      sha256 = "sha256-mnv0T1RThuVc13gMVb8yYyxEfD1JuFk85cyt6BF5KdE=";
+      sha256 = "sha256-0xN9Ddg/Vg9isJGPKgoSCf3fbTCB1PXSoowrroTHDtY=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./ringfairy-1331a920e525db3586b73cdd789caba0458a76e6/Cargo.lock;
+      lockFile = ./ringfairy-8635cb208f854fc5545b59db1cb602bf2f10e25a/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-08-01";
+    date = "2024-09-06";
   };
   term2alpha = {
     pname = "term2alpha";
