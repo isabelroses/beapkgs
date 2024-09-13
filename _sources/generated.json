@@ -259,11 +259,11 @@
     "nh-darwin": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-darwin-fd285da9959cdf9cbd8f6ff159e4de70429294be/Cargo.lock",
+                "./nh-darwin-642220e43e1b1fec3b1894fb25ad36c6831d0cab/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-09-10",
+        "date": "2024-09-11",
         "extract": null,
         "name": "nh-darwin",
         "passthru": null,
@@ -275,11 +275,11 @@
             "name": null,
             "owner": "ToyVo",
             "repo": "nh_darwin",
-            "rev": "fd285da9959cdf9cbd8f6ff159e4de70429294be",
-            "sha256": "sha256-pa6T44S5UDSNJguJZReLopzTz6Ern2KCAhujN8Xj1J0=",
+            "rev": "642220e43e1b1fec3b1894fb25ad36c6831d0cab",
+            "sha256": "sha256-CRP0fja7sT9aNJCKV+VUGrMZCslMptEtK0/JAjNAoQU=",
             "type": "github"
         },
-        "version": "fd285da9959cdf9cbd8f6ff159e4de70429294be"
+        "version": "642220e43e1b1fec3b1894fb25ad36c6831d0cab"
     },
     "nixpkgs-track": {
         "cargoLocks": {
