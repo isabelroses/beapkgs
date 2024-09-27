@@ -8,7 +8,6 @@ self:
 let
   inherit (lib)
     mkIf
-    types
     mkOption
     mkEnableOption
     mkPackageOption
@@ -26,30 +25,7 @@ in
 
     package = mkPackageOption self.packages.${pkgs.stdenv.hostPlatform.system} "zzz" { };
 
-    settings = {
-      home = mkOption {
-        type = with types; str;
-        default = "~/.zzz";
-        example = "~/.snippets";
-        description = "home for your snippets";
-      };
-
-      default_language = mkOption {
-        type = with types; str;
-        default = "go";
-        example = "rust";
-        description = "default language for new snippets";
-      };
-
-      theme = mkOption {
-        type = with types; str;
-        default = "catppuccin-mocha";
-        example = "nord";
-        description = "theme for code previews";
-      };
-    };
-
-    colors = mkOption {
+    settings = mkOption {
       inherit (settingsFormat) type;
       default = { };
       example = lib.literalExpression ''
@@ -75,8 +51,8 @@ in
   config = mkIf cfg.enable {
     home.packages = [ cfg.package ];
 
-    xdg.configFile."zzz/config.yaml" = mkIf ((cfg.colors != { }) || (cfg.settings != { })) {
-      source = settingsFormat.generate "zzz-config.yaml" (cfg.colors // cfg.settings);
+    xdg.configFile."zzz/config.yaml" = mkIf (cfg.settings != { }) {
+      source = settingsFormat.generate "zzz-config.yaml" cfg.settings;
     };
   };
 }
