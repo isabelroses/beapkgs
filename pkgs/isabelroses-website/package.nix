@@ -12,7 +12,7 @@ buildGoModule {
 
   inherit (pins.isabelroses-website) src;
 
-  vendorHash = "sha256-9ZjF2Y5xx0+NARkh1zbTb4igYbCDEGDIMBxJWXOeGvc=";
+  vendorHash = "sha256-s+lePVX0JNVkLmDYK1WGMsZd8vY7gKt4GP0CPkkgyfo=";
 
   ldflags = [
     "-s"
