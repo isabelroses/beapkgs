@@ -27,8 +27,6 @@ rustPlatform.buildRustPackage {
   buildInputs = lib.optionals stdenv.isDarwin [ darwin.apple_sdk.frameworks.SystemConfiguration ];
 
   preFixup = ''
-    mv $out/bin/nh_darwin $out/bin/nh
-
     mkdir completions
     $out/bin/nh completions --shell bash > completions/nh.bash
     $out/bin/nh completions --shell zsh > completions/nh.zsh
