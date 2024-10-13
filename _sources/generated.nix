@@ -15,16 +15,16 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0";
+    version = "1fb64b805dd15744919649b5ca9dc5e678492e5f";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0";
+      rev = "1fb64b805dd15744919649b5ca9dc5e678492e5f";
       fetchSubmodules = false;
-      sha256 = "sha256-ZyN1Y3qFawE/TN9CCV6sSGDldHxmGlJPMtVsnKj78+o=";
+      sha256 = "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./blahaj-ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0/Cargo.lock;
+      lockFile = ./blahaj-1fb64b805dd15744919649b5ca9dc5e678492e5f/Cargo.lock;
       outputHashes = {
         "git-tracker-0.2.0" = "sha256-ZOD/8Wjn7lNZjpiOLBwmYCcEe8tYmxxDMhhiWJViGws=";
       };

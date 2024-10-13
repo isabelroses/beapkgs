@@ -22,7 +22,7 @@
     "blahaj": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./blahaj-ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0/Cargo.lock",
+                "./blahaj-1fb64b805dd15744919649b5ca9dc5e678492e5f/Cargo.lock",
                 {
                     "git-tracker-0.2.0": "sha256-ZOD/8Wjn7lNZjpiOLBwmYCcEe8tYmxxDMhhiWJViGws="
                 }
@@ -40,11 +40,11 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "blahaj",
-            "rev": "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0",
-            "sha256": "sha256-ZyN1Y3qFawE/TN9CCV6sSGDldHxmGlJPMtVsnKj78+o=",
+            "rev": "1fb64b805dd15744919649b5ca9dc5e678492e5f",
+            "sha256": "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=",
             "type": "github"
         },
-        "version": "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0"
+        "version": "1fb64b805dd15744919649b5ca9dc5e678492e5f"
     },
     "go-enum": {
         "cargoLocks": null,
