@@ -15,21 +15,21 @@
   };
   blahaj = {
     pname = "blahaj";
-    version = "569335b74e14c025a2b2cb30fba129f7c7736433";
+    version = "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "blahaj";
-      rev = "569335b74e14c025a2b2cb30fba129f7c7736433";
+      rev = "ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0";
       fetchSubmodules = false;
-      sha256 = "sha256-b/bENglEpxU+ilfiAp0XI53+iYvep80S6eB78HSpPbI=";
+      sha256 = "sha256-ZyN1Y3qFawE/TN9CCV6sSGDldHxmGlJPMtVsnKj78+o=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./blahaj-569335b74e14c025a2b2cb30fba129f7c7736433/Cargo.lock;
+      lockFile = ./blahaj-ab5a52639ad0e046286c9a6d07bb0b1ad39f20a0/Cargo.lock;
       outputHashes = {
-        "git-tracker-0.2.0" = "sha256-ekji25NfXsMrAQE8uz24DkFcGfba1U2SLTEZE/atpss=";
+        "git-tracker-0.2.0" = "sha256-ZOD/8Wjn7lNZjpiOLBwmYCcEe8tYmxxDMhhiWJViGws=";
       };
     };
-    date = "2024-08-06";
+    date = "2024-10-13";
   };
   go-enum = {
     pname = "go-enum";
