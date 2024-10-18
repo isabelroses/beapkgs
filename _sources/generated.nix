@@ -121,15 +121,15 @@
   };
   jq-lsp = {
     pname = "jq-lsp";
-    version = "5395972afe5dae43e98d136555782b6bc5c0d608";
+    version = "8cbbf6df9f7761276b2bbab1ecb6d744b901f521";
     src = fetchFromGitHub {
       owner = "wader";
       repo = "jq-lsp";
-      rev = "5395972afe5dae43e98d136555782b6bc5c0d608";
+      rev = "8cbbf6df9f7761276b2bbab1ecb6d744b901f521";
       fetchSubmodules = false;
-      sha256 = "sha256-ueSf32C4BznDKBQD0OIJKZhrwLq1xpn6WWEnsqoWkl8=";
+      sha256 = "sha256-lNNVCvVliur03keWPH96/9AIc/CJwhtg4CVa6a2DVQI=";
     };
-    date = "2024-08-19";
+    date = "2024-10-17";
   };
   json-to-struct = {
     pname = "json-to-struct";
