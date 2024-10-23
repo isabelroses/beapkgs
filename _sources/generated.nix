@@ -199,21 +199,21 @@
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
-    version = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
+    version = "a6061c46361eeaf263a7661c47f8d32794ac4ccc";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "nixpkgs-using";
-      rev = "c716afae7bb1ded4ea5b6283d5778b88f6e75482";
+      rev = "a6061c46361eeaf263a7661c47f8d32794ac4ccc";
       fetchSubmodules = false;
-      sha256 = "sha256-XAC3Ejf/ZMJr1h/4BTmlOKALhZdLEVdMQE6qEEjRZSE=";
+      sha256 = "sha256-/iVRZWWTRGZCNFgiFSjXxMxk8Pz6o3fhxM8c/AshhiA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nixpkgs-using-c716afae7bb1ded4ea5b6283d5778b88f6e75482/Cargo.lock;
+      lockFile = ./nixpkgs-using-a6061c46361eeaf263a7661c47f8d32794ac4ccc/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-07-09";
+    date = "2024-10-22";
   };
   purr = {
     pname = "purr";
