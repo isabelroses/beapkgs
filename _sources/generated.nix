@@ -77,6 +77,24 @@
       sha256 = "sha256-EuZbbeRssacrctIbxBbd2GOh8zgFi2OBRregfC88se0=";
     };
   };
+  hyfetch = {
+    pname = "hyfetch";
+    version = "b5b49ecbc095ac20e49c0783121c885752df9001";
+    src = fetchFromGitHub {
+      owner = "hykilpikonna";
+      repo = "hyfetch";
+      rev = "b5b49ecbc095ac20e49c0783121c885752df9001";
+      fetchSubmodules = false;
+      sha256 = "sha256-W1oMzLACGDvcl8du4L3TuUn79i6HFUFuPEJhc3IPD0E=";
+    };
+    cargoLock."Cargo.lock" = {
+      lockFile = ./hyfetch-b5b49ecbc095ac20e49c0783121c885752df9001/Cargo.lock;
+      outputHashes = {
+        
+      };
+    };
+    date = "2024-10-23";
+  };
   isabelroses-website = {
     pname = "isabelroses-website";
     version = "21ea874cd5539be95a93b2acb7eebfb54533c320";

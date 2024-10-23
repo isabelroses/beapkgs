@@ -54,6 +54,11 @@ fetch.github = "isabelroses/website"
 src.git = "https://github.com/isabelroses/hael"
 fetch.github = "isabelroses/hael"
 
+[hyfetch]
+src.git = "https://github.com/hykilpikonna/hyfetch"
+fetch.github = "hykilpikonna/hyfetch"
+cargo_locks = ["Cargo.lock"]
+
 [zzz]
 src.git = "https://github.com/isabelroses/zzz"
 fetch.github = "isabelroses/zzz"
