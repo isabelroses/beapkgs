@@ -217,16 +217,16 @@
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
-    version = "a6061c46361eeaf263a7661c47f8d32794ac4ccc";
+    version = "f50655193d60570724ba8e848aa01a076119e0cb";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "nixpkgs-using";
-      rev = "a6061c46361eeaf263a7661c47f8d32794ac4ccc";
+      rev = "f50655193d60570724ba8e848aa01a076119e0cb";
       fetchSubmodules = false;
-      sha256 = "sha256-/iVRZWWTRGZCNFgiFSjXxMxk8Pz6o3fhxM8c/AshhiA=";
+      sha256 = "sha256-DDtCjiDZh2KyzoyM6uLxfgagXgS7J72Nc0WqGJPSxf0=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nixpkgs-using-a6061c46361eeaf263a7661c47f8d32794ac4ccc/Cargo.lock;
+      lockFile = ./nixpkgs-using-f50655193d60570724ba8e848aa01a076119e0cb/Cargo.lock;
       outputHashes = {
         
       };
@@ -235,21 +235,21 @@
   };
   purr = {
     pname = "purr";
-    version = "507132622656de0ace74a71fbc8c9f52c3ba31e6";
+    version = "77ab253722cd5f867c2aea2a5ac6ecbc4750640f";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "507132622656de0ace74a71fbc8c9f52c3ba31e6";
+      rev = "77ab253722cd5f867c2aea2a5ac6ecbc4750640f";
       fetchSubmodules = false;
-      sha256 = "sha256-DiyUx6pe6/aurHrI4aZ/tYvfI/PuPU9+KGySCoF79SU=";
+      sha256 = "sha256-ocQt1ak8bZD2JmM8AyLLirmbmLoWQ68PnO14wLtdIKM=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./purr-507132622656de0ace74a71fbc8c9f52c3ba31e6/Cargo.lock;
+      lockFile = ./purr-77ab253722cd5f867c2aea2a5ac6ecbc4750640f/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-08-05";
+    date = "2024-10-22";
   };
   ringfairy = {
     pname = "ringfairy";
