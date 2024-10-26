@@ -79,21 +79,21 @@
   };
   hyfetch = {
     pname = "hyfetch";
-    version = "b5b49ecbc095ac20e49c0783121c885752df9001";
+    version = "28b365d418e877d1c961b1c7522c781d4fde69d0";
     src = fetchFromGitHub {
       owner = "hykilpikonna";
       repo = "hyfetch";
-      rev = "b5b49ecbc095ac20e49c0783121c885752df9001";
+      rev = "28b365d418e877d1c961b1c7522c781d4fde69d0";
       fetchSubmodules = false;
-      sha256 = "sha256-W1oMzLACGDvcl8du4L3TuUn79i6HFUFuPEJhc3IPD0E=";
+      sha256 = "sha256-dNPCq/1mqgL2qtBFxENeFjlHS8vneGfpLVmyA86nR28=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./hyfetch-b5b49ecbc095ac20e49c0783121c885752df9001/Cargo.lock;
+      lockFile = ./hyfetch-28b365d418e877d1c961b1c7522c781d4fde69d0/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-23";
+    date = "2024-10-25";
   };
   isabelroses-website = {
     pname = "isabelroses-website";
