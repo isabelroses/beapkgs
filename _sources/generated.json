@@ -129,11 +129,11 @@
     "hyfetch": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./hyfetch-28b365d418e877d1c961b1c7522c781d4fde69d0/Cargo.lock",
+                "./hyfetch-e630b7837fd4d09fadf377413e1ffa44fa80f9b6/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-10-25",
+        "date": "2024-10-29",
         "extract": null,
         "name": "hyfetch",
         "passthru": null,
@@ -145,11 +145,11 @@
             "name": null,
             "owner": "hykilpikonna",
             "repo": "hyfetch",
-            "rev": "28b365d418e877d1c961b1c7522c781d4fde69d0",
-            "sha256": "sha256-dNPCq/1mqgL2qtBFxENeFjlHS8vneGfpLVmyA86nR28=",
+            "rev": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6",
+            "sha256": "sha256-WPJzLm27Ourt5KddMCwt7TuuFTz4TIIm5yd5E8NiQmI=",
             "type": "github"
         },
-        "version": "28b365d418e877d1c961b1c7522c781d4fde69d0"
+        "version": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6"
     },
     "isabelroses-website": {
         "cargoLocks": null,
@@ -284,11 +284,11 @@
     "nh-darwin": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./nh-darwin-0b41c2b22887021a4a847a00f9c7cddafcacb9bd/Cargo.lock",
+                "./nh-darwin-f9dedce7b9167711b8551c01f6a421985a8d66c5/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-10-28",
+        "date": "2024-10-29",
         "extract": null,
         "name": "nh-darwin",
         "passthru": null,
@@ -300,11 +300,11 @@
             "name": null,
             "owner": "ToyVo",
             "repo": "nh_darwin",
-            "rev": "0b41c2b22887021a4a847a00f9c7cddafcacb9bd",
-            "sha256": "sha256-M8NI1RIppyMrGMVPYtvcoXMwlV11wGnoIXBmCp+q+uw=",
+            "rev": "f9dedce7b9167711b8551c01f6a421985a8d66c5",
+            "sha256": "sha256-n2EqooILMvK67v6Cxpf4S/pyiEsdNyXwc5reWKHBfJA=",
             "type": "github"
         },
-        "version": "0b41c2b22887021a4a847a00f9c7cddafcacb9bd"
+        "version": "f9dedce7b9167711b8551c01f6a421985a8d66c5"
     },
     "nixpkgs-track": {
         "cargoLocks": {

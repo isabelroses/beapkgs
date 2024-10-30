@@ -79,21 +79,21 @@
   };
   hyfetch = {
     pname = "hyfetch";
-    version = "28b365d418e877d1c961b1c7522c781d4fde69d0";
+    version = "e630b7837fd4d09fadf377413e1ffa44fa80f9b6";
     src = fetchFromGitHub {
       owner = "hykilpikonna";
       repo = "hyfetch";
-      rev = "28b365d418e877d1c961b1c7522c781d4fde69d0";
+      rev = "e630b7837fd4d09fadf377413e1ffa44fa80f9b6";
       fetchSubmodules = false;
-      sha256 = "sha256-dNPCq/1mqgL2qtBFxENeFjlHS8vneGfpLVmyA86nR28=";
+      sha256 = "sha256-WPJzLm27Ourt5KddMCwt7TuuFTz4TIIm5yd5E8NiQmI=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./hyfetch-28b365d418e877d1c961b1c7522c781d4fde69d0/Cargo.lock;
+      lockFile = ./hyfetch-e630b7837fd4d09fadf377413e1ffa44fa80f9b6/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-25";
+    date = "2024-10-29";
   };
   isabelroses-website = {
     pname = "isabelroses-website";
@@ -181,21 +181,21 @@
   };
   nh-darwin = {
     pname = "nh-darwin";
-    version = "0b41c2b22887021a4a847a00f9c7cddafcacb9bd";
+    version = "f9dedce7b9167711b8551c01f6a421985a8d66c5";
     src = fetchFromGitHub {
       owner = "ToyVo";
       repo = "nh_darwin";
-      rev = "0b41c2b22887021a4a847a00f9c7cddafcacb9bd";
+      rev = "f9dedce7b9167711b8551c01f6a421985a8d66c5";
       fetchSubmodules = false;
-      sha256 = "sha256-M8NI1RIppyMrGMVPYtvcoXMwlV11wGnoIXBmCp+q+uw=";
+      sha256 = "sha256-n2EqooILMvK67v6Cxpf4S/pyiEsdNyXwc5reWKHBfJA=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-darwin-0b41c2b22887021a4a847a00f9c7cddafcacb9bd/Cargo.lock;
+      lockFile = ./nh-darwin-f9dedce7b9167711b8551c01f6a421985a8d66c5/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-28";
+    date = "2024-10-29";
   };
   nixpkgs-track = {
     pname = "nixpkgs-track";
