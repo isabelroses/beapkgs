@@ -2,6 +2,9 @@
   lib,
   pins,
   rustPlatform,
+  fastfetch,
+  makeWrapper,
+  backends ? [ fastfetch ],
 }:
 rustPlatform.buildRustPackage {
   pname = "hyfetch";
@@ -9,6 +12,13 @@ rustPlatform.buildRustPackage {
 
   inherit (pins.hyfetch) src;
   cargoLock = pins.hyfetch.cargoLock."Cargo.lock";
+
+  nativeBuildInputs = [ makeWrapper ];
+
+  postFixup = ''
+    wrapProgram $out/bin/hyfetch \
+      --suffix PATH : ${lib.makeBinPath backends}
+  '';
 
   meta = {
     description = "neofetch with pride flags <3";
