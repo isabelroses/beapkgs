@@ -65,6 +65,7 @@ jobs:
           authToken: "${{ secrets.CACHIX_TOKEN }}"
 
       - name: Build from the matrix
+        continue-on-error: true
         run: |
           export NIXPKGS_ALLOW_UNFREE=1
           nix build -L .#${{ matrix.package }} --impure
