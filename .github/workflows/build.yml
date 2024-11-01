@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      packages: ${{ steps.get_packages.outputs.packages }}
+      matrix: ${{ steps.gen-matrix.outputs.matrix }}
 
     steps:
       - name: Checkout
@@ -40,7 +40,7 @@ jobs:
 
     needs: setup
     strategy:
-      matrix: ${{fromJSON(needs.gen-matrix.outputs.matrix)}}
+      matrix: ${{fromJSON(needs.setup.outputs.matrix)}}
 
     runs-on: ${{ matrix.os }}
 
