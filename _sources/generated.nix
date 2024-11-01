@@ -217,21 +217,21 @@
   };
   nixpkgs-using = {
     pname = "nixpkgs-using";
-    version = "f50655193d60570724ba8e848aa01a076119e0cb";
+    version = "9824a8023dec1f183df66a3dff2c7fe9d41cb498";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "nixpkgs-using";
-      rev = "f50655193d60570724ba8e848aa01a076119e0cb";
+      rev = "9824a8023dec1f183df66a3dff2c7fe9d41cb498";
       fetchSubmodules = false;
-      sha256 = "sha256-DDtCjiDZh2KyzoyM6uLxfgagXgS7J72Nc0WqGJPSxf0=";
+      sha256 = "sha256-5bblEPHbLenricLHZYZw1OyXxoEZNlYgt/JCgnE6tas=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nixpkgs-using-f50655193d60570724ba8e848aa01a076119e0cb/Cargo.lock;
+      lockFile = ./nixpkgs-using-9824a8023dec1f183df66a3dff2c7fe9d41cb498/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-22";
+    date = "2024-10-31";
   };
   purr = {
     pname = "purr";
@@ -284,22 +284,22 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "9ddca7bde92090792dbcdc65c1e9897c362196d7";
+    version = "f847bd284db6a38e7f5920421ba23e3aa688f8fd";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "9ddca7bde92090792dbcdc65c1e9897c362196d7";
+      rev = "f847bd284db6a38e7f5920421ba23e3aa688f8fd";
       fetchSubmodules = true;
-      sha256 = "sha256-BC+qJ54hF+iFtq15/ygQNHjLUkncWmM2ueIMDwjGmiE=";
+      sha256 = "sha256-4KxoDR8zU7AlBnRP48dHLiGHM9P1VwlQxaotef4z4WQ=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-9ddca7bde92090792dbcdc65c1e9897c362196d7/Cargo.lock;
+      lockFile = ./wezterm-f847bd284db6a38e7f5920421ba23e3aa688f8fd/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-10-15";
+    date = "2024-10-30";
   };
   zzz = {
     pname = "zzz";
