@@ -1,5 +1,5 @@
 {
-  darwin,
+  apple-sdk_15,
   fontconfig,
   pins,
   installShellFiles,
@@ -17,7 +17,12 @@
   stdenv,
   vulkan-loader,
   wayland,
-  xorg,
+  libX11,
+  libxcb,
+  xcbutil,
+  xcbutilimage,
+  xcbutilkeysyms,
+  xcbutilwm,
   zlib,
 }:
 rustPlatform.buildRustPackage rec {
@@ -33,36 +38,28 @@ rustPlatform.buildRustPackage rec {
     installShellFiles
     pkg-config
     python3
-  ] ++ lib.optionals stdenv.isDarwin [ perl ];
+  ] ++ lib.optional stdenv.hostPlatform.isDarwin perl;
 
   buildInputs =
     [
       fontconfig
       zlib
     ]
-    ++ lib.optionals stdenv.isLinux [
-      xorg.libX11
-      xorg.libxcb
+    ++ lib.optionals stdenv.hostPlatform.isLinux [
+      libX11
+      libxcb
       libxkbcommon
       openssl
       wayland
-      xorg.xcbutil
-      xorg.xcbutilimage
-      xorg.xcbutilkeysyms
-      xorg.xcbutilwm # contains xcb-ewmh among others
+      xcbutil
+      xcbutilimage
+      xcbutilkeysyms
+      xcbutilwm # contains xcb-ewmh among others
     ]
-    ++ lib.optionals stdenv.isDarwin [ libiconv ]
-    ++ lib.optionals stdenv.isDarwin (
-      with darwin.apple_sdk_11_0.frameworks;
-      [
-        CoreGraphics
-        Cocoa
-        Foundation
-        Security
-        UserNotifications
-        System
-      ]
-    );
+    ++ lib.optionals stdenv.hostPlatform.isDarwin [
+      libiconv
+      apple-sdk_15
+    ];
 
   postPatch = ''
     echo "${version}" > .tag
@@ -71,7 +68,7 @@ rustPlatform.buildRustPackage rec {
   '';
 
   buildFeatures = [ "distro-defaults" ];
-  env.NIX_LDFLAGS = lib.optionalString stdenv.isDarwin "-framework System";
+  env.NIX_LDFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-framework System";
 
   postInstall = ''
     mkdir -p $out/nix-support
@@ -91,13 +88,13 @@ rustPlatform.buildRustPackage rec {
   '';
 
   preFixup =
-    lib.optionalString stdenv.isLinux ''
+    lib.optionalString stdenv.hostPlatform.isLinux ''
       patchelf \
         --add-needed "${libGL}/lib/libEGL.so.1" \
         --add-needed "${vulkan-loader}/lib/libvulkan.so.1" \
         $out/bin/wezterm-gui
     ''
-    + lib.optionalString stdenv.isDarwin ''
+    + lib.optionalString stdenv.hostPlatform.isDarwin ''
       mkdir -p "$out/Applications"
       OUT_APP="$out/Applications/WezTerm.app"
       cp -r assets/macos/WezTerm.app "$OUT_APP"

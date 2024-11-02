@@ -4,7 +4,7 @@
   rustPlatform,
   stdenv,
   openssl,
-  darwin,
+  apple-sdk_15,
   pkg-config,
 }:
 let
@@ -18,16 +18,7 @@ rustPlatform.buildRustPackage {
 
   cargoLock = pins.blahaj.cargoLock."Cargo.lock";
 
-  buildInputs =
-    [ openssl ]
-    ++ lib.optionals stdenv.isDarwin (
-      with darwin.apple_sdk.frameworks;
-      [
-        Security
-        CoreFoundation
-        SystemConfiguration
-      ]
-    );
+  buildInputs = [ openssl ] ++ lib.optional stdenv.hostPlatform.isDarwin apple-sdk_15;
 
   nativeBuildInputs = [ pkg-config ];
 

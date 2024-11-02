@@ -1,7 +1,7 @@
 {
   lib,
   pins,
-  darwin,
+  apple-sdk_15,
   stdenv,
   openssl,
   pkg-config,
@@ -14,16 +14,7 @@ rustPlatform.buildRustPackage {
   inherit (pins.ringfairy) src;
   cargoLock = pins.ringfairy.cargoLock."Cargo.lock";
 
-  buildInputs =
-    [ openssl ]
-    ++ lib.optionals stdenv.isDarwin (
-      with darwin.apple_sdk.frameworks;
-      [
-        Security
-        CoreFoundation
-        SystemConfiguration
-      ]
-    );
+  buildInputs = [ openssl ] ++ lib.optional stdenv.hostPlatform.isDarwin apple-sdk_15;
 
   nativeBuildInputs = [ pkg-config ];
 
