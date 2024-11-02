@@ -45,7 +45,7 @@
   commandLineArgs ? "",
 
   # Necessary for USB audio devices.
-  pulseSupport ? stdenv.isLinux,
+  pulseSupport ? stdenv.hostPlatform.isLinux,
   libpulseaudio,
 
   # For GPU acceleration support on Wayland (without the lib it doesn't seem to work)
