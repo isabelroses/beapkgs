@@ -46,7 +46,6 @@ jobs:
           authToken: "${{ secrets.CACHIX_TOKEN }}"
 
       - name: Build from the matrix
-        continue-on-error: true
         run: |
           nix run \
             github:Mic92/nix-fast-build -- \
