@@ -24,7 +24,6 @@ buildGoModule {
     homepage = "https://isabelroses.com/";
     license = with lib.licenses; [
       mit
-      cc-by-nc-sa-40
     ];
     mainProgram = "isabelroses.com";
   };

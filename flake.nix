@@ -50,4 +50,11 @@
       darwinModules.default = import ./modules/darwin self;
       homeManagerModules.default = import ./modules/home-manager self;
     };
+
+  nixConfig = {
+    extra-substituters = [ "https://isabelroses.cachix.org" ];
+    extra-trusted-public-keys = [
+      "isabelroses.cachix.org-1:mXdV/CMcPDaiTmkQ7/4+MzChpOe6Cb97njKmBQQmLPM="
+    ];
+  };
 }

@@ -12,37 +12,18 @@ on:
       - ".github/workflows/build.yml"
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-
-    outputs:
-      matrix: ${{ steps.gen-matrix.outputs.matrix }}
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install Lix
-        uses: DeterminateSystems/nix-installer-action@main
-        with:
-          source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
-          logger: pretty
-
-      - name: Generate matrix
-        id: gen-matrix
-        run: |
-          set -Eeu
-          matrix="$(nix eval --json '.#githubActions.matrix')"
-          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
-
   build:
-    name: ${{ matrix.name }} (${{ matrix.system }})
-
-    needs: setup
-    strategy:
-      matrix: ${{fromJSON(needs.setup.outputs.matrix)}}
-
+    name: Build (${{ matrix.system }})
     runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            system: x86_64-linux
+          - os: macos-latest
+            system: aarch64-darwin
 
     steps:
       - name: Checkout
@@ -67,5 +48,11 @@ jobs:
       - name: Build from the matrix
         continue-on-error: true
         run: |
-          export NIXPKGS_ALLOW_UNFREE=1
-          nix build -L .#${{ matrix.package }} --impure
+          nix run \
+            github:Mic92/nix-fast-build -- \
+            --no-nom \
+            --skip-cached \
+            --systems '${{ matrix.system }}' \
+            --option accept-flake-config true \
+            --flake '.#packages.${{ matrix.system }}'
+
