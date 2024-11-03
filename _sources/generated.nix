@@ -269,37 +269,24 @@
     };
     date = "2024-09-06";
   };
-  term2alpha = {
-    pname = "term2alpha";
-    version = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
-    src = fetchgit {
-      url = "https://git.sr.ht/~zethra/term2alpha";
-      rev = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-TqGryK4a+zizTq/5xS4HYF6JCeRHP27ZVkGJq22bAbk=";
-    };
-    date = "2024-08-07";
-  };
   wezterm = {
     pname = "wezterm";
-    version = "f847bd284db6a38e7f5920421ba23e3aa688f8fd";
+    version = "0983ae90d6dfb45c5f99058e97de73a70ca9dd36";
     src = fetchFromGitHub {
       owner = "wez";
       repo = "wezterm";
-      rev = "f847bd284db6a38e7f5920421ba23e3aa688f8fd";
+      rev = "0983ae90d6dfb45c5f99058e97de73a70ca9dd36";
       fetchSubmodules = true;
-      sha256 = "sha256-4KxoDR8zU7AlBnRP48dHLiGHM9P1VwlQxaotef4z4WQ=";
+      sha256 = "sha256-M0zw6SBVJhwNOSHXLuja5U4F5viMjLN+gqTwTqjUXAQ=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-f847bd284db6a38e7f5920421ba23e3aa688f8fd/Cargo.lock;
+      lockFile = ./wezterm-0983ae90d6dfb45c5f99058e97de73a70ca9dd36/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-10-30";
+    date = "2024-10-31";
   };
   zzz = {
     pname = "zzz";

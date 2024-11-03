@@ -1,17 +1,18 @@
 {
   lib,
-  pins,
+  fetchgit,
   haskell,
   ...
 }:
-let
-  version = builtins.substring 0 7 pins.term2alpha.version;
-in
 haskell.packages.ghc94.mkDerivation {
   pname = "term2alpha";
-  inherit version;
+  version = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
 
-  inherit (pins.term2alpha) src;
+  src = fetchgit {
+    url = "https://sr.ht/~zethra/term2alpha";
+    rev = "d1d3b51071e099d0473d9ef228e9bb8bf7b016ca";
+    sha256 = "sha256-TqGryK4a+zizTq/5xS4HYF6JCeRHP27ZVkGJq22bAbk=";
+  };
 
   isLibrary = false;
   isExecutable = true;

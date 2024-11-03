@@ -69,9 +69,10 @@ fetch.github = "wez/wezterm"
 git.fetchSubmodules = true
 cargo_locks = ["Cargo.lock"]
 
-[term2alpha]
-src.git = "https://sr.ht/~zethra/term2alpha"
-fetch.git = "https://sr.ht/~zethra/term2alpha"
+# broken somehow
+# [term2alpha]
+# src.git = "https://sr.ht/~zethra/term2alpha"
+# fetch.git = "https://sr.ht/~zethra/term2alpha"
 
 # gonvim-tools
 [go-enum]
