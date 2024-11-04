@@ -15,7 +15,6 @@
             "repo": "bellado",
             "rev": "8b9bb4e19b06a35acd8b2d39830c2751246ff189",
             "sha256": "sha256-evko1/qE4oRXTMdCOGuwJRUkRm7Sxb5MhQCTLgx5Z+4=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "8b9bb4e19b06a35acd8b2d39830c2751246ff189"
@@ -43,7 +42,6 @@
             "repo": "blahaj",
             "rev": "1fb64b805dd15744919649b5ca9dc5e678492e5f",
             "sha256": "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1fb64b805dd15744919649b5ca9dc5e678492e5f"
@@ -64,7 +62,6 @@
             "repo": "go-enum",
             "rev": "v0.6.0",
             "sha256": "sha256-Mt45Qz8l++bvBLKEpbX0m8iTkHDpsZtdYhhHUprQKY8=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.6.0"
@@ -85,7 +82,6 @@
             "repo": "gomvp",
             "rev": "5b06c041c898822fd72cd245188e51d112adae74",
             "sha256": "sha256-dXjI+nItJCAGKxyC9tX11hxWHCP+NgXtTYtm5+6dqDU=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "5b06c041c898822fd72cd245188e51d112adae74"
@@ -106,7 +102,6 @@
             "repo": "hael",
             "rev": "d604e456f3f1b1c5df011204adb74d7e27a1fce5",
             "sha256": "sha256-QtOkCIReOgSRz/hMWT3v1PSpS0Dv8TgKkVnZv8AjsIE=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "d604e456f3f1b1c5df011204adb74d7e27a1fce5"
@@ -127,7 +122,6 @@
             "repo": "helm-ls",
             "rev": "v0.1.0",
             "sha256": "sha256-EuZbbeRssacrctIbxBbd2GOh8zgFi2OBRregfC88se0=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.1.0"
@@ -153,7 +147,6 @@
             "repo": "hyfetch",
             "rev": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6",
             "sha256": "sha256-WPJzLm27Ourt5KddMCwt7TuuFTz4TIIm5yd5E8NiQmI=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6"
@@ -174,7 +167,6 @@
             "repo": "website",
             "rev": "21ea874cd5539be95a93b2acb7eebfb54533c320",
             "sha256": "sha256-LgLJT1BPn6wz4gdWQSjDBG3cheMNa/64Qhf0YveMqhs=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "21ea874cd5539be95a93b2acb7eebfb54533c320"
@@ -200,7 +192,6 @@
             "repo": "ito",
             "rev": "30596468c71e1da2176eea78206486c60559bab6",
             "sha256": "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "30596468c71e1da2176eea78206486c60559bab6"
@@ -221,7 +212,6 @@
             "repo": "izrss",
             "rev": "47460bfdfde0ec797daa52150fff6106819b7d0a",
             "sha256": "sha256-UcE/zzGjBVst6+tE/Znary7pvQIAELj6eB7T2m803BM=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "47460bfdfde0ec797daa52150fff6106819b7d0a"
@@ -242,7 +232,6 @@
             "repo": "jq-lsp",
             "rev": "8cbbf6df9f7761276b2bbab1ecb6d744b901f521",
             "sha256": "sha256-lNNVCvVliur03keWPH96/9AIc/CJwhtg4CVa6a2DVQI=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "8cbbf6df9f7761276b2bbab1ecb6d744b901f521"
@@ -263,7 +252,6 @@
             "repo": "json-to-struct",
             "rev": "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec",
             "sha256": "sha256-l/XLZstZFVnYXRqtng1oiCSvhNAomyeTuI1OtCb8UHo=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec"
@@ -289,7 +277,6 @@
             "repo": "meower",
             "rev": "edc08e7f0f22041d28c70bccd9fd6100e31c1040",
             "sha256": "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "edc08e7f0f22041d28c70bccd9fd6100e31c1040"
@@ -315,7 +302,6 @@
             "repo": "nh_darwin",
             "rev": "028777665a62825b88703edaf5d8e79c61ba2e6d",
             "sha256": "sha256-YstBWQKfFRWHvs/xZlN8sXZXCemu6tuvvStxEGhMmTQ=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "028777665a62825b88703edaf5d8e79c61ba2e6d"
@@ -341,7 +327,6 @@
             "repo": "nixpkgs-track",
             "rev": "4792e406455f7dda87ee5915fdaaeaa9b44569fd",
             "sha256": "sha256-KnCrng2k2yGxxakA9OsFBeKozE4CXo3TaqG4/wqqaj8=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "4792e406455f7dda87ee5915fdaaeaa9b44569fd"
@@ -367,7 +352,6 @@
             "repo": "nixpkgs-using",
             "rev": "9824a8023dec1f183df66a3dff2c7fe9d41cb498",
             "sha256": "sha256-5bblEPHbLenricLHZYZw1OyXxoEZNlYgt/JCgnE6tas=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "9824a8023dec1f183df66a3dff2c7fe9d41cb498"
@@ -393,7 +377,6 @@
             "repo": "purr",
             "rev": "77ab253722cd5f867c2aea2a5ac6ecbc4750640f",
             "sha256": "sha256-ocQt1ak8bZD2JmM8AyLLirmbmLoWQ68PnO14wLtdIKM=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "77ab253722cd5f867c2aea2a5ac6ecbc4750640f"
@@ -419,7 +402,6 @@
             "repo": "ringfairy",
             "rev": "8635cb208f854fc5545b59db1cb602bf2f10e25a",
             "sha256": "sha256-0xN9Ddg/Vg9isJGPKgoSCf3fbTCB1PXSoowrroTHDtY=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "8635cb208f854fc5545b59db1cb602bf2f10e25a"
@@ -448,7 +430,6 @@
             "repo": "wezterm",
             "rev": "0983ae90d6dfb45c5f99058e97de73a70ca9dd36",
             "sha256": "sha256-M0zw6SBVJhwNOSHXLuja5U4F5viMjLN+gqTwTqjUXAQ=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0983ae90d6dfb45c5f99058e97de73a70ca9dd36"
@@ -469,7 +450,6 @@
             "repo": "zzz",
             "rev": "0e925cee1e869c80f678d3b5ca81d930bffdfc9a",
             "sha256": "sha256-H6I4r6pzezkV7L9zbbr3lUGX1azmijZinN+Oc/0O0eQ=",
-            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0e925cee1e869c80f678d3b5ca81d930bffdfc9a"
