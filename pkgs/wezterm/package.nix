@@ -17,12 +17,7 @@
   stdenv,
   vulkan-loader,
   wayland,
-  libX11,
-  libxcb,
-  xcbutil,
-  xcbutilimage,
-  xcbutilkeysyms,
-  xcbutilwm,
+  xorg,
   zlib,
 }:
 rustPlatform.buildRustPackage rec {
@@ -46,15 +41,15 @@ rustPlatform.buildRustPackage rec {
       zlib
     ]
     ++ lib.optionals stdenv.hostPlatform.isLinux [
-      libX11
-      libxcb
+      xorg.libX11
+      xorg.libxcb
       libxkbcommon
       openssl
       wayland
-      xcbutil
-      xcbutilimage
-      xcbutilkeysyms
-      xcbutilwm # contains xcb-ewmh among others
+      xorg.xcbutil
+      xorg.xcbutilimage
+      xorg.xcbutilkeysyms
+      xorg.xcbutilwm # contains xcb-ewmh among others
     ]
     ++ lib.optionals stdenv.hostPlatform.isDarwin [
       libiconv
