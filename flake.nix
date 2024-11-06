@@ -14,8 +14,6 @@
     let
       inherit (nixpkgs) lib;
 
-      extLib = import ./ci.nix;
-
       forAllSystems =
         function:
         nixpkgs.lib.genAttrs lib.systems.flakeExposed (
@@ -29,12 +27,6 @@
         );
     in
     {
-      githubActions = extLib.mkGithubMatrix {
-        packages = {
-          inherit (self.packages) x86_64-linux x86_64-darwin aarch64-darwin;
-        };
-      };
-
       packages = forAllSystems (
         pkgs:
         lib.packagesFromDirectoryRecursive {
