@@ -97,15 +97,15 @@
   };
   isabelroses-website = {
     pname = "isabelroses-website";
-    version = "21ea874cd5539be95a93b2acb7eebfb54533c320";
+    version = "9f8bd48d9fc88e1b26dad878162e72b1c9c98c81";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "website";
-      rev = "21ea874cd5539be95a93b2acb7eebfb54533c320";
+      rev = "9f8bd48d9fc88e1b26dad878162e72b1c9c98c81";
       fetchSubmodules = false;
-      sha256 = "sha256-LgLJT1BPn6wz4gdWQSjDBG3cheMNa/64Qhf0YveMqhs=";
+      sha256 = "sha256-LWYT06gLd6J3bC+cIlMXYO0AJFT6TbeH0wHihS0FxZc=";
     };
-    date = "2024-10-12";
+    date = "2024-11-07";
   };
   ito = {
     pname = "ito";
@@ -139,15 +139,15 @@
   };
   jq-lsp = {
     pname = "jq-lsp";
-    version = "10b38acc9c0ca74f6c9bdb61c126377fb03b6016";
+    version = "92763427b397246344db1bf9c7cd66339f351bc1";
     src = fetchFromGitHub {
       owner = "wader";
       repo = "jq-lsp";
-      rev = "10b38acc9c0ca74f6c9bdb61c126377fb03b6016";
+      rev = "92763427b397246344db1bf9c7cd66339f351bc1";
       fetchSubmodules = false;
-      sha256 = "sha256-MWy5565nY79iYFvLwlg04TPZ1T7m9uEoms1W0bCLP4U=";
+      sha256 = "sha256-oe3yTcI5sMdWPV7rZF6VbQvtigKQliWYtiU7a47ipHY=";
     };
-    date = "2024-11-06";
+    date = "2024-11-08";
   };
   json-to-struct = {
     pname = "json-to-struct";
