@@ -25,8 +25,7 @@
             }
           )
         );
-    in
-    {
+
       packages = forAllSystems (
         pkgs:
         lib.packagesFromDirectoryRecursive {
@@ -36,6 +35,11 @@
           );
         }
       );
+    in
+    {
+      legacyPackages = packages;
+
+      inherit packages;
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };

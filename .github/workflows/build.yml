@@ -53,5 +53,5 @@ jobs:
             --skip-cached \
             --systems '${{ matrix.system }}' \
             --option accept-flake-config true \
-            --flake '.#packages.${{ matrix.system }}'
+            --flake '.#legacyPackages.${{ matrix.system }}'
 
