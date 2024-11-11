@@ -1,5 +1,4 @@
 {
-  apple-sdk_15,
   fontconfig,
   pins,
   installShellFiles,
@@ -53,7 +52,6 @@ rustPlatform.buildRustPackage rec {
     ]
     ++ lib.optionals stdenv.hostPlatform.isDarwin [
       libiconv
-      apple-sdk_15
     ];
 
   postPatch = ''

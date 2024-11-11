@@ -1,8 +1,6 @@
 {
   lib,
   pins,
-  apple-sdk_15,
-  stdenv,
   openssl,
   pkg-config,
   rustPlatform,
@@ -17,7 +15,7 @@ rustPlatform.buildRustPackage {
 
   buildInputs = [
     openssl
-  ] ++ lib.optional stdenv.hostPlatform.isDarwin apple-sdk_15;
+  ];
 
   nativeBuildInputs = [ pkg-config ];
 

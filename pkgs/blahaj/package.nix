@@ -2,9 +2,7 @@
   lib,
   pins,
   rustPlatform,
-  stdenv,
   openssl,
-  apple-sdk_15,
   pkg-config,
 }:
 let
@@ -18,7 +16,7 @@ rustPlatform.buildRustPackage {
 
   cargoLock = pins.blahaj.cargoLock."Cargo.lock";
 
-  buildInputs = [ openssl ] ++ lib.optional stdenv.hostPlatform.isDarwin apple-sdk_15;
+  buildInputs = [ openssl ];
 
   nativeBuildInputs = [ pkg-config ];
 

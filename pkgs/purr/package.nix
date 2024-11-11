@@ -3,8 +3,6 @@
   rustPlatform,
   pkg-config,
   openssl,
-  stdenv,
-  apple-sdk_15,
   pins,
 }:
 rustPlatform.buildRustPackage {
@@ -16,7 +14,7 @@ rustPlatform.buildRustPackage {
 
   nativeBuildInputs = [ pkg-config ];
 
-  buildInputs = [ openssl ] ++ lib.optional stdenv.hostPlatform.isDarwin apple-sdk_15;
+  buildInputs = [ openssl ];
 
   meta = {
     description = "Utility commands for managing userstyles";

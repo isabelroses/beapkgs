@@ -1,8 +1,6 @@
 {
   lib,
   pins,
-  darwin,
-  stdenv,
   openssl,
   pkg-config,
   rustPlatform,
@@ -15,16 +13,7 @@ rustPlatform.buildRustPackage {
   inherit (pins.nixpkgs-using) src;
   cargoLock = pins.nixpkgs-using.cargoLock."Cargo.lock";
 
-  buildInputs =
-    [ openssl ]
-    ++ lib.optionals stdenv.isDarwin (
-      with darwin.apple_sdk.frameworks;
-      [
-        Security
-        CoreFoundation
-        SystemConfiguration
-      ]
-    );
+  buildInputs = [ openssl ];
 
   nativeBuildInputs = [ pkg-config ];
 
