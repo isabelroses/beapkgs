@@ -14,6 +14,8 @@
     let
       inherit (nixpkgs) lib;
 
+      extLib = import ./ci.nix;
+
       forAllSystems =
         function:
         nixpkgs.lib.genAttrs lib.systems.flakeExposed (
@@ -37,9 +39,14 @@
       );
     in
     {
+      inherit packages;
       legacyPackages = packages;
 
-      inherit packages;
+      githubActions = extLib.mkGithubMatrix {
+        packages = {
+          inherit (self.packages) x86_64-linux x86_64-darwin aarch64-darwin;
+        };
+      };
 
       devShells = forAllSystems (pkgs: {
         default = pkgs.callPackage ./shell.nix { };
