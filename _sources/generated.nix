@@ -79,21 +79,21 @@
   };
   hyfetch = {
     pname = "hyfetch";
-    version = "e630b7837fd4d09fadf377413e1ffa44fa80f9b6";
+    version = "1b3b5ca883cdff47017d1be636a735162e19b6e8";
     src = fetchFromGitHub {
       owner = "hykilpikonna";
       repo = "hyfetch";
-      rev = "e630b7837fd4d09fadf377413e1ffa44fa80f9b6";
+      rev = "1b3b5ca883cdff47017d1be636a735162e19b6e8";
       fetchSubmodules = false;
-      sha256 = "sha256-WPJzLm27Ourt5KddMCwt7TuuFTz4TIIm5yd5E8NiQmI=";
+      sha256 = "sha256-qK7loxQXAklR8psMVugZReFYh2FbzrS3nLTZRV0Z+Ro=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./hyfetch-e630b7837fd4d09fadf377413e1ffa44fa80f9b6/Cargo.lock;
+      lockFile = ./hyfetch-1b3b5ca883cdff47017d1be636a735162e19b6e8/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-29";
+    date = "2024-11-11";
   };
   isabelroses-website = {
     pname = "isabelroses-website";
@@ -235,21 +235,21 @@
   };
   purr = {
     pname = "purr";
-    version = "77ab253722cd5f867c2aea2a5ac6ecbc4750640f";
+    version = "e03d3075b4b1ee19148a4902332ffe29dbb39bea";
     src = fetchFromGitHub {
       owner = "uncenter";
       repo = "purr";
-      rev = "77ab253722cd5f867c2aea2a5ac6ecbc4750640f";
+      rev = "e03d3075b4b1ee19148a4902332ffe29dbb39bea";
       fetchSubmodules = false;
-      sha256 = "sha256-ocQt1ak8bZD2JmM8AyLLirmbmLoWQ68PnO14wLtdIKM=";
+      sha256 = "sha256-a5jtJp0r/8iL+E8JhkgdVyKqYQc+uoXpRjf48N1CQ10=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./purr-77ab253722cd5f867c2aea2a5ac6ecbc4750640f/Cargo.lock;
+      lockFile = ./purr-e03d3075b4b1ee19148a4902332ffe29dbb39bea/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-22";
+    date = "2024-11-12";
   };
   ringfairy = {
     pname = "ringfairy";

@@ -129,11 +129,11 @@
     "hyfetch": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./hyfetch-e630b7837fd4d09fadf377413e1ffa44fa80f9b6/Cargo.lock",
+                "./hyfetch-1b3b5ca883cdff47017d1be636a735162e19b6e8/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-10-29",
+        "date": "2024-11-11",
         "extract": null,
         "name": "hyfetch",
         "passthru": null,
@@ -145,11 +145,11 @@
             "name": null,
             "owner": "hykilpikonna",
             "repo": "hyfetch",
-            "rev": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6",
-            "sha256": "sha256-WPJzLm27Ourt5KddMCwt7TuuFTz4TIIm5yd5E8NiQmI=",
+            "rev": "1b3b5ca883cdff47017d1be636a735162e19b6e8",
+            "sha256": "sha256-qK7loxQXAklR8psMVugZReFYh2FbzrS3nLTZRV0Z+Ro=",
             "type": "github"
         },
-        "version": "e630b7837fd4d09fadf377413e1ffa44fa80f9b6"
+        "version": "1b3b5ca883cdff47017d1be636a735162e19b6e8"
     },
     "isabelroses-website": {
         "cargoLocks": null,
@@ -359,11 +359,11 @@
     "purr": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./purr-77ab253722cd5f867c2aea2a5ac6ecbc4750640f/Cargo.lock",
+                "./purr-e03d3075b4b1ee19148a4902332ffe29dbb39bea/Cargo.lock",
                 {}
             ]
         },
-        "date": "2024-10-22",
+        "date": "2024-11-12",
         "extract": null,
         "name": "purr",
         "passthru": null,
@@ -375,11 +375,11 @@
             "name": null,
             "owner": "uncenter",
             "repo": "purr",
-            "rev": "77ab253722cd5f867c2aea2a5ac6ecbc4750640f",
-            "sha256": "sha256-ocQt1ak8bZD2JmM8AyLLirmbmLoWQ68PnO14wLtdIKM=",
+            "rev": "e03d3075b4b1ee19148a4902332ffe29dbb39bea",
+            "sha256": "sha256-a5jtJp0r/8iL+E8JhkgdVyKqYQc+uoXpRjf48N1CQ10=",
             "type": "github"
         },
-        "version": "77ab253722cd5f867c2aea2a5ac6ecbc4750640f"
+        "version": "e03d3075b4b1ee19148a4902332ffe29dbb39bea"
     },
     "ringfairy": {
         "cargoLocks": {
