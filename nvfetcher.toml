@@ -49,6 +49,7 @@ cargo_locks = ["Cargo.lock"]
 [isabelroses-website]
 src.git = "https://github.com/isabelroses/website"
 fetch.github = "isabelroses/website"
+cargo_locks = ["Cargo.lock"]
 
 [hael]
 src.git = "https://github.com/isabelroses/hael"

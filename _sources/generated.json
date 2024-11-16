@@ -15,6 +15,7 @@
             "repo": "bellado",
             "rev": "8b9bb4e19b06a35acd8b2d39830c2751246ff189",
             "sha256": "sha256-evko1/qE4oRXTMdCOGuwJRUkRm7Sxb5MhQCTLgx5Z+4=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "8b9bb4e19b06a35acd8b2d39830c2751246ff189"
@@ -42,6 +43,7 @@
             "repo": "blahaj",
             "rev": "1fb64b805dd15744919649b5ca9dc5e678492e5f",
             "sha256": "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1fb64b805dd15744919649b5ca9dc5e678492e5f"
@@ -62,6 +64,7 @@
             "repo": "go-enum",
             "rev": "v0.6.0",
             "sha256": "sha256-Mt45Qz8l++bvBLKEpbX0m8iTkHDpsZtdYhhHUprQKY8=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.6.0"
@@ -82,6 +85,7 @@
             "repo": "gomvp",
             "rev": "5b06c041c898822fd72cd245188e51d112adae74",
             "sha256": "sha256-dXjI+nItJCAGKxyC9tX11hxWHCP+NgXtTYtm5+6dqDU=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "5b06c041c898822fd72cd245188e51d112adae74"
@@ -102,6 +106,7 @@
             "repo": "hael",
             "rev": "d604e456f3f1b1c5df011204adb74d7e27a1fce5",
             "sha256": "sha256-QtOkCIReOgSRz/hMWT3v1PSpS0Dv8TgKkVnZv8AjsIE=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "d604e456f3f1b1c5df011204adb74d7e27a1fce5"
@@ -122,6 +127,7 @@
             "repo": "helm-ls",
             "rev": "v0.1.0",
             "sha256": "sha256-EuZbbeRssacrctIbxBbd2GOh8zgFi2OBRregfC88se0=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "v0.1.0"
@@ -147,13 +153,19 @@
             "repo": "hyfetch",
             "rev": "1b3b5ca883cdff47017d1be636a735162e19b6e8",
             "sha256": "sha256-qK7loxQXAklR8psMVugZReFYh2FbzrS3nLTZRV0Z+Ro=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1b3b5ca883cdff47017d1be636a735162e19b6e8"
     },
     "isabelroses-website": {
-        "cargoLocks": null,
-        "date": "2024-11-07",
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./isabelroses-website-ff970ea70d15f61cc3ea820cb0c998b4caa4ce18/Cargo.lock",
+                {}
+            ]
+        },
+        "date": "2024-11-16",
         "extract": null,
         "name": "isabelroses-website",
         "passthru": null,
@@ -165,11 +177,12 @@
             "name": null,
             "owner": "isabelroses",
             "repo": "website",
-            "rev": "9f8bd48d9fc88e1b26dad878162e72b1c9c98c81",
-            "sha256": "sha256-LWYT06gLd6J3bC+cIlMXYO0AJFT6TbeH0wHihS0FxZc=",
+            "rev": "ff970ea70d15f61cc3ea820cb0c998b4caa4ce18",
+            "sha256": "sha256-dScjX47djfu/ximuxcxmxYy0fm6k73mlrVwBZXtMeEk=",
+            "sparseCheckout": [],
             "type": "github"
         },
-        "version": "9f8bd48d9fc88e1b26dad878162e72b1c9c98c81"
+        "version": "ff970ea70d15f61cc3ea820cb0c998b4caa4ce18"
     },
     "ito": {
         "cargoLocks": {
@@ -192,6 +205,7 @@
             "repo": "ito",
             "rev": "30596468c71e1da2176eea78206486c60559bab6",
             "sha256": "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "30596468c71e1da2176eea78206486c60559bab6"
@@ -212,6 +226,7 @@
             "repo": "izrss",
             "rev": "47460bfdfde0ec797daa52150fff6106819b7d0a",
             "sha256": "sha256-UcE/zzGjBVst6+tE/Znary7pvQIAELj6eB7T2m803BM=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "47460bfdfde0ec797daa52150fff6106819b7d0a"
@@ -232,6 +247,7 @@
             "repo": "jq-lsp",
             "rev": "92763427b397246344db1bf9c7cd66339f351bc1",
             "sha256": "sha256-oe3yTcI5sMdWPV7rZF6VbQvtigKQliWYtiU7a47ipHY=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "92763427b397246344db1bf9c7cd66339f351bc1"
@@ -252,6 +268,7 @@
             "repo": "json-to-struct",
             "rev": "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec",
             "sha256": "sha256-l/XLZstZFVnYXRqtng1oiCSvhNAomyeTuI1OtCb8UHo=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "1f65fffbfdbb2b0e56a3f6f6cd24daad58e90dec"
@@ -277,6 +294,7 @@
             "repo": "meower",
             "rev": "edc08e7f0f22041d28c70bccd9fd6100e31c1040",
             "sha256": "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "edc08e7f0f22041d28c70bccd9fd6100e31c1040"
@@ -302,6 +320,7 @@
             "repo": "nh_darwin",
             "rev": "028777665a62825b88703edaf5d8e79c61ba2e6d",
             "sha256": "sha256-YstBWQKfFRWHvs/xZlN8sXZXCemu6tuvvStxEGhMmTQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "028777665a62825b88703edaf5d8e79c61ba2e6d"
@@ -327,6 +346,7 @@
             "repo": "nixpkgs-track",
             "rev": "4792e406455f7dda87ee5915fdaaeaa9b44569fd",
             "sha256": "sha256-KnCrng2k2yGxxakA9OsFBeKozE4CXo3TaqG4/wqqaj8=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "4792e406455f7dda87ee5915fdaaeaa9b44569fd"
@@ -352,6 +372,7 @@
             "repo": "nixpkgs-using",
             "rev": "9824a8023dec1f183df66a3dff2c7fe9d41cb498",
             "sha256": "sha256-5bblEPHbLenricLHZYZw1OyXxoEZNlYgt/JCgnE6tas=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "9824a8023dec1f183df66a3dff2c7fe9d41cb498"
@@ -377,6 +398,7 @@
             "repo": "purr",
             "rev": "e03d3075b4b1ee19148a4902332ffe29dbb39bea",
             "sha256": "sha256-a5jtJp0r/8iL+E8JhkgdVyKqYQc+uoXpRjf48N1CQ10=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "e03d3075b4b1ee19148a4902332ffe29dbb39bea"
@@ -402,6 +424,7 @@
             "repo": "ringfairy",
             "rev": "8635cb208f854fc5545b59db1cb602bf2f10e25a",
             "sha256": "sha256-0xN9Ddg/Vg9isJGPKgoSCf3fbTCB1PXSoowrroTHDtY=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "8635cb208f854fc5545b59db1cb602bf2f10e25a"
@@ -430,6 +453,7 @@
             "repo": "wezterm",
             "rev": "979df7826965348345a3305ed889a4b9aef838e1",
             "sha256": "sha256-DJhA2T94KtG+Fj7DACTsM5XyZAl58GfN4q1btUjKw9E=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "979df7826965348345a3305ed889a4b9aef838e1"
@@ -450,6 +474,7 @@
             "repo": "zzz",
             "rev": "0e925cee1e869c80f678d3b5ca81d930bffdfc9a",
             "sha256": "sha256-H6I4r6pzezkV7L9zbbr3lUGX1azmijZinN+Oc/0O0eQ=",
+            "sparseCheckout": [],
             "type": "github"
         },
         "version": "0e925cee1e869c80f678d3b5ca81d930bffdfc9a"
