@@ -1,20 +1,29 @@
 {
   lib,
   nvd,
-  pins,
   rustPlatform,
   installShellFiles,
   makeBinaryWrapper,
   nix-output-monitor,
+  fetchFromGitHub,
+  nix-update-script,
 }:
 let
-  version = builtins.substring 0 7 pins.nh-darwin.version;
+  version = "0-unstable-2024-10-30";
 in
 rustPlatform.buildRustPackage {
   pname = "nh-darwin";
   inherit version;
 
-  inherit (pins.nh-darwin) src;
+  src = fetchFromGitHub {
+    owner = "ToyVo";
+    repo = "nh_darwin";
+    rev = "028777665a62825b88703edaf5d8e79c61ba2e6d";
+    hash = "sha256-YstBWQKfFRWHvs/xZlN8sXZXCemu6tuvvStxEGhMmTQ=";
+  };
+
+  cargoHash = "sha256-KZMZMNK5HQvOie0erQnaEzqfEvO2pq0wA95LDo263WU=";
+
   strictDeps = true;
 
   nativeBuildInputs = [
@@ -41,7 +50,12 @@ rustPlatform.buildRustPackage {
       }
   '';
 
-  cargoLock = pins.nh-darwin.cargoLock."Cargo.lock";
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
+  };
 
   meta = {
     license = lib.licenses.eupl12;

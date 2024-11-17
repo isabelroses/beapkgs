@@ -1,17 +1,24 @@
 {
   lib,
-  pins,
   rustPlatform,
   fastfetch,
   makeWrapper,
+  nix-update-script,
+  fetchFromGitHub,
   backends ? [ fastfetch ],
 }:
 rustPlatform.buildRustPackage {
   pname = "hyfetch";
-  version = builtins.substring 0 7 pins.hyfetch.version;
+  version = "1.99.0-unstable-2024-11-12";
 
-  inherit (pins.hyfetch) src;
-  cargoLock = pins.hyfetch.cargoLock."Cargo.lock";
+  src = fetchFromGitHub {
+    owner = "hykilpikonna";
+    repo = "hyfetch";
+    rev = "1b3b5ca883cdff47017d1be636a735162e19b6e8";
+    hash = "sha256-qK7loxQXAklR8psMVugZReFYh2FbzrS3nLTZRV0Z+Ro=";
+  };
+
+  cargoHash = "sha256-0SSFtzTjg9TM4QmsPIM10HAYu8UVSl8EeMLEu0nb2R0=";
 
   nativeBuildInputs = [ makeWrapper ];
 
@@ -19,6 +26,13 @@ rustPlatform.buildRustPackage {
     wrapProgram $out/bin/hyfetch \
       --suffix PATH : ${lib.makeBinPath backends}
   '';
+
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
+  };
 
   meta = {
     description = "neofetch with pride flags <3";

@@ -1,14 +1,28 @@
 {
   lib,
-  pins,
   rustPlatform,
+  fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage {
   pname = "ito";
-  version = builtins.substring 0 7 pins.ito.version;
+  version = "0-unstable-2024-07-09";
 
-  inherit (pins.ito) src;
-  cargoLock = pins.ito.cargoLock."Cargo.lock";
+  src = fetchFromGitHub {
+    owner = "uncenter";
+    repo = "ito";
+    rev = "30596468c71e1da2176eea78206486c60559bab6";
+    hash = "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=";
+  };
+
+  cargoHash = "sha256-4czKsg/gANG/bVMW+uYHbB53Gpf/USK9QE9fy/haxIs=";
+
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
+  };
 
   meta = {
     description = "A powerful string manipulation tool";

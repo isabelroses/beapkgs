@@ -1,6 +1,5 @@
 {
   fontconfig,
-  pins,
   installShellFiles,
   lib,
   libGL,
@@ -18,14 +17,24 @@
   wayland,
   xorg,
   zlib,
+  fetchFromGitHub,
+  nix-update-script,
 }:
 rustPlatform.buildRustPackage rec {
-  inherit (pins.wezterm) pname src;
-  version = "${builtins.replaceStrings [ "-" ] [ "" ] pins.wezterm.date}-isabelroses-${
-    builtins.substring 0 7 pins.wezterm.version
-  }";
+  pname = "wezterm";
+  version = "20240203-110809-5046fc22-unstable-2024-11-14";
 
-  cargoLock = pins.wezterm.cargoLock."Cargo.lock";
+  src = fetchFromGitHub {
+    owner = "wez";
+    repo = "wezterm";
+    rev = "979df7826965348345a3305ed889a4b9aef838e1";
+    hash = "sha256-DJhA2T94KtG+Fj7DACTsM5XyZAl58GfN4q1btUjKw9E=";
+    fetchSubmodules = true;
+  };
+
+  useFetchCargoVendor = true;
+  cargoHash = "sha256-DJhA2T94KtG+Fj7DACTsM5XyZAl58GfN4q1btUjKw9E=";
+
   doCheck = false;
 
   nativeBuildInputs = [
@@ -101,6 +110,13 @@ rustPlatform.buildRustPackage rec {
       mkdir -p $out/share/terminfo $out/nix-support
       tic -x -o $out/share/terminfo ${src}/termwiz/data/wezterm.terminfo
     '';
+
+    updateScript = nix-update-script {
+      extraArgs = [
+        "--version"
+        "branch=HEAD"
+      ];
+    };
   };
 
   meta = {
