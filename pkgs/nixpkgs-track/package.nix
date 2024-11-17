@@ -1,23 +1,36 @@
 {
   lib,
-  pins,
   openssl,
   pkg-config,
   rustPlatform,
-  ...
+  nix-update-script,
+  fetchFromGitHub,
 }:
 rustPlatform.buildRustPackage {
   pname = "nixpkgs-track";
-  version = builtins.substring 0 7 pins.nixpkgs-track.version;
+  version = "0-unstable-2024-10-10";
 
-  inherit (pins.nixpkgs-track) src;
-  cargoLock = pins.nixpkgs-track.cargoLock."Cargo.lock";
+  src = fetchFromGitHub {
+    owner = "uncenter";
+    repo = "nixpkgs-track";
+    rev = "4792e406455f7dda87ee5915fdaaeaa9b44569fd";
+    hash = "sha256-KnCrng2k2yGxxakA9OsFBeKozE4CXo3TaqG4/wqqaj8=";
+  };
+
+  cargoHash = "sha256-2MSOb88SPsry+Q3XAOW2S8cSiTcaQ2LzIFmgPXRlD10=";
 
   buildInputs = [
     openssl
   ];
 
   nativeBuildInputs = [ pkg-config ];
+
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
+  };
 
   meta = {
     description = "Track where Nixpkgs pull requests have reached";

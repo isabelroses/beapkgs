@@ -1,27 +1,38 @@
 {
   lib,
-  pins,
   rustPlatform,
   openssl,
   pkg-config,
+  nix-update-script,
+  fetchFromGitHub,
 }:
 let
-  version = builtins.substring 0 7 pins.blahaj.version;
+  version = "0-unstable-2024-10-13";
 in
 rustPlatform.buildRustPackage {
   pname = "blahaj";
   inherit version;
 
-  inherit (pins.blahaj) src;
+  src = fetchFromGitHub {
+    owner = "isabelroses";
+    repo = "blahaj";
+    rev = "1fb64b805dd15744919649b5ca9dc5e678492e5f";
+    hash = "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=";
+  };
 
-  cargoLock = pins.blahaj.cargoLock."Cargo.lock";
+  useFetchCargoVendor = true;
+  cargoHash = "sha256-RdNeRmONn3LbYQ0mwCwAWOJx+F43+/agjRjIpLmdfiA=";
 
   buildInputs = [ openssl ];
-
   nativeBuildInputs = [ pkg-config ];
 
-  env = {
-    BUILD_REV = version;
+  env.BUILD_REV = version;
+
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
   };
 
   meta = {

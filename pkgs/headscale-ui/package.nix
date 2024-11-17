@@ -3,17 +3,18 @@
   unzip,
   stdenv,
   fetchurl,
+  nix-update-script,
 }:
 let
   pname = "headscale-ui";
-  version = "2023.01.30-beta-1";
+  version = "2024.10.10";
 in
 stdenv.mkDerivation {
   inherit pname version;
 
   src = fetchurl {
     url = "https://github.com/gurucomputing/${pname}/releases/download/${version}/headscale-ui.zip";
-    sha256 = "sha256-6SUgtSTFvJWNdsWz6AiOfUM9p33+8EhDwyqHX7O2+NQ=";
+    sha256 = "sha256-NZjlwRiyTFrC4RFDVYyvxVvurjZhXRRsE9UrYisoPdc=";
   };
 
   buildInputs = [ unzip ];
@@ -30,6 +31,8 @@ stdenv.mkDerivation {
     mkdir -p $out/share/
     cp -r web/ $out/share/
   '';
+
+  passthru.updateScript = nix-update-script { };
 
   meta = {
     description = "A web frontend for the headscale Tailscale-compatible coordination server";

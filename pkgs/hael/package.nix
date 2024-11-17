@@ -1,16 +1,19 @@
 {
   lib,
-  pins,
   buildGoModule,
+  fetchFromGitHub,
+  nix-update-script,
 }:
-let
-  version = builtins.substring 0 7 pins.hael.version;
-in
 buildGoModule {
   pname = "hael";
-  inherit version;
+  version = "0.0.2-unstable-2024-03-25";
 
-  inherit (pins.hael) src;
+  src = fetchFromGitHub {
+    owner = "isabelroses";
+    repo = "hael";
+    rev = "d604e456f3f1b1c5df011204adb74d7e27a1fce5";
+    hash = "sha256-QtOkCIReOgSRz/hMWT3v1PSpS0Dv8TgKkVnZv8AjsIE=";
+  };
 
   vendorHash = null;
 
@@ -18,6 +21,13 @@ buildGoModule {
     "-s"
     "-w"
   ];
+
+  passthru.updateScript = nix-update-script {
+    extraArgs = [
+      "--version"
+      "branch=HEAD"
+    ];
+  };
 
   meta = {
     description = "Trans rights are human rights";

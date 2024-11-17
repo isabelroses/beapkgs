@@ -2,7 +2,6 @@
   lib,
   fetchFromSourcehut,
   haskell,
-  ...
 }:
 haskell.packages.ghc94.mkDerivation {
   pname = "term2alpha";
@@ -19,6 +18,13 @@ haskell.packages.ghc94.mkDerivation {
   isExecutable = true;
 
   executableHaskellDepends = [ haskell.packages.ghc94.base ];
+
+  # passthru.updateScript = nix-update-script {
+  #   extraArgs = [
+  #     "--version"
+  #     "branch=HEAD"
+  #   ];
+  # };
 
   license = lib.licenses.mit;
   mainProgram = "term2alpha";
