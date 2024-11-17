@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     # flake only users can ignore this input
     flake-compat = {
@@ -32,9 +32,34 @@
         pkgs:
         lib.packagesFromDirectoryRecursive {
           directory = ./pkgs;
-          callPackage = lib.callPackageWith (
-            pkgs // { pins = pkgs.callPackage ./_sources/generated.nix { }; }
-          );
+          inherit (pkgs) callPackage;
+        }
+        // {
+          # taken and slightly modified from
+          # https://github.com/lilyinstarlight/nixos-cosmic/blob/0b0e62252fb3b4e6b0a763190413513be499c026/flake.nix#L81
+          update = pkgs.writeShellApplication {
+            name = "update";
+
+            text = lib.concatStringsSep "\n" (
+              lib.mapAttrsToList (
+                name: pkg:
+                if pkg ? updateScript && (lib.isList pkg.updateScript) && (lib.length pkg.updateScript) > 0 then
+                  lib.escapeShellArgs (
+                    if (lib.match "nix-update|.*/nix-update" (lib.head pkg.updateScript) != null) then
+                      [ (lib.getExe pkgs.nix-update) ]
+                      ++ (lib.tail pkg.updateScript)
+                      ++ [
+                        "--flake"
+                        "packages.${pkgs.stdenv.hostPlatform.system}.${name}"
+                      ]
+                    else
+                      pkg.updateScript
+                  )
+                else
+                  builtins.toString pkg.updateScript or ""
+              ) packages.${pkgs.stdenv.hostPlatform.system}
+            );
+          };
         }
       );
     in
