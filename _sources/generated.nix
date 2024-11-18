@@ -97,21 +97,21 @@
   };
   isabelroses-website = {
     pname = "isabelroses-website";
-    version = "ff970ea70d15f61cc3ea820cb0c998b4caa4ce18";
+    version = "20de3520c58c42d8d435e755a79a8eb077a2e1ff";
     src = fetchFromGitHub {
       owner = "isabelroses";
       repo = "website";
-      rev = "ff970ea70d15f61cc3ea820cb0c998b4caa4ce18";
+      rev = "20de3520c58c42d8d435e755a79a8eb077a2e1ff";
       fetchSubmodules = false;
-      sha256 = "sha256-dScjX47djfu/ximuxcxmxYy0fm6k73mlrVwBZXtMeEk=";
+      sha256 = "sha256-/PApKnetermcVz9K3RaoddJ5ldQWZd9k6clpkF8TjfQ=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./isabelroses-website-ff970ea70d15f61cc3ea820cb0c998b4caa4ce18/Cargo.lock;
+      lockFile = ./isabelroses-website-20de3520c58c42d8d435e755a79a8eb077a2e1ff/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-11-16";
+    date = "2024-11-17";
   };
   ito = {
     pname = "ito";
@@ -187,21 +187,21 @@
   };
   nh-darwin = {
     pname = "nh-darwin";
-    version = "028777665a62825b88703edaf5d8e79c61ba2e6d";
+    version = "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2";
     src = fetchFromGitHub {
       owner = "ToyVo";
       repo = "nh_darwin";
-      rev = "028777665a62825b88703edaf5d8e79c61ba2e6d";
+      rev = "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2";
       fetchSubmodules = false;
-      sha256 = "sha256-YstBWQKfFRWHvs/xZlN8sXZXCemu6tuvvStxEGhMmTQ=";
+      sha256 = "sha256-u6rTrvXRii4wm1qs1F0/IcRDLwfEcEDxC5YO5NkL8Gg=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./nh-darwin-028777665a62825b88703edaf5d8e79c61ba2e6d/Cargo.lock;
+      lockFile = ./nh-darwin-f19fcb3ad4c2f0686c36243fd8a9f7793942dea2/Cargo.lock;
       outputHashes = {
         
       };
     };
-    date = "2024-10-30";
+    date = "2024-11-17";
   };
   nixpkgs-track = {
     pname = "nixpkgs-track";
