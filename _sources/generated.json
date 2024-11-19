@@ -223,7 +223,7 @@
     },
     "jq-lsp": {
         "cargoLocks": null,
-        "date": "2024-11-08",
+        "date": "2024-11-18",
         "extract": null,
         "name": "jq-lsp",
         "passthru": null,
@@ -235,11 +235,11 @@
             "name": null,
             "owner": "wader",
             "repo": "jq-lsp",
-            "rev": "92763427b397246344db1bf9c7cd66339f351bc1",
-            "sha256": "sha256-oe3yTcI5sMdWPV7rZF6VbQvtigKQliWYtiU7a47ipHY=",
+            "rev": "cd4787c1a931005c277944f1aec7da41efb9382d",
+            "sha256": "sha256-bXi7FxoTJlIRl6yCycr9vJw5aiXdE/MYAzjnwhT98eY=",
             "type": "github"
         },
-        "version": "92763427b397246344db1bf9c7cd66339f351bc1"
+        "version": "cd4787c1a931005c277944f1aec7da41efb9382d"
     },
     "json-to-struct": {
         "cargoLocks": null,
