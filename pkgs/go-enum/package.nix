@@ -18,7 +18,7 @@ buildGoModule {
     hash = "sha256-Mt45Qz8l++bvBLKEpbX0m8iTkHDpsZtdYhhHUprQKY8=";
   };
 
-  vendorHash = "sha256-yzivi+plzt24s/kjtxifwrvjriu8jlvkc1lgw4yg6cg=";
+  vendorHash = "sha256-YzIVI+PLZt24s/KjTxifWrvjrIU8jLvkC1lgw4yG6cg=";
 
   passthru.updateScript = nix-update-script { };
 
