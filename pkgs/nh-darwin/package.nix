@@ -9,7 +9,7 @@
   nix-update-script,
 }:
 let
-  version = "0-unstable-2024-10-30";
+  version = "3.6.0-0-unstable-2024-11-17";
 in
 rustPlatform.buildRustPackage {
   pname = "nh-darwin";
@@ -18,11 +18,11 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "ToyVo";
     repo = "nh_darwin";
-    rev = "028777665a62825b88703edaf5d8e79c61ba2e6d";
-    hash = "sha256-YstBWQKfFRWHvs/xZlN8sXZXCemu6tuvvStxEGhMmTQ=";
+    rev = "f19fcb3ad4c2f0686c36243fd8a9f7793942dea2";
+    hash = "sha256-u6rTrvXRii4wm1qs1F0/IcRDLwfEcEDxC5YO5NkL8Gg=";
   };
 
-  cargoHash = "sha256-KZMZMNK5HQvOie0erQnaEzqfEvO2pq0wA95LDo263WU=";
+  cargoHash = "sha256-I3ArDu0VsvEesiqr9t42r7+sgabn9SgYilWWYr7X0pU=";
 
   strictDeps = true;
 
