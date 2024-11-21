@@ -23,10 +23,10 @@ let
     richgo
     gotestsum
     mockgen
-    (callPackage ../json-to-struct { })
-    (callPackage ../gomvp { })
+    (callPackage ../json-to-struct/package.nix { })
+    (callPackage ../gomvp/package.nix { })
     govulncheck
-    (callPackage ../go-enum { })
+    (callPackage ../go-enum/package.nix { })
   ];
 in
 pkgs.symlinkJoin {
