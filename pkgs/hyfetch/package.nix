@@ -9,16 +9,16 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "hyfetch";
-  version = "1.99.0-unstable-2024-11-12";
+  version = "1.99.0-unstable-2024-11-22";
 
   src = fetchFromGitHub {
     owner = "hykilpikonna";
     repo = "hyfetch";
-    rev = "1b3b5ca883cdff47017d1be636a735162e19b6e8";
-    hash = "sha256-qK7loxQXAklR8psMVugZReFYh2FbzrS3nLTZRV0Z+Ro=";
+    rev = "bb260890c5d2ad8bba6cb1fa5156d786caf562da";
+    hash = "sha256-WzEbOGuyqV/9E3wlcZJk/HIHQe5zAz3qp+pJAtL+/LQ=";
   };
 
-  cargoHash = "sha256-0SSFtzTjg9TM4QmsPIM10HAYu8UVSl8EeMLEu0nb2R0=";
+  cargoHash = "sha256-dK5gjenmTQiproVovI4c1iwogtSX/xCsTOAhEB51A4o=";
 
   nativeBuildInputs = [ makeWrapper ];
 
