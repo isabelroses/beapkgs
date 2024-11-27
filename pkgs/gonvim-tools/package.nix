@@ -1,9 +1,30 @@
 {
   lib,
-  pkgs,
+  symlinkJoin,
+
+  # paths
+  gotools,
+  gofumpt,
+  golines,
+  golangci-lint,
+  gomodifytags,
+  gopls,
+  gotests,
+  iferr,
+  impl,
+  reftools,
+  delve,
+  ginkgo,
+  richgo,
+  gotestsum,
+  mockgen,
+  json-to-struct,
+  gomvp,
+  govulncheck,
+  go-enum,
 }:
 let
-  paths = with pkgs; [
+  paths = [
     # comments are binaries provided by the package
     # see https://github.com/ray-x/go.nvim/blob/master/lua/go/install.lua
     # all sorted in order of what they are in the file above, with this exception:
@@ -23,13 +44,13 @@ let
     richgo
     gotestsum
     mockgen
-    (callPackage ../json-to-struct/package.nix { })
-    (callPackage ../gomvp/package.nix { })
+    json-to-struct
+    gomvp
     govulncheck
-    (callPackage ../go-enum/package.nix { })
+    go-enum
   ];
 in
-pkgs.symlinkJoin {
+symlinkJoin {
   name = "gonvim-tools";
 
   inherit paths;
