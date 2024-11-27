@@ -13,7 +13,7 @@ in
     enable = lib.mkEnableOption "nh-darwin, yet another Nix CLI helper. Works on NixOS, NixDarwin, and HomeManager Standalone";
 
     package = lib.mkPackageOption pkgs "nh" { } // {
-      default = self.packages.${pkgs.stdenv.hostPlatform.system}.nh-darwin;
+      default = self.packages.${pkgs.stdenv.hostPlatform.system}.nh;
     };
 
     flake = lib.mkOption {
