@@ -1,21 +1,36 @@
 {
   lib,
+  just,
+  dart-sass,
   rustPlatform,
   fetchFromGitHub,
   nix-update-script,
 }:
 rustPlatform.buildRustPackage {
   pname = "isabelroses-website";
-  version = "0-unstable-2024-11-17";
+  version = "0-unstable-2024-12-14";
 
   src = fetchFromGitHub {
     owner = "isabelroses";
     repo = "website";
-    rev = "20de3520c58c42d8d435e755a79a8eb077a2e1ff";
-    hash = "sha256-/PApKnetermcVz9K3RaoddJ5ldQWZd9k6clpkF8TjfQ=";
+    rev = "b909ed3d41026d3b94476164649af95f4b72d03e";
+    hash = "sha256-6vxzaEXkSMp5+G75ElXMDbmQpPIjpLXuhGYZg3nr9us=";
   };
 
-  cargoHash = "sha256-PeqZC/buRYtNNVqso++9uf0y/z5jJk5LtCJAQtmJ47k=";
+  cargoHash = "sha256-6DJjw66U9kWA+4szHRXcToMmvY/xPAfI/cvC+r2xoGQ=";
+
+  nativeBuildInputs = [
+    just
+    dart-sass
+  ];
+
+  dontUseJustInstall = true;
+  dontUseJustBuild = true;
+  dontUseJustCheck = true;
+
+  preBuild = ''
+    just build-styles
+  '';
 
   passthru.updateScript = nix-update-script {
     extraArgs = [
