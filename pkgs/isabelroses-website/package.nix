@@ -8,16 +8,16 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "isabelroses-website";
-  version = "0-unstable-2024-12-19";
+  version = "0-unstable-2024-12-20";
 
   src = fetchFromGitHub {
     owner = "isabelroses";
     repo = "website";
-    rev = "6f7cf02af1c83520c61ccc3bb3abcc5cff6c9838";
-    hash = "sha256-eNFNfi+uF3D9QIs52Ww8/vrwwMbLrgIhTi39TbLMQ5o=";
+    rev = "7f3e6e19a22a29067fadac6ef19a1977acd6b4b9";
+    hash = "sha256-IVYPxsiroXzYcS+jZA5zDJ4Ix0HUbS/jgFg6ZdlVGmU=";
   };
 
-  cargoHash = "sha256-Dq6I4zN+1DVBbyMlsS/Tf6J49PYX+rW/sy/qIGWABdQ=";
+  cargoHash = "sha256-oADW3b/h+aXg8iam9c2CVLkIjjzYMC2fAty6BG1OhhY=";
 
   nativeBuildInputs = [
     just
