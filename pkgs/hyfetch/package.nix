@@ -14,11 +14,11 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "hykilpikonna";
     repo = "hyfetch";
-    rev = "afd9ad33d49744cea35441534fdd1fdc47ad00bc";
-    hash = "sha256-ybke2iynZSepQ9tjpejL4VbQ52a7C2CrSFhoiDLrpGQ=";
+    rev = "9806ced8b2d044211cfb96466168a1a781e61dc4";
+    hash = "sha256-ocIrTMBxiJ80sGfPl2mHpqV2LCGwKLZ08AAT2uJNM0I=";
   };
 
-  cargoHash = "sha256-6xNXYauSGkhL28apHbRZ9JpBu7Yvj46nR2GtjyXxwms=";
+  cargoHash = "sha256-wj8R3dduepgEIk2atzgd8s4HY9nwqQ8JDZlpNY3G92Q=";
 
   nativeBuildInputs = [ makeWrapper ];
 
