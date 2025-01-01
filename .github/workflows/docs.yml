@@ -5,7 +5,6 @@ on:
   push:
     paths:
       - "modules/**/*"
-      - "pkgs/**/*"
       - ".github/workflows/docs.yml"
 
 jobs:
@@ -23,7 +22,7 @@ jobs:
           logger: pretty
 
       - name: Build Linux packages
-        run: "nix build -L .#beapkgs-docs"
+        run: "nix build -L docs#beapkgs-docs"
 
       - name: Upload Pages Artifact
         uses: "actions/upload-pages-artifact@v3"
