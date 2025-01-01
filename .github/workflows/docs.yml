@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "modules/**/*"
+      - "docs/**/*"
       - ".github/workflows/docs.yml"
 
 jobs:
