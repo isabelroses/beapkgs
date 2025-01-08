@@ -8,16 +8,16 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "nixpkgs-track";
-  version = "0-unstable-2024-10-10";
+  version = "0.2.0-unstable-2025-01-07";
 
   src = fetchFromGitHub {
     owner = "uncenter";
     repo = "nixpkgs-track";
-    rev = "4792e406455f7dda87ee5915fdaaeaa9b44569fd";
-    hash = "sha256-KnCrng2k2yGxxakA9OsFBeKozE4CXo3TaqG4/wqqaj8=";
+    rev = "7b10fc639400f822c97a731469cdfec31e6b68e5";
+    hash = "sha256-nKQYINm0eZw5PMSaj7nfclcdZNrZT3aJDJ7cBzq8ZYE=";
   };
 
-  cargoHash = "sha256-2MSOb88SPsry+Q3XAOW2S8cSiTcaQ2LzIFmgPXRlD10=";
+  cargoHash = "sha256-GhRhdWjuDG8dBXNTPyzZLew6MWuXsUrERBllLBB4AOM=";
 
   buildInputs = [
     openssl
