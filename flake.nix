@@ -97,9 +97,9 @@
     };
 
   nixConfig = {
-    extra-substituters = [ "https://isabelroses.cachix.org" ];
+    extra-substituters = [ "https://beapkgs.cachix.org" ];
     extra-trusted-public-keys = [
-      "isabelroses.cachix.org-1:mXdV/CMcPDaiTmkQ7/4+MzChpOe6Cb97njKmBQQmLPM="
+      "beapkgs.cachix.org-1:gcUFDNeQvGeAc/jDl/K8ax9WZvcCA71J+A36m7u7UWM="
     ];
   };
 }
