@@ -2,13 +2,15 @@ name: Build and populate cache
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *"
+  workflow_run:
+    workflows:
+      - Bump Flake Inputs
+    types:
+      - completed
   push:
     paths:
-      - "flake/pkgs"
+      - "pkgs"
       - "**.lock"
-      - "_sources/*"
       - ".github/workflows/build.yml"
 
 jobs:
