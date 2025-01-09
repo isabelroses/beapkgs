@@ -1,5 +1,7 @@
 {
   lib,
+  openssl,
+  pkg-config,
   rustPlatform,
   nix-update-script,
   fetchFromGitHub,
@@ -16,6 +18,9 @@ rustPlatform.buildRustPackage {
   };
 
   cargoHash = "sha256-2ykBg8Ki3deut2/drSrDJdfw3m+tfo21ji1CsKYNo60=";
+
+  buildInputs = [ openssl ];
+  nativeBuildInputs = [ pkg-config ];
 
   passthru.updateScript = nix-update-script {
     extraArgs = [
