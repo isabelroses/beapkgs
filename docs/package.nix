@@ -1,6 +1,7 @@
 {
   pkgs,
   nuscht-search,
+  beapkgs,
   ...
 }:
 let
@@ -14,7 +15,7 @@ nuscht-search.mkMultiSearch {
     {
       name = "NixOS modules";
       modules = [
-        ../modules/nixos
+        (import ../modules/nixos { beapkgsSelf = beapkgs; })
         { _module.args = { inherit pkgs; }; }
       ];
       inherit urlPrefix;
@@ -22,7 +23,7 @@ nuscht-search.mkMultiSearch {
     {
       name = "darwin modules";
       modules = [
-        ../modules/darwin
+        (import ../modules/darwin { beapkgsSelf = beapkgs; })
         { _module.args = { inherit pkgs; }; }
       ];
       inherit urlPrefix;
@@ -30,7 +31,7 @@ nuscht-search.mkMultiSearch {
     {
       name = "home-manager modules";
       modules = [
-        ../modules/home-manager
+        (import ../modules/home-manager { beapkgsSelf = beapkgs; })
         { _module.args = { inherit pkgs; }; }
       ];
       inherit urlPrefix;

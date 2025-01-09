@@ -1,1 +1,10 @@
-self: { imports = [ (import ./nh.nix self) ]; }
+{ beapkgsSelf }:
+{ lib, ... }:
+{
+  imports = [
+    (lib.modules.importApply ../global.nix {
+      beapkgsModules = import ./all-modules.nix;
+      inherit beapkgsSelf;
+    })
+  ];
+}

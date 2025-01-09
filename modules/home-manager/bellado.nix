@@ -1,4 +1,4 @@
-self:
+{ beapkgs }:
 {
   lib,
   pkgs,
@@ -7,6 +7,15 @@ self:
 }:
 let
   inherit (lib) mkEnableOption mkIf optionalAttrs;
+
+  cfg = config.programs.bellado;
+
+  aliases = optionalAttrs cfg.enableAliases {
+    bel = "bellado";
+    bell = "bellado -l";
+    bella = "bellado -la";
+    bellc = "bellado -lc";
+  };
 in
 {
   options.programs.bellado = {
@@ -15,26 +24,15 @@ in
     enableAliases = mkEnableOption "recommended bellado aliases";
   };
 
-  config =
-    let
-      cfg = config.programs.bellado;
+  config = mkIf cfg.enable {
+    home.packages = [ beapkgs.packages.${pkgs.stdenv.hostPlatform.system}.bellado ];
 
-      aliases = optionalAttrs cfg.enableAliases {
-        bel = "bellado";
-        bell = "bellado -l";
-        bella = "bellado -la";
-        bellc = "bellado -lc";
-      };
-    in
-    mkIf cfg.enable {
-      home.packages = [ self.packages.${pkgs.stdenv.hostPlatform.system}.bellado ];
-
-      programs = {
-        bash.shellAliases = aliases;
-        zsh.shellAliases = aliases;
-        fish.shellAliases = aliases;
-        ion.shellAliases = aliases;
-        nushell.shellAliases = aliases;
-      };
+    programs = {
+      bash.shellAliases = aliases;
+      zsh.shellAliases = aliases;
+      fish.shellAliases = aliases;
+      ion.shellAliases = aliases;
+      nushell.shellAliases = aliases;
     };
+  };
 }

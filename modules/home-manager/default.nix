@@ -1,7 +1,10 @@
-self: {
+{ beapkgsSelf }:
+{ lib, ... }:
+{
   imports = [
-    (import ./bellado.nix self)
-    (import ./izrss.nix self)
-    (import ./zzz.nix self)
+    (lib.modules.importApply ../global.nix {
+      beapkgsModules = import ./all-modules.nix;
+      inherit beapkgsSelf;
+    })
   ];
 }

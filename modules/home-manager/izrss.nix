@@ -1,4 +1,4 @@
-self:
+{ beapkgs }:
 {
   lib,
   pkgs,
@@ -14,6 +14,8 @@ let
     ;
 
   settingsFormat = pkgs.formats.toml { };
+
+  cfg = config.programs.izrss;
 in
 {
   meta.maintainers = [ lib.maintainers.isabelroses ];
@@ -22,7 +24,7 @@ in
     enable = mkEnableOption "A fast and once simple cli todo tool";
 
     package = mkPackageOption pkgs "izrss" { } // {
-      default = self.packages.${pkgs.stdenv.hostPlatform.system}.izrss;
+      default = beapkgs.packages.${pkgs.stdenv.hostPlatform.system}.izrss;
     };
 
     settings = mkOption {
@@ -67,15 +69,11 @@ in
     )
   ];
 
-  config =
-    let
-      cfg = config.programs.izrss;
-    in
-    mkIf cfg.enable {
-      home.packages = [ cfg.package ];
+  config = mkIf cfg.enable {
+    home.packages = [ cfg.package ];
 
-      xdg.configFile."izrss/config.toml" = mkIf (cfg.settings != { }) {
-        source = settingsFormat.generate "izrss-config.toml" cfg.settings;
-      };
+    xdg.configFile."izrss/config.toml" = mkIf (cfg.settings != { }) {
+      source = settingsFormat.generate "izrss-config.toml" cfg.settings;
     };
+  };
 }

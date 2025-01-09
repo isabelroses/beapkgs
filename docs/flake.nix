@@ -1,8 +1,8 @@
 {
   inputs = {
-    nixpkgs = {
-      url = "github:NixOS/nixpkgs/nixos-unstable";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    beapkgs.url = "git+file:.";
 
     nuscht-search = {
       url = "github:NuschtOS/search";
@@ -13,6 +13,7 @@
   outputs =
     {
       nixpkgs,
+      beapkgs,
       nuscht-search,
       ...
     }:
@@ -26,6 +27,7 @@
       packages = forAllSystems (pkgs: {
         beapkgs-docs = pkgs.callPackage ./package.nix {
           nuscht-search = nuscht-search.packages.${pkgs.stdenv.hostPlatform.system};
+          inherit beapkgs;
         };
       });
     };

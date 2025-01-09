@@ -10,7 +10,11 @@
   };
 
   outputs =
-    { self, nixpkgs, ... }:
+    {
+      self,
+      nixpkgs,
+      ...
+    }:
     let
       inherit (nixpkgs) lib;
 
@@ -87,10 +91,9 @@
 
       overlays.default = _: prev: self.packages.${prev.stdenv.hostPlatform.system} or { };
 
-      # try getting default to merge modules using [lib.mergeModules](https://noogle.dev/f/lib/mergeModules)
-      nixosModules.default = import ./modules/nixos;
-      darwinModules.default = import ./modules/darwin self;
-      homeManagerModules.default = import ./modules/home-manager self;
+      nixosModules.default = import ./modules/nixos { beapkgsSelf = self; };
+      darwinModules.default = import ./modules/darwin { beapkgsSelf = self; };
+      homeManagerModules.default = import ./modules/home-manager { beapkgsSelf = self; };
     };
 
   nixConfig = {
