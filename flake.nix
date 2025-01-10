@@ -1,13 +1,5 @@
 {
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
-    # flake only users can ignore this input
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
-  };
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
   outputs =
     {
@@ -18,37 +10,35 @@
     let
       inherit (nixpkgs) lib;
 
-      extLib = import ./ci.nix;
-
       forAllSystems =
-        function:
+        fn:
         lib.genAttrs lib.systems.flakeExposed (
           system:
-          function (
+          fn (
             import nixpkgs {
               inherit system;
               config.allowUnfree = true;
             }
           )
         );
-
-      packages = forAllSystems (
-        pkgs:
-        lib.packagesFromDirectoryRecursive {
-          directory = ./pkgs;
-          callPackage = lib.callPackageWith (pkgs // self.packages.${pkgs.stdenv.hostPlatform.system});
-        }
-      );
     in
     {
-      inherit packages;
-      legacyPackages = packages;
+      packages = forAllSystems (pkgs: import ./default.nix { inherit pkgs; });
 
-      githubActions = extLib.mkGithubMatrix {
-        packages = {
-          inherit (self.packages) x86_64-linux x86_64-darwin aarch64-darwin;
-        };
-      };
+      hydraJobs = forAllSystems (
+        pkgs:
+        lib.filterAttrs (
+          _: pkg:
+          let
+            isDerivation = lib.isDerivation pkg;
+            availableOnHost = lib.meta.availableOn pkgs.stdenv.hostPlatform pkg;
+            isCross = pkg.stdenv.buildPlatform != pkg.stdenv.targetPlatform;
+            broken = pkg.meta.broken or false;
+            isCacheable = !(pkg.preferLocalBuild or false);
+          in
+          isDerivation && (availableOnHost || isCross) && !broken && isCacheable
+        ) self.packages.${pkgs.stdenv.hostPlatform.system}
+      );
 
       # taken and slightly modified from
       # https://github.com/lilyinstarlight/nixos-cosmic/blob/0b0e62252fb3b4e6b0a763190413513be499c026/flake.nix#L81
@@ -76,7 +66,7 @@
                     )
                   else
                     builtins.toString pkg.updateScript or ""
-                ) packages.${pkgs.stdenv.hostPlatform.system}
+                ) self.packages.${pkgs.stdenv.hostPlatform.system}
               );
             }
           );
