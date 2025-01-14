@@ -5,7 +5,7 @@
   nix-update-script,
 }:
 let
-  version = "0.1.0-unstable-2024-12-18";
+  version = "0.1.0-unstable-2025-01-13";
 in
 buildGoModule {
   pname = "izrss";
@@ -14,11 +14,11 @@ buildGoModule {
   src = fetchFromGitHub {
     owner = "isabelroses";
     repo = "izrss";
-    rev = "ede8883b1545f40d43b2d2f2c10be9b238cb379e";
-    hash = "sha256-Kt/gAXlXNw40F7U6sg9IISlajXTQ+Cep10u4bkGZt7Q=";
+    rev = "d6f5dbe5ff1765e67df5a4630e586e1ad09ad551";
+    hash = "sha256-FYnHpQjSYq5ZRgBWj84+Y5cq3oJcg4R62KmnK6MCToE=";
   };
 
-  vendorHash = "sha256-/VTxJp96Z/ngwe/SD/zMrBe8kUlb09zABxndc2YXkoU=";
+  vendorHash = "sha256-yW26HcZc98m2RRS59MZsxzWCDsjTWCU3XqD9EhxVq+0=";
 
   ldflags = [
     "-s"
