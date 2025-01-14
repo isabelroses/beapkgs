@@ -37,9 +37,6 @@ jobs:
           source-url: https://install.lix.systems/lix/lix-installer-${{ matrix.system }}
           logger: pretty
 
-      - name: Nix Magic Cache
-        uses: DeterminateSystems/magic-nix-cache-action@main
-
       - name: Setup cachix
         uses: cachix/cachix-action@v15
         with:
