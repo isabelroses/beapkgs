@@ -6,16 +6,16 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "ito";
-  version = "0-unstable-2024-07-09";
+  version = "0-unstable-2025-01-15";
 
   src = fetchFromGitHub {
     owner = "uncenter";
     repo = "ito";
-    rev = "30596468c71e1da2176eea78206486c60559bab6";
-    hash = "sha256-g8hPXX91+TKijEMqDhhSeHSAYBYIkwnRnLff/yGhOWs=";
+    rev = "ef9b77d5ec1653183ba35bae0d9d3decadbe6ade";
+    hash = "sha256-m73wzVwnkFJEPAzCsYvvBD6Ubwmfn6k//sHiA5+E5Sc=";
   };
 
-  cargoHash = "sha256-4czKsg/gANG/bVMW+uYHbB53Gpf/USK9QE9fy/haxIs=";
+  cargoHash = "sha256-YHWkapW015kuocakACJRX8kAJciRQ0SsdvUgUgZh86o=";
 
   passthru.updateScript = nix-update-script {
     extraArgs = [
