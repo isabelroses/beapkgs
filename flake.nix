@@ -21,6 +21,19 @@
             }
           )
         );
+
+      mkModule =
+        {
+          name ? "default",
+          class,
+          file,
+        }:
+        {
+          _class = class;
+          _file = "${self.outPath}/flake.nix#${class}Modules.${name}";
+
+          imports = [ (import file { beapkgsSelf = self; }) ];
+        };
     in
     {
       packages = forAllSystems (pkgs: import ./default.nix { inherit pkgs; });
@@ -79,11 +92,22 @@
 
       formatter = forAllSystems (pkgs: pkgs.nixfmt-rfc-style);
 
-      overlays.default = _: prev: self.packages.${prev.stdenv.hostPlatform.system} or { };
+      overlays.default = _: prev: import ./default.nix { pkgs = prev; };
 
-      nixosModules.default = import ./modules/nixos { beapkgsSelf = self; };
-      darwinModules.default = import ./modules/darwin { beapkgsSelf = self; };
-      homeManagerModules.default = import ./modules/home-manager { beapkgsSelf = self; };
+      nixosModules.default = mkModule {
+        class = "nixos";
+        file = ./modules/nixos;
+      };
+
+      darwinModules.default = mkModule {
+        class = "darwin";
+        file = ./modules/darwin;
+      };
+
+      homeManagerModules.default = mkModule {
+        class = "homeManager";
+        file = ./modules/home-manager;
+      };
     };
 
   nixConfig = {
