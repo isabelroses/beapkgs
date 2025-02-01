@@ -24,15 +24,10 @@ jobs:
           logger: pretty
 
       - name: Update Lockfile
-        run: nix flake update
+        run: nix flake update --commit-lock-file
 
       - name: Update Packages
         run: nix run .#update
 
-      - name: Commit and push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update"
-          push_options: "--force"
-          commit_user_name: GitHub Actions
-
+      - name: Push changes
+        run: git push origin main

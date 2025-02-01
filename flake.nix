@@ -73,6 +73,7 @@
                         ++ [
                           "--flake"
                           "packages.${pkgs.stdenv.hostPlatform.system}.${name}"
+                          "--commit"
                         ]
                       else
                         pkg.updateScript
