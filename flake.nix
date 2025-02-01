@@ -71,9 +71,8 @@
                         [ (lib.getExe pkgs.nix-update) ]
                         ++ (lib.tail pkg.updateScript)
                         ++ [
-                          "--flake"
-                          "packages.${pkgs.stdenv.hostPlatform.system}.${name}"
                           "--commit"
+                          name
                         ]
                       else
                         pkg.updateScript
