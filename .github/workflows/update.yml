@@ -23,6 +23,11 @@ jobs:
           source-url: https://install.lix.systems/lix/lix-installer-x86_64-linux
           logger: pretty
 
+      - name: Setup Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
       - name: Update Lockfile
         run: nix flake update --commit-lock-file
 
