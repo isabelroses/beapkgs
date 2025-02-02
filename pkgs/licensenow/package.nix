@@ -6,16 +6,16 @@
 }:
 buildGoModule {
   pname = "licencenow";
-  version = "0.1.0-unstable-2024-03-21";
+  version = "0.2.0-unstable-2025-02-01";
 
   src = fetchFromGitHub {
     owner = "isabelroses";
     repo = "licencenow";
-    rev = "a03dcc4158acad6359f78ef2dfefe0cfcb74ed8b";
-    hash = "sha256-wYqXagPThOqBxQfXyhCi1y5hm/yGxT4QrqbZW62lWQE=";
+    rev = "cf81aa41ac5e21505b4635528aeb7ddd86ba7cfd";
+    hash = "sha256-G0wQ+uCHKca1CKWg/o3t/Xf+ypyO61B6INlWFxlP06g=";
   };
 
-  vendorHash = "sha256-aVk0ccByDS4+gs2im4eU6S5daK3OVoRYoBxn3SSgDGw=";
+  vendorHash = "sha256-Aev19JLghMqSs/GKIVSzrol8aLSjufHHLpjqPTaFQ88=";
 
   ldflags = [
     "-s"
