@@ -10,8 +10,8 @@
   use-nom ? true,
 }:
 let
-  version = "4.0.0-beta.8-unstable-2025-01-22";
-  rev = "245b2a1743a7b7f559d428090630b2b56c25949f";
+  version = "4.0.0-beta.9-unstable-2025-02-03";
+  rev = "8ef70b642b8351c010a48f43dda6a1ebf038f5d9";
 
   rtp = lib.makeBinPath (
     [
@@ -30,10 +30,10 @@ rustPlatform.buildRustPackage {
     owner = "viperml";
     repo = "nh";
     inherit rev;
-    hash = "sha256-gNmu5trAOoWOo1nlSr0i0BOw4AnVmsbI1eG0WjMdvZU=";
+    hash = "sha256-HcNEFumdZ4Y59CBB1h1IzOyPxwn0u/Wson6hhzItXCA=";
   };
 
-  cargoHash = "sha256-0eHCsV68eO9LHUjNs3ZB9TIn5+4SLqL3t4dq+2SmaJk=";
+  cargoHash = "sha256-rGc4+wRiztpSLw/UebktWWip0oFBHmQRBZpYg5Xuxns=";
 
   strictDeps = true;
 
