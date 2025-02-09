@@ -48,5 +48,6 @@ rustPlatform.buildRustPackage {
       cc-by-nc-sa-40
     ];
     mainProgram = "isabelroses-website";
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

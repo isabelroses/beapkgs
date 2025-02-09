@@ -38,5 +38,6 @@ stdenv.mkDerivation {
     description = "A web frontend for the headscale Tailscale-compatible coordination server";
     homepage = "https://github.com/gurucomputing/headscale-ui";
     license = lib.licenses.bsd3;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

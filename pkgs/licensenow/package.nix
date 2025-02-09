@@ -34,5 +34,6 @@ buildGoModule {
     homepage = "https://github.com/isabelroses/licencenow";
     license = with lib.licenses; [ mit ];
     maintainers = with lib.maintainers; [ isabelroses ];
+    mainProgram = "licencenow";
   };
 }

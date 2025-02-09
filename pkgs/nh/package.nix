@@ -71,5 +71,6 @@ rustPlatform.buildRustPackage {
   meta = {
     license = lib.licenses.eupl12;
     mainProgram = "nh";
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

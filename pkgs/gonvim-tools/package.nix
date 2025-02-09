@@ -61,5 +61,6 @@ symlinkJoin {
       lib.lists.flatten (builtins.map (pkg: pkg.meta.license or lib.licenses.unfree) paths)
     );
     platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

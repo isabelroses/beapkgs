@@ -76,50 +76,53 @@ let
     escapeShellArg
     ;
 
-  deps = [
-    alsa-lib
-    at-spi2-atk
-    at-spi2-core
-    atk
-    cairo
-    cups
-    dbus
-    expat
-    fontconfig
-    freetype
-    gdk-pixbuf
-    glib
-    gtk3
-    gtk4
-    libdrm
-    libGL
-    libxkbcommon
-    xorg.libXScrnSaver
-    xorg.libXcomposite
-    xorg.libXcursor
-    xorg.libXdamage
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libXi
-    xorg.libXrandr
-    xorg.libXrender
-    xorg.libxshmfence
-    xorg.libXtst
-    xorg.libxcb
-    xorg.libX11
-    libuuid
-    mesa
-    nspr
-    nss
-    pango
-    pipewire
-    udev
-    wayland
-    zlib
-    snappy
-    libkrb5
-    vivaldi-ffmpeg-codecs
-  ] ++ optional pulseSupport libpulseaudio ++ optional libvaSupport libva;
+  deps =
+    [
+      alsa-lib
+      at-spi2-atk
+      at-spi2-core
+      atk
+      cairo
+      cups
+      dbus
+      expat
+      fontconfig
+      freetype
+      gdk-pixbuf
+      glib
+      gtk3
+      gtk4
+      libdrm
+      libGL
+      libxkbcommon
+      xorg.libXScrnSaver
+      xorg.libXcomposite
+      xorg.libXcursor
+      xorg.libXdamage
+      xorg.libXext
+      xorg.libXfixes
+      xorg.libXi
+      xorg.libXrandr
+      xorg.libXrender
+      xorg.libxshmfence
+      xorg.libXtst
+      xorg.libxcb
+      xorg.libX11
+      libuuid
+      mesa
+      nspr
+      nss
+      pango
+      pipewire
+      udev
+      wayland
+      zlib
+      snappy
+      libkrb5
+      vivaldi-ffmpeg-codecs
+    ]
+    ++ optional pulseSupport libpulseaudio
+    ++ optional libvaSupport libva;
 
   rpath = makeLibraryPath deps + ":" + makeSearchPathOutput "lib" "lib64" deps;
   binpath = makeBinPath deps;
@@ -235,16 +238,12 @@ stdenv.mkDerivation {
           coreutils
         ]
       }
-      ${
-        optionalString (enableFeatures != [ ]) ''
-          --add-flags "--enable-features=${strings.concatStringsSep "," enableFeatures}"
-        ''
-      }
-      ${
-        optionalString (disableFeatures != [ ]) ''
-          --add-flags "--disable-features=${strings.concatStringsSep "," disableFeatures}"
-        ''
-      }
+      ${optionalString (enableFeatures != [ ]) ''
+        --add-flags "--enable-features=${strings.concatStringsSep "," enableFeatures}"
+      ''}
+      ${optionalString (disableFeatures != [ ]) ''
+        --add-flags "--disable-features=${strings.concatStringsSep "," disableFeatures}"
+      ''}
       --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations}}"
       ${optionalString vulkanSupport ''
         --prefix XDG_DATA_DIRS  : "${addDriverRunpath.driverLink}/share"
@@ -264,5 +263,6 @@ stdenv.mkDerivation {
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     license = lib.licenses.bsd3;
     platforms = [ "x86_64-linux" ];
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

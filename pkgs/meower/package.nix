@@ -1,4 +1,5 @@
 {
+  lib,
   rustPlatform,
   nix-update-script,
   fetchFromGitHub,
@@ -28,5 +29,7 @@ rustPlatform.buildRustPackage {
     description = "Helps you generate your meow mrrrp nya";
     homepage = "https://github.com/Noxyntious/meower";
     mainProgram = "meower";
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

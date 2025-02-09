@@ -27,5 +27,6 @@ buildGoModule {
     homepage = "https://github.com/abice/go-enum";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

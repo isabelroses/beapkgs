@@ -1,4 +1,8 @@
-{ unzip, stdenvNoCC }:
+{
+  lib,
+  unzip,
+  stdenvNoCC,
+}:
 stdenvNoCC.mkDerivation {
   pname = "emojis";
   version = "0.1.3";
@@ -15,5 +19,8 @@ stdenvNoCC.mkDerivation {
     runHook postInstall
   '';
 
-  meta.description = "emojis repacked as APNG";
+  meta = {
+    description = "emojis repacked as APNG";
+    maintainers = with lib.maintainers; [ isabelroses ];
+  };
 }

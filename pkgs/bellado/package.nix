@@ -1,4 +1,5 @@
 {
+  lib,
   rustPlatform,
   nix-update-script,
   fetchFromGitHub,
@@ -23,4 +24,12 @@ rustPlatform.buildRustPackage {
   doCheck = false;
 
   passthru.updateScript = nix-update-script { };
+
+  meta = {
+    description = "a todo list manager";
+    homepage = "https://github.com/isabelroses/bellado";
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ isabelroses ];
+    mainProgram = "bellado";
+  };
 }

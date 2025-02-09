@@ -35,5 +35,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/uncenter/purr";
     license = lib.licenses.mit;
     mainProgram = "purr";
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

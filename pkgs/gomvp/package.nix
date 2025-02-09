@@ -24,5 +24,6 @@ buildGoModule {
     homepage = "https://github.com/abenz1267/gomvp";
     license = lib.licenses.mit;
     platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

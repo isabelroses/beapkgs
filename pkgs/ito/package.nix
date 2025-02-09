@@ -30,5 +30,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/uncenter/ito";
     license = lib.licenses.mit;
     mainProgram = "ito";
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

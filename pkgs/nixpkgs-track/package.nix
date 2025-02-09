@@ -35,5 +35,6 @@ rustPlatform.buildRustPackage {
     homepage = "https://github.com/uncenter/nixpkgs-track";
     license = lib.licenses.mit;
     mainProgram = "nixpkgs-track";
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }

@@ -21,5 +21,6 @@ buildGoModule {
     homepage = "https://github.com/tmc/json-to-struct";
     license = lib.licenses.gpl3;
     platforms = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ isabelroses ];
   };
 }
