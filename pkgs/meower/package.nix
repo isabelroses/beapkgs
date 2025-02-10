@@ -29,7 +29,7 @@ rustPlatform.buildRustPackage {
     description = "Helps you generate your meow mrrrp nya";
     homepage = "https://github.com/Noxyntious/meower";
     mainProgram = "meower";
-    license = lib.licenses.unfree;
+    license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ isabelroses ];
   };
 }
