@@ -6,13 +6,13 @@
 }:
 rustPlatform.buildRustPackage {
   pname = "meower";
-  version = "0.4-unstable-2024-06-15";
+  version = "0.4-unstable-2025-02-10";
 
   src = fetchFromGitHub {
     owner = "Noxyntious";
     repo = "meower";
-    rev = "edc08e7f0f22041d28c70bccd9fd6100e31c1040";
-    hash = "sha256-aM69CmZYVRuhuUnAsjojraiv9VXTvhJxIPohw50Qpv8=";
+    rev = "041fdc0967e97ff041bdb61fff8d6495e2930a77";
+    hash = "sha256-Nfu1yZfVx7ZczE9AQxtz9LigGtl1Cq59ser7qho679o=";
   };
 
   useFetchCargoVendor = true;
