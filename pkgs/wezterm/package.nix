@@ -27,8 +27,8 @@ rustPlatform.buildRustPackage rec {
   src = fetchFromGitHub {
     owner = "wez";
     repo = "wezterm";
-    rev = "4c619a44dc07ad611d28a8af0416f25462d6b3ad";
-    hash = "sha256-Mv7rx2M48q9tYD3n93kn+ylT+wFAdsq66AU/6D5i2ww=";
+    rev = "2471433d1f327b1c19dd31fac68e95d7e7fd4f4f";
+    hash = "sha256-+lt8b70eCPm97cj4lrHjafq6nnMkZsPnCs9KO3dgZcE=";
     fetchSubmodules = true;
   };
 
